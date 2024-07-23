@@ -1,0 +1,228 @@
+.footer {
+  font-family: $noto;
+  background: $pink;
+  padding-bottom: 9px;
+  @include media(lg) {
+    padding-left: 40px;
+  }
+  @include media(sm) {
+    padding-top: 50px;
+  }
+  &Sub {
+    padding: 10px 25px;
+    // border-top: solid 2px $pink;
+    @include media(sm) {
+      padding: 10px 15px;
+    }
+    &__link {
+      font-weight: bold;
+      color: $pink;
+      display: flex;
+      align-items: center;
+      @include media(lg) {
+        @include fontsize(16);
+      }
+      @include media(sm) {
+        @include fontsize(14);
+      }
+      > span {
+        border-bottom: solid 1px $pink;
+      }
+      &:before {
+        content: "";
+        background: url("/assets/img/common/ico_mail-pink.svg") no-repeat;
+        width: 28px;
+        height: 20px;
+        display: inline-block;
+        margin-right: 10px;
+      }
+    }
+  }
+  &__contents {
+    display: flex;
+    @include media(lg) {
+      align-items: flex-end;
+      margin-bottom: 20px;
+    }
+    @include media(sm) {
+      flex-direction: column-reverse;
+    }
+  }
+  &__logo {
+    @include media(lg) {
+      flex: 0 0 40%;
+      position: relative;
+    }
+    .logo {
+      max-width: 247px;
+      @include media(sm) {
+        margin: 24px auto 18px;
+      }
+      img {
+        width: auto;
+        height: auto;
+      }
+    }
+  }
+  &__nav {
+    @include media(lg) {
+      flex: 0 0 80%;
+      padding: 40px 120px 40px 100px;
+    }
+    @include media(sm) {
+      padding: 0 20px;
+    }
+    &List {
+      color: #fff;
+      flex: 0 0 40%;
+      font-family: $noto;
+      @include media(lg) {
+        padding-top: 30px;
+      }
+      &__list {
+        display: flex;
+        flex-wrap: wrap;
+        @include media(sm) {
+          padding: 0 15px;
+          justify-content: center;
+          row-gap: 20px;
+          column-gap: 42px;
+          margin-bottom: 20px;
+        }
+      }
+      &__item {
+        @include media(lg) {
+          @include fontsize(16);
+          flex: 0 0 23%;
+          margin-bottom: 15px;
+          line-height: 160%;
+        }
+        @include media(sm) {
+          @include fontsize(16);
+        }
+        a{
+          position: relative;
+          &::before {
+            background: #fff;
+            content: '';
+            width: 100%;
+            height: 1px;
+            position: absolute;
+            left: 0;
+            bottom: -2px;
+            margin: auto;
+            transform-origin: right top;
+            transform: scale(0, 1);
+            transition: transform .3s;
+          }
+          &:hover::before {
+            transform-origin: left top;
+            transform: scale(1, 1);
+          }          
+        }
+      }
+    }
+    &Link {
+      @include media(lg) {
+        display: flex;
+        justify-content: space-between;
+      }
+      &Outer {
+        @include media(sm) {
+          margin-left: 20px;
+        }
+        &:after {
+          content: "";
+          background: url("/assets/img/common/ico_outlink.svg") no-repeat;
+          width: 13px;
+          height: 13px;
+          display: inline-block;
+        }
+      }
+      &Sns {
+        display: flex;
+        align-items: center;
+        @include media(lg) {
+          gap: 30px;
+        }
+        @include media(sm) {
+          margin-top: 60px;
+          justify-content: center;
+          gap: 20px;
+          a {
+            img {
+              width: 26px;
+              height: auto;
+            }
+          }
+        }
+      }
+    }
+    &Mail {
+      position: relative;
+      padding-left: 35px;
+      line-height: 160%;
+      margin-top: 12px;
+      @include media(lg) {
+        @include fontsize(16);
+        > span {
+          @include fontsize(14);
+        }
+      }
+      @include media(sm) {
+        margin: 12px 40px 0 40px;
+        @include fontsize(16);
+        > span {
+          @include fontsize(14);
+        }
+      }
+      &:before {
+        content: "";
+        background: url("/assets/img/common/ico_mail-wh.svg") no-repeat;
+        width: 23px;
+        height: 23px;
+        display: block;
+        position: absolute;
+        top: 3px;
+        left: 0;
+      }
+    }
+  }
+  .copyright {
+    color: #fff;
+    font-family: $noto;
+    @include fontsize(10);
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0.4px;
+    @include media(lg) {
+      text-align: right;
+    }
+    @include media(sm) {
+      text-align: center;
+      display: block;
+    }
+  }
+}
+
+.pagetop {
+  display: none;
+  position: fixed;
+  bottom: 30%;
+  right: 15px;
+  z-index: 99;
+  > a {
+    display: block;
+    background-color: #1a1a1a;
+    text-align: center;
+    text-decoration: none;
+    width: 48px;
+    height: 48px;
+    padding: 10px 0;
+    &:hover {
+      filter: alpha(opacity=50);
+      -moz-opacity: 0.5;
+      opacity: 0.5;
+    }
+  }
+}

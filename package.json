@@ -1,0 +1,28 @@
+{
+  "name": "leia",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "watch": "npm run watch:sass & npm run watch:js",
+    "watch:sass": "sass --watch src/styles/style.scss assets/css/style.css",
+    "watch:js": "babel src/js/script.js --out-file assets/js/script.js --watch"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.5.10",
+    "@astrojs/vercel": "^7.7.2",
+    "@vitejs/plugin-vue": "^5.0.5",
+    "astro": "^4.11.5",
+    "typescript": "^5.4.5",
+    "vite": "^5.3.3"
+  },
+  "devDependencies": {
+    "prettier": "^3.2.5",
+    "prettier-plugin-astro": "^0.13.0",
+    "sass": "^1.77.0"
+  }
+}

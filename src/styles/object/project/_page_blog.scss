@@ -1,0 +1,383 @@
+.blog {
+	@include media(lg) {
+	}
+	@include media(sm) {
+	}
+	&__list {
+		background: #fce9f0;
+		position: relative;
+		@include media(lg) {
+			padding: 100px 0;
+		}
+		@include media(sm) {
+			padding: 80px 0;
+		}
+		&Title {
+			text-align: center;
+			font-weight: 500;
+			@include media(lg) {
+				@include fontsize(22);
+				margin-bottom: 50px;
+			}
+			@include media(sm) {
+				@include fontsize(18);
+				margin-bottom: 30px;
+			}
+		}
+		&Inner {
+			margin: 0 auto;
+			@include media(lg) {
+				display: flex;
+				gap: 60px;
+				width: 70%;
+			}
+			@include media(sm) {
+				width: 90%;
+			}
+			&Article {
+				background: #fff;
+				box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+				display: flex;
+				align-items: center;
+				@include media(lg) {
+					max-width: 800px;
+					width: 100%;
+					padding: 50px 40px;
+					gap: 20px;
+					margin-bottom: 40px;
+				}
+				@include media(sm) {
+					padding: 25px 20px;
+					gap: 10px;
+					margin-bottom: 20px;
+				}
+				&--thumb {
+					@include media(lg) {
+						// max-width: 230px;
+					}
+					img {
+						width: 100%;
+						height: auto;
+					}
+				}
+				&--box {
+					@include media(lg) {
+						flex: 0 0 50%;
+					}
+					@include media(sm) {
+						flex: 0 0 60%;
+					}
+				}
+				&--date {
+					display: inline-block;
+					font-family: $noto;
+					line-height: 1.5rem;
+					@include media(lg) {
+						@include fontsize(14);
+						margin-left: 10px;
+					}
+					@include media(sm) {
+						@include fontsize(12);
+						margin-left: 5px;
+					}
+				}
+				&--tag {
+					display: inline-block;
+					border-radius: 0.3rem;
+					background: $pink;
+					color: #fff;
+					font-family: $noto;
+					@include media(lg) {
+						@include fontsize(14);
+						padding: 5px 7px;
+					}
+					@include media(sm) {
+						@include fontsize(12);
+						padding: 3px 5px;
+						border-radius: 0.1rem;
+					}
+				}
+				&--title {
+					font-family: $noto;
+					font-weight: 500;
+					display: -webkit-box;
+					-webkit-box-orient: vertical;
+					-webkit-line-clamp: 2;
+					overflow: hidden;
+					font-weight: bold;
+					@include media(lg) {
+						@include fontsize(18);
+						margin-top: 15px;
+						line-height: 1.8rem;
+					}
+					@include media(sm) {
+						@include fontsize(16);
+						line-height: 1.3rem;
+						margin-bottom: 7px;
+					}
+				}
+				&--text {
+					font-family: $noto;
+					color: #666;
+					overflow: hidden;
+					display: -webkit-box;
+					-webkit-box-orient: vertical;
+					-webkit-line-clamp: 2;
+					@include media(lg) {
+						@include fontsize(16);
+						margin-top: 10px;
+						line-height: 1.5rem;
+					}
+					@include media(sm) {
+						display: none;
+					}
+				}
+				&--more {
+					font-family: $serif;
+					position: relative;
+					display: block;
+					color: $pink;
+					text-align: right;
+					@include media(lg) {
+						@include fontsize(16);
+						margin-top: 10px;
+						line-height: 1.5rem;
+						padding-right: 20px;
+					}
+					@include media(sm) {
+						@include fontsize(14);
+						padding-right: 20px;
+					}
+					&:after {
+						content: "";
+						background: url("/assets/img/common/allow-small.svg") no-repeat;
+						width: 101px;
+						height: 7px;
+						display: block;
+						position: absolute;
+						right: 0;
+						@include media(sm) {
+							background: url("/assets/img/common/allow-small.svg") no-repeat;
+							width: 101px;
+							height: 7px;
+							right: -10px;
+							background-size: 100%;
+						}
+					}
+				}
+				&:hover {
+					opacity: 0.8;
+					cursor: pointer;
+					.blog__listInnerArticle--more {
+						&::after {
+							background: url("/assets/img/common/allow-small.svg") no-repeat;
+							animation: SlideInAllow 1s ease;
+							transform: none;
+							@include media(sm) {
+								background: url("/assets/img/common/allow-small.svg") no-repeat;
+								width: 101px;
+								height: 7px;
+								background-size: 100%;
+							}
+						}
+					}
+				}
+			}
+			&Sidebar {
+				@include media(lg) {
+					flex: 0 0 23%;
+				}
+				.searchForm {
+					display: flex;
+					align-items: center;
+					@include media(sm) {
+						justify-content: center;
+						padding-top: 50px;
+					}
+					input[type="search"] {
+						outline: 0;
+						background: #fff;
+						border: none;
+						border-radius: 0;
+						box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+						padding: 10px;
+						@include media(lg) {
+							@include fontsize(16);
+							width: 100%;
+							margin-right: 15px;
+						}
+						@include media(sm) {
+							@include fontsize(16);
+							margin-right: 10px;
+							width: 70%;
+						}
+					}
+				}
+				&--txt {
+					font-family: $serif;
+					text-align: center;
+					@include fontsize(18);
+					@include media(lg) {
+						margin-top: 50px;
+					}
+					@include media(sm) {
+						margin-top: 60px;
+					}
+				}
+				&--cate {
+					margin-top: 30px;
+					color: #333;
+					@include media(sm) {
+						display: flex;
+						flex-wrap: wrap;
+						width: 80%;
+						margin: 0 auto;
+						margin-top: 20px;
+						gap: 20px;
+					}
+					&Text {
+						position: relative;
+						padding-left: 15px;
+						font-family: $noto;
+						@include media(lg) {
+							@include fontsize(14);
+							margin-bottom: 15px;
+						}
+						@include media(sm) {
+							@include fontsize(14);
+							flex: 0 0 46%;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.article {
+    &Detail {
+        background: #fff;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+        @include media(lg) {
+            max-width: 920px;
+            width: 100%;
+            padding: 80px 64px;
+            margin-bottom: 40px;
+        }
+        @include media(sm) {
+            padding: 30px 20px;
+        }
+        &Title {
+            font-family: $noto;
+            font-weight: 600;
+            @include media(lg) {
+                @include fontsize(24);
+                line-height: 2rem;
+                margin-bottom: 25px;
+            }
+            @include media(sm) {
+                @include fontsize(18);
+                line-height: 1.7rem;
+                margin-bottom: 20px;
+            }
+        }
+        &Ctg {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            @include media(lg) {
+                margin-bottom: 30px;
+            }
+            @include media(sm) {
+                margin-bottom: 20px;
+            }
+        }
+        &Mv {
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+        &Contents {
+            font-family: $noto;
+            @include media(lg) {
+                margin-top: 60px;
+            }
+            @include media(sm) {
+                margin-top: 30px;
+            }
+            &--ttl {
+                border-bottom: solid 1px #ddd;
+                @include media(lg) {
+                    @include fontsize(18);
+                    padding-bottom: 15px;
+                    margin-bottom: 25px;
+                }
+                @include media(sm) {
+                    @include fontsize(16);
+                    line-height: 1.5rem;
+                    padding-bottom: 10px;
+                    margin-bottom: 20px;
+                }
+            }
+            &--subttl {
+                position: relative;
+                padding-left: 20px;
+                @include media(lg) {
+                    @include fontsize(16);
+                    margin-bottom: 20px;
+                }
+                @include media(sm) {
+                    @include fontsize(14);
+                    line-height: 1.5rem;
+                    margin-bottom: 15px;
+                }
+                &:before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    background: $pink;
+                    display: inline-block;
+                    width: 5px;
+                    height: 16px;
+                    border-radius: 0.3rem;
+                    @include media(sm) {
+                        top: 5px;
+                    }
+                }
+            }
+            &--text {
+                @include media(lg) {
+                    @include fontsize(16);
+                    line-height: 2.3rem;
+                }
+                @include media(sm) {
+                    @include fontsize(14);
+                    line-height: 1.8rem;
+                }
+            }
+        }
+		&--btn{
+			color: $pink;
+			font-weight: bold;
+			&.prev{
+				&:before{
+					content: '<';
+					font-family: $poppins;
+					margin-right: 5px;
+					font-weight: 500;
+				}
+			}
+			&.next{
+				margin-left: 40px;
+				&:after{
+					content: '>';
+					font-family: $poppins;
+					margin-right: 5px;
+					font-weight: 500;
+				}
+			}
+			
+		}
+    }
+}

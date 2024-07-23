@@ -1,0 +1,41 @@
+//antialiased,subpixel-antialiased,none
+$font-smoothing: antialiased;
+
+//auto,optimizeSpeed,optimizeLegibility,geometricPrecision
+$text-rendering: auto;
+
+$mincho: "Yu Mincho", YuMincho, "Hiragino Mincho ProN", "Hiragino Mincho Pro", "HG明朝B", "MS Mincho", serif;
+$yugothic: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN",
+    "メイリオ", Meiryo, sans-serif;
+$gothic_ie: "メイリオ", Meiryo, sans-serif;
+$gothic: $yugothic;
+
+$noto: "Noto Sans", $gothic;
+$serif: "Noto Serif Display", serif, $gothic;
+$baby: "Oooh Baby", cursive, $gothic;
+$poppins: "Poppins", $gothic;
+$noto-kr: "Noto Sans KR", $gothic;
+$caramel: "Caramel",$gothic;
+
+$base-font-family: $gothic;
+
+// /* Setting
+// ------------------------*/
+$page-max-width: 1200px;
+$page-basic-width: 75vw;
+$max-width: 959px;
+$sm-width: 959px;
+$sm-width_u: 960px;
+$sm-width_t: 1280px;
+
+$base-font-size: 62.5%;
+$base-font-color: #000000;
+$anchor-base-font-color: #505050;
+
+// colors
+$pink: #E12C6D;
+$gray: #AFAFB0;
+
+// margin, paddings
+$pad-lg: 50px;
+$pad-sm: 3.125%;

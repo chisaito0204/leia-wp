@@ -1,0 +1,76 @@
+---
+const url = new URL(Astro.request.url);
+const pathname = url.pathname;
+const isIndexPage = pathname === '/' || pathname === '';
+const headerClass = isIndexPage ? 'header js-header' : 'header js-header notop';
+---
+
+<header class={headerClass}>
+  <div class="header__content">
+    <div class="header__logo">
+      <a href="/">
+        <figure class="logo">
+          <img src="/assets/img/common/lds_logo-pink.png" alt="" width="147" height="28" />
+        </figure>
+      </a>
+    </div>
+    <nav id="controls" class="header__nav lg-only">
+      <ul class="header__nav__list">
+        <li class="header__nav__item"><a href="/">Home</a></li>
+        <li class="header__nav__item ja"><a href="/about">5つの魅力</a></li>
+        <li class="header__nav__item ja"><a href="/class">クラス</a></li>
+        <li class="header__nav__item ja"><a href="/teacher">教師</a></li>
+        <li class="header__nav__item ja"><a href="/contact">お問合せ</a></li>
+        <li class="header__nav__item"><a href="/blog">Blog</a></li>
+        <li class="header__nav__item"><a href="/faq">Faq</a></li>
+        <li class="header__nav__item"><a href="/gallery">ダンスギャラリー</a></li>
+      </ul>
+    </nav>
+    <div class="header__spMenuBtn sm-only">
+      <div class="header__spMenuBtn--box">
+        <span class="header__spMenuBtn--bar"></span>
+        <span class="header__spMenuBtn--bar"></span>
+        <span class="header__spMenuBtn--bar"></span>
+      </div>
+    </div>
+    <div class="header__spSideMenu sm-only">
+      <div class="header__spSideMenu--container">
+        <ul class="header__spSideMenu__list">
+          <figure class="logo">
+            <img src="/assets/img/common/lds_logo-white.png" alt="" width="165" height="37">
+          </figure>
+          <li class="header__spSideMenu__item en">
+            <a href="/">Home</a>
+          </li>
+          <li class="header__spSideMenu__item">
+            <a href="/about">5つの魅力</a>
+          </li>
+          <li class="header__spSideMenu__item">
+            <a href="/class">クラス</a>
+          </li>
+          <li class="header__spSideMenu__item">
+            <a href="/teacher">教師</a>
+          </li>
+          <li class="header__spSideMenu__item">
+            <a href="/contact">お問合せ</a>
+          </li>
+          <li class="header__spSideMenu__item en">
+            <a href="/blog">Blog</a>
+          </li>
+          <li class="header__spSideMenu__item en">
+            <a href="/faq">Faq</a>
+          </li>
+          <li class="header__spSideMenu__item">
+            <a href="/gallery">ダンスギャラリー</a>
+          </li>
+        </ul>
+        <div class="header__spSideMenu__sns">
+          <a href="https://x.com/leiadancestudio" target="_blank"><img src="/assets/img/common/x.svg" alt="X" width="24" height="24" /></a>
+          <a href="https://www.instagram.com/leia_dance_studio/" target="_blank"><img src="/assets/img/common/instagram.svg" alt="Instagram" width="24" height="24" /></a>
+          <a href="https://www.facebook.com/leia.dance.studio/" target="_blank"><img src="/assets/img/common/facebook.svg" alt="facebook" width="24" height="18" /></a>
+        </div>
+        <p class="header__spSideMenu__txt">見学、体験レッスンは<a href="/lp">こちら</a>から！</p>
+      </div>
+    </div>
+  </div>
+</header>

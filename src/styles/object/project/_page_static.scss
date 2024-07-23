@@ -1,0 +1,439 @@
+/* static index
+* ----------------
+* common
+* ---------------- */
+/* SP改行 */
+@include media(sm) {
+	.br::before {
+		content: "\A";
+		white-space: pre;
+	}
+}
+
+/* colors */
+.pink {
+	color: $pink;
+}
+
+/* scroll down */
+.scrollDown {
+	width: 1px;
+	height: 40px;
+	background: #333;
+	animation: scrollDown 2s ease infinite;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+/* indent */
+.indent01 {
+	padding-left: 1em;
+	text-indent: -1em;
+	display: block;
+}
+.indent02 {
+	padding-left: 1.5em;
+	text-indent: -1.5em;
+	display: block;
+}
+.indent03 {
+	padding-left: 3em;
+	text-indent: -3em;
+	display: block;
+}
+
+@keyframes scrollDown {
+	0% {
+		transform-origin: top;
+		transform: scaleY(0);
+	}
+	45% {
+		transform-origin: top;
+		transform: scaleY(1);
+	}
+	55% {
+		transform-origin: bottom;
+		transform: scaleY(1);
+	}
+	100% {
+		transform-origin: bottom;
+		transform: scaleY(0);
+	}
+}
+
+/* フェードイン */
+.js-fade {
+	opacity: 0;
+	transition: opacity 1s ease-in-out;
+	&.is-show {
+		opacity: 1;
+	}
+	&Slide {
+		transform: translateY(50px);
+		transition:
+			opacity 1s ease-in-out,
+			transform 1s ease-in-out;
+		&.is-show {
+			transform: translateY(0);
+		}
+	}
+}
+
+.mod {
+	//FV
+	&FV {
+		position: relative;
+		@include media(lg) {
+			margin-top: 100px;
+			display: flex;
+			justify-content: flex-end;
+			align-items: flex-end;
+		}
+		@include media(sm) {
+			padding-top: 150px;
+		}
+		img {
+			width: auto;
+			height: auto;
+			@include media(sm) {
+				display: block;
+				width: 90%;
+				margin-left: auto;
+			}
+		}
+	}
+	&Title {
+		font-family: $noto;
+		flex: 0 0 35%;
+		@include media(lg) {
+			@include fontsize(42);
+			margin-bottom: 85px;
+			margin-right: -45px;
+		}
+		@include media(sm) {
+			@include fontsize(26);
+			text-align: right;
+			margin-right: 10px;
+			margin-bottom: 20px;
+		}
+		.en {
+			font-family: $serif;
+		}
+	}
+	&SubTitle {
+		font-family: $serif;
+		@include fontsize(32);
+		color: $pink;
+		position: absolute;
+		top: 50px;
+		left: 12%;
+		border-left: solid 1px $pink;
+		padding-left: 8px;
+		display: block;
+		writing-mode: vertical-rl;
+		height: 281px;
+		@include media(sm) {
+			@include fontsize(20);
+			top: 100px;
+			left: 5%;
+			height: 200px;
+		}
+	}
+	&Ttlbg{
+		&.con {
+			@include media(lg) {
+				background: url("/assets/img/contact/title-bg.jpg") no-repeat;
+				background-size: 100%;
+			}
+			@include media(sm) {
+				background: url("/assets/img/contact/sp/title-bg.jpg") no-repeat;
+				background-size: 100%;
+			}
+		}
+		&.blog {
+			@include media(lg) {
+				background: url("/assets/img/blog/title-bg.jpg") no-repeat;
+				background-size: 100%;
+			}
+			@include media(sm) {
+				background: url("/assets/img/blog/sp/title-bg.jpg") no-repeat;
+				background-size: 100%;
+			}
+		}
+	}
+	&Tttlbox {
+		width: 70%;
+		margin: auto;
+		padding: 100px 0 50px;
+		@include media(sm) {
+			width: 90%;
+			margin: auto;
+			padding: 110px 0 30px;
+		}
+		&--ttl {
+			font-family: $serif;
+			@include media(lg) {
+				@include fontsize(52);
+				margin-bottom: 30px;
+			}
+			@include media(sm) {
+				@include fontsize(32);
+				margin-bottom: 15px;
+			}
+		}
+		&--subttl {
+			font-family: $noto;
+			border-bottom: solid 1px $pink;
+			padding-bottom: 10px;
+			@include media(lg) {
+				@include fontsize(20);
+				width: 20%;
+			}
+			@include media(sm) {
+				@include fontsize(16);
+				width: 60%;
+			}
+		}
+	}
+
+	&Text {
+		text-align: center;
+		font-family: $noto;
+		@include media(lg) {
+			@include fontsize(20);
+			line-height: 180%;
+			margin: 80px 0 100px;
+		}
+		@include media(sm) {
+			@include fontsize(14);
+			line-height: 180%;
+			margin: 50px 0;
+		}
+		> a {
+			color: $pink;
+			font-weight: bold;
+			border-bottom: solid 1px $pink;
+		}
+	}
+	&BandImg {
+		margin-bottom: 70px;
+		img {
+			width: 100%;
+			height: auto;
+			@include media(sm) {
+				 aspect-ratio: 3/1;
+				 object-fit: cover;
+			}
+		}
+	}
+	&MoreBtn {
+		color: $pink;
+		font-family: $noto;
+		font-weight: bold;
+		transition: 0.3s;
+		display: block;
+		width: fit-content;
+		transition: 0.2s cubic-bezier(0.45, 0, 0.55, 1);
+		@include media(lg) {
+			@include fontsize(18);
+			margin: 50px 100px 0 auto;
+		}
+		@include media(sm) {
+			@include fontsize(16);
+			margin: 30px 20px 0 auto;
+		}
+		&:after {
+			content: "";
+			background: url("/assets/img/common/allow.svg") no-repeat;
+			width: 148px;
+			height: 12px;
+			display: block;
+			@include media(sm) {
+				background: url("/assets/img/common/allow-small.svg") no-repeat;
+				width: 106px;
+				height: 7px;
+				background-size: 100%;
+			}
+		}
+		&:hover {
+			opacity: 0.7;
+			&::after {
+				background: url("/assets/img/common/allow.svg") no-repeat;
+				animation: SlideInAllow 1s ease;
+				transform: none;
+				@include media(sm) {
+					background: url("/assets/img/common/allow-sp.svg") no-repeat;
+					width: 106px;
+					height: 7px;
+					background-size: 100%;
+				}
+			}
+		}
+	}
+	&Sns{
+		margin-top: 60px;
+		&__txt{
+			text-align: center;
+			@include media(lg) {
+				@include fontsize(16);
+				line-height: 160%;
+				margin-bottom: 20px;
+			}
+			@include media(sm) {
+				@include fontsize(14);
+				line-height: 180%;
+				margin-bottom: 30px;
+			}
+		}
+		&Links{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			gap: 30px;
+		}
+	}
+}
+
+// ページャー
+.pagination {
+	display: flex;
+	align-items: center;
+	position: relative;
+	color: $pink;
+	font-family: $poppins;
+	font-weight: 500;
+	@include media(sm) {
+		justify-content: center;
+	}
+	li .page-numbers,
+	.next a,
+	.pre a {
+		border: solid 1px $pink;
+		background: #fff;
+		text-align: center;
+		color: $pink;
+		display: block;
+		@include media(lg) {
+			width: 35px;
+			height: 40px;
+			line-height: 40px;
+			@include fontsize(18);
+		}
+		@include media(sm) {
+			width: 35px;
+			height: 40px;
+			line-height: 40px;
+			@include fontsize(16);
+		}
+	}
+	li.active .page-numbers {
+		border: solid 1px $pink;
+		background: $pink;
+		color: #fff;
+	}
+	li {
+		@include media(lg) {
+			margin-left: 20px;
+		}
+		@include media(sm) {
+			margin-left: 15px;
+		}
+		&:first-of-type {
+			margin-left: 0;
+		}
+	}
+}
+.navi {
+	display: flex;
+	align-items: center;
+	position: relative;
+	color: $pink;
+	font-family: $poppins;
+	font-weight: 500;
+	@include media(lg) {
+		margin-top: 50px;
+	}
+	@include media(sm) {
+		justify-content: center;
+		margin-top: 50px;
+	}
+	.num {
+		text-align: center;
+		&:hover {
+			opacity: 0.8;
+		}
+		@include media(lg) {
+			width: 35px;
+			height: 40px;
+			line-height: 40px;
+			@include fontsize(18);
+			margin-right: 20px;
+		}
+		@include media(sm) {
+			width: 35px;
+			height: 40px;
+			line-height: 40px;
+			@include fontsize(16);
+			margin-right: 15px;
+		}
+	}
+	p {
+		background: $pink;
+		color: #fff;
+	}
+	a.num {
+		border: solid 1px $pink;
+		background: #fff;
+		color: $pink;
+	}
+	span {
+		font-weight: bold;
+		@include media(lg) {
+			@include fontsize(16);
+			margin-right: 20px;
+		}
+		@include media(sm) {
+			@include fontsize(14);
+			margin-right: 15px;
+			// margin-left: 15px;
+		}
+	}
+	.prev {
+		margin-top: 0.5%;
+		// margin-right: 40px;
+		&:hover {
+			opacity: 0.8;
+		}
+		@include media(sm) {
+			display: none;
+			&.detail {
+				display: block;
+			}
+		}
+		&Txt {
+			@include fontsize(14);
+			color: #000;
+			font-weight: 400;
+			margin: 3px 20px 0;
+		}
+	}
+	.next {
+		margin-top: 0.5%;
+		margin-left: 20px;
+		&:hover {
+			opacity: 0.8;
+		}
+		@include media(sm) {
+			display: none;
+			&.detail {
+				display: block;
+			}
+		}
+		&Txt {
+			@include fontsize(14);
+			color: #000;
+			font-weight: 400;
+			margin: 3px 20px 0;
+		}
+	}
+}

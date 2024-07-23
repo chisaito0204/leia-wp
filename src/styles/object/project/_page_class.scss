@@ -1,0 +1,19 @@
+.class{
+	&__textarea{
+		@include media(lg) {
+			@include fontsize(16);
+			margin: 35px 0 40px;
+			span{
+				line-height: 160%;
+			}
+		}
+		@include media(sm) {
+			@include fontsize(14);
+			width: 85%;
+			margin: 20px auto 40px;
+			span{
+				line-height: 140%;
+			}
+		}
+	}
+}

@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+body {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: opacity 300ms ease-out 0ms;
+  cursor: pointer;
+  // &:hover {
+  //     opacity: .75;
+  // }
+}
+
+h1,h2,h3,h4,h5,h6 {
+  line-height: 1.33;
+}
+p {
+  line-height: inherit;
+  font-size: inherit;
+  color: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+.lg-only {
+	@include media(sm) {
+		display: none !important;
+	}
+}
+.sm-only {
+	display: none;
+	@include media(sm) {
+		display: block;
+	}
+}
+

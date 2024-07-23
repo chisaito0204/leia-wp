@@ -1,0 +1,387 @@
+.teacher {
+	@include media(lg) {
+		margin-top: 100px;
+		.top__teacherBox {
+			align-items: flex-end;
+			margin-bottom: 100px;
+		}
+	}
+	@include media(sm) {
+		margin-top: 140px;
+	}
+	&__text {
+		font-family: $noto;
+		@include media(lg) {
+			@include fontsize(18);
+			line-height: 180%;
+			margin: 80px 0 100px;
+			text-align: center;
+		}
+		@include media(sm) {
+			@include fontsize(14);
+			line-height: 160%;
+			width: 90%;
+			margin: 30px auto 60px;
+		}
+		> span {
+			color: $pink;
+			font-weight: bold;
+		}
+	}
+	&__messasge {
+		@include media(lg) {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 80px;
+			margin-bottom: 100px;
+		}
+		@include media(sm) {
+			margin-bottom: 80px;
+		}
+		&--dec {
+			position: absolute;
+			font-family: $baby;
+			top: -10px;
+			left: -20px;
+			z-index: 10;
+			color: $pink;
+			transform: rotate(-9deg);
+			@include media(lg) {
+				@include fontsize(60);
+			}
+			@include media(sm) {
+				@include fontsize(40);
+				left: -5px;
+			}
+		}
+		&--txt {
+			flex: 0 0 35%;
+			background: #fce9f0;
+			border-radius: 1rem;
+			position: relative;
+			text-align: left;
+			@include media(lg) {
+				@include fontsize(18);
+				line-height: 200%;
+				padding: 50px;
+				&:before {
+					content: "";
+					position: absolute;
+					top: 50%;
+					left: 100%;
+					margin-top: -15px;
+					border: 15px solid transparent;
+					border-left: 15px solid #fce9f0;
+				}
+			}
+			@include media(sm) {
+				@include fontsize(14);
+				line-height: 200%;
+				width: 90%;
+				margin: 0 auto;
+				padding: 30px;
+				&:before {
+					content: "";
+					position: absolute;
+					top: 100%;
+					left: 30%;
+					margin-left: -15px;
+					border: 15px solid transparent;
+					border-top: 15px solid #fce9f0;
+				}
+			}
+		}
+		&--img {
+			@include media(sm) {
+				text-align: right;
+				margin-right: 20px;
+				margin-top: 20px;
+				img {
+					width: 60%;
+					height: auto;
+				}
+			}
+		}
+	}
+	&__history {
+		width: 80%;
+		margin: 0 auto;
+		font-family: $noto;
+		@include media(sm) {
+			width: 90%;
+		}
+		&__ttl {
+			font-weight: bold;
+			@include media(lg) {
+				@include fontsize(22);
+				margin-bottom: 20px;
+			}
+			@include media(sm) {
+				@include fontsize(18);
+				margin-bottom: 20px;
+			}
+		}
+		&__txt {
+			@include media(lg) {
+				@include fontsize(18);
+				line-height: 160%;
+				margin-bottom: 25px;
+			}
+			@include media(sm) {
+				@include fontsize(16);
+				line-height: 160%;
+				margin-bottom: 30px;
+			}
+		}
+		&__subttl {
+			display: flex;
+			align-items: center;
+			color: $pink;
+			font-weight: bold;
+			@include media(lg) {
+				@include fontsize(18);
+				margin-bottom: 25px;
+			}
+			@include media(sm) {
+				@include fontsize(18);
+				margin-bottom: 20px;
+			}
+			&:before {
+				content: "";
+				background: url("/assets/img/teacher/icon_crown.svg") no-repeat;
+				display: inline-block;
+				width: 21px;
+				height: 21px;
+				margin-right: 5px;
+			}
+		}
+		&Box {
+			@include media(sm) {
+				overflow: auto;
+				margin-bottom: 10px;
+				.simplebar-scrollbar::before {
+					background: #d9d9d9;
+					border-radius: 50px;
+					height: 4px;
+				}
+			}
+			&Box::-webkit-scrollbar {
+				display: none;
+			}
+			&In {
+				@include media(sm) {
+					min-width: 800px;
+				}
+			}
+		}
+		&Table {
+			display: flex;
+			justify-content: space-between;
+			padding-bottom: 10px;
+			margin-top: 10px;
+			border-bottom: solid 1px #afafb0;
+			&:last-of-type {
+				border-bottom: none;
+			}
+			&__ttl {
+				@include fontsize(14);
+				&.b {
+					font-weight: bold;
+				}
+				&:nth-of-type(1) {
+					flex: 0 0 10%;
+				}
+				&:nth-of-type(2),
+				&:nth-of-type(3) {
+					flex: 0 0 15%;
+				}
+				&:nth-of-type(4) {
+					flex: 0 0 23%;
+				}
+			}
+		}
+		&Slide {
+			margin: 70px 0 50px;
+			@include media(lg) {
+				display: flex;
+				justify-content: space-between;
+			}
+			.slideImg {
+				@include media(sm) {
+					margin-bottom: 20px;
+				}
+				> img {
+					width: 100%;
+					height: auto;
+				}
+			}
+		}
+		&Title {
+			font-family: $noto;
+			font-weight: bold;
+			@include media(lg) {
+				@include fontsize(24);
+				margin-bottom: 25px;
+			}
+			@include media(sm) {
+				@include fontsize(18);
+				margin-bottom: 20px;
+			}
+		}
+		&Perttl {
+			color: #fff;
+			font-weight: bold;
+			background: $pink;
+			@include fontsize(18);
+			line-height: 160%;
+			padding: 7px 0;
+			text-align: center;
+			@include media(sm) {
+				text-align: left;
+				padding: 7px 10px;
+				&:before {
+					content: "";
+					width: 13px;
+					height: 13px;
+					background: #fff;
+					display: inline-block;
+					border-radius: 50%;
+					margin-right: 7px;
+				}
+			}
+		}
+		&List01 {
+			display: flex;
+			padding: 15px 0;
+			border-bottom: solid 1px #afafb0;
+			&:last-of-type {
+				border-bottom: none;
+			}
+			&--ttl {
+				flex: 0 0 25%;
+				font-weight: bold;
+				@include media(lg) {
+					@include fontsize(16);
+				}
+				@include media(sm) {
+					@include fontsize(14);
+				}
+			}
+			&--desc {
+				flex: 0 0 25%;
+				@include fontsize(16);
+				line-height: 160%;
+			}
+		}
+		&List02 {
+			display: flex;
+			padding: 15px 0;
+			border-bottom: solid 1px #afafb0;
+			&:last-of-type {
+				border-bottom: none;
+			}
+			&--ttl {
+				flex: 0 0 50%;
+				font-weight: bold;
+				@include media(lg) {
+					@include fontsize(16);
+				}
+				@include media(sm) {
+					@include fontsize(14);
+				}
+			}
+			&--desc {
+				flex: 0 0 40%;
+				&:nth-of-type(2) {
+					flex: 0 0 10%;
+				}
+				@include media(lg) {
+					@include fontsize(16);
+					line-height: 160%;
+				}
+				@include media(sm) {
+					@include fontsize(14);
+				}
+			}
+		}
+		&Etc {
+			margin: 50px 0;
+			&__ttl {
+				font-weight: bold;
+				@include media(lg) {
+					@include fontsize(20);
+					margin-bottom: 20px;
+				}
+				@include media(sm) {
+					@include fontsize(18);
+					margin-bottom: 15px;
+				}
+			}
+			&__txt {
+				padding-left: 1em;
+				text-indent: -1em;
+				display: block;
+				@include media(lg) {
+					@include fontsize(18);
+					line-height: 180%;
+				}
+				@include media(sm) {
+					@include fontsize(16);
+					line-height: 160%;
+				}
+				&:before {
+					content: "";
+					background: #e12c6d;
+					width: 6px;
+					height: 6px;
+					border-radius: 50%;
+					display: inline-block;
+					margin-right: 5px;
+					margin-bottom: 3px;
+				}
+			}
+		}
+		&Part {
+			@include media(lg) {
+				display: flex;
+				align-items: flex-start;
+				justify-content: center;
+				margin: 100px 0 200px;
+				gap: 40px;
+			}
+			@include media(sm) {
+				text-align: center;
+				margin-bottom: 100px;
+			}
+			&--name {
+				font-family: $noto;
+				border-bottom: solid 1px $pink;
+				@include media(lg) {
+					@include fontsize(32);
+					line-height: 170%;
+				}
+				@include media(sm) {
+					@include fontsize(28);
+					text-align: left;
+					width: 50%;
+					margin: 20px auto 0;
+				}
+				.en {
+					font-family: $serif;
+					@include media(lg) {
+						@include fontsize(28);
+					}
+					@include media(sm) {
+						@include fontsize(28);
+						line-height: 160%;
+					}
+				}
+			}
+		}
+	}
+	&__note{
+		@include fontsize(14);
+		margin-bottom: 40px;
+	}
+}

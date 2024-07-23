@@ -1,0 +1,46 @@
+.mod {
+	&BreadCrumb {
+		font-family: $noto;
+		color: #333;
+		display: flex;
+		gap: 8px;
+		@include fontsize(12);
+		
+		font-weight: 400;
+		line-height: 150%;
+		letter-spacing: 0.48px;
+		@include media(lg) {
+			padding-top: 130px;
+			margin-left: 100px;
+		}
+		@include media(sm) {
+			margin-left: 20px;
+			margin-top: 86px;
+		}
+		@media screen and (max-width: 335px){
+			width: calc(100% - 20px);
+			margin-left: auto;
+			overflow-x: scroll;
+			white-space: nowrap;
+		}
+		li {
+			a {
+				position: relative;
+				color: #999999;
+				padding-right: 17px;
+				&::after {
+					content: "";
+					width: 4.8px;
+					height: 4.8px;
+					position: absolute;
+					display: inline-block;
+					border-top: solid 1px #333;
+					border-right: solid 1px #333;
+					top: 50%;
+					right: 0px;
+					transform: translate(-50%, -50%) rotate(45deg);
+				}
+			}
+		}
+	}
+}

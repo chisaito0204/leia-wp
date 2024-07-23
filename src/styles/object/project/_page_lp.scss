@@ -1,0 +1,293 @@
+.lp {
+	margin-bottom: 50px;
+	@include media(sm) {
+		margin-bottom: 100px;
+	}
+	&__mv {
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+	&__box {
+		text-align: center;
+		position: relative;
+		margin-top: -200px;
+		@include media(sm) {
+			margin-top: -25px;
+		}
+		&Bg {
+			position: absolute;
+			left: 20px;
+			bottom: 0;
+			z-index: 0;
+			@include media(sm) {
+				left: 0;
+				width: 50%;
+				img {
+					height: auto;
+				}
+			}
+		}
+	}
+	&__title {
+		font-family: $serif;
+		color: $pink;
+		@include media(lg) {
+			@include fontsize(80);
+		}
+		@include media(sm) {
+			@include fontsize(38);
+		}
+	}
+	&__txt01 {
+		@include media(lg) {
+			@include fontsize(46);
+			margin: 30px 0;
+		}
+		@include media(sm) {
+			@include fontsize(22);
+			margin: 15px 0;
+		}
+	}
+	&__txt02 {
+		font-weight: bold;
+		-webkit-text-stroke-width: 1px;
+		-webkit-text-stroke-color: black;
+		color: #fdc0cc;
+		@include media(lg) {
+			@include fontsize(80);
+			margin-bottom: 20px;
+		}
+		@include media(sm) {
+			@include fontsize(40);
+			margin-bottom: 20px;
+		}
+	}
+	&__txt03 {
+		font-weight: bold;
+		margin-bottom: 30px;
+		@include media(lg) {
+			@include fontsize(30);
+		}
+		@include media(sm) {
+			@include fontsize(18);
+		}
+		.t1 {
+			@include media(lg) {
+				@include fontsize(50);
+			}
+			@include media(sm) {
+				@include fontsize(30);
+			}
+		}
+		.t2 {
+			font-family: $noto-kr;
+			@include media(lg) {
+				@include fontsize(80);
+			}
+			@include media(sm) {
+				@include fontsize(40);
+			}
+		}
+		.t3 {
+			@include media(lg) {
+				@include fontsize(60);
+			}
+			@include media(sm) {
+				@include fontsize(30);
+			}
+		}
+		.t4 {
+			@include media(lg) {
+				@include fontsize(40);
+			}
+			@include media(sm) {
+				@include fontsize(20);
+			}
+		}
+	}
+	&__txtbox {
+		text-align: center;
+		display: inline-block;
+		margin-bottom: 40px;
+	}
+	&__txt04 {
+		text-align: left;
+		display: block;
+		margin-bottom: 30px;
+		@include media(sm) {
+			margin-bottom: 15px;
+		}
+		.t1 {
+			font-weight: bold;
+			color: #666;
+			@include media(lg) {
+				@include fontsize(26);
+			}
+			@include media(sm) {
+				@include fontsize(16);
+			}
+		}
+		.t2 {
+			@include media(lg) {
+				@include fontsize(22);
+			}
+			@include media(sm) {
+				@include fontsize(14);
+				&.pl {
+					padding-left: 68px;
+				}
+			}
+		}
+		.t3 {
+			font-family: $noto-kr;
+			font-weight: bold;
+			@include media(lg) {
+				@include fontsize(32);
+			}
+			@include media(sm) {
+				@include fontsize(22);
+			}
+		}
+	}
+	&__btn {
+		display: block;
+		color: #fff;
+		background: $pink;
+		border-radius: 50px;
+		width: fit-content;
+		margin: auto;
+		font-weight: bold;
+		@include media(lg) {
+			@include fontsize(30);
+			padding: 24px 55px;
+			margin-bottom: 50px;
+		}
+		@include media(sm) {
+			@include fontsize(18);
+			padding: 18px 50px;
+			margin-bottom: 40px;
+		}
+	}
+	&__textarea {
+		line-height: 200%;
+		@include media(lg) {
+			@include fontsize(20);
+			margin-bottom: 110px;
+		}
+		@include media(sm) {
+			@include fontsize(14);
+			margin-bottom: 50px;
+		}
+	}
+	&__teacher {
+		font-weight: bold;
+		text-align: center;
+		@include media(lg) {
+			@include fontsize(22);
+			margin-bottom: 34px;
+		}
+		@include media(sm) {
+			@include fontsize(18);
+			margin-bottom: 40px;
+		}
+	}
+	&__pose {
+		text-align: center;
+		&--txt {
+			color: $pink;
+			font-weight: bold;
+			@include media(lg) {
+				@include fontsize(22);
+				line-height: 180%;
+				margin-bottom: 28px;
+			}
+			@include media(sm) {
+				@include fontsize(16);
+				line-height: 160%;
+				margin-bottom: 20px;
+			}
+		}
+		&--img {
+			@include media(sm) {
+				margin-bottom: 18px;
+
+				img {
+					width: 90%;
+					height: auto;
+				}
+			}
+		}
+		&__img {
+			@include media(lg) {
+				display: flex;
+				justify-content: center;
+				gap: 120px;
+				margin: 50px 0 150px;
+			}
+			@include media(sm) {
+				margin-bottom: 50px;
+				img {
+					width: 90%;
+					height: auto;
+					margin-bottom: 18px;
+				}
+			}
+		}
+	}
+	&__infobox {
+		width: 70%;
+		margin: 0 auto 100px;
+		@include media(sm) {
+			width: 90%;
+		}
+		.top__lesson__schedule {
+			width: 100%;
+		}
+	}
+	&__gallery {
+		@include media(lg) {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 23px;
+			margin-bottom: 150px;
+			&--img02 {
+				margin-bottom: 23px;
+			}
+		}
+		@include media(sm) {
+			margin-bottom: 100px;
+			img{
+				width: 100%;
+				height: auto;
+			}
+			&--img01 {
+				width: 80%;
+				margin-bottom: 15px;
+			}
+			&--img02 {
+				width: 70%;
+				margin-bottom: 15px;
+				margin-left: auto;
+			}
+			&--img03 {
+				width: 80%;
+			}
+		}
+	}
+	&__ttl {
+		font-weight: bold;
+		text-align: center;
+		@include media(lg) {
+			@include fontsize(28);
+			margin-bottom: 15px;
+		}
+		@include media(sm) {
+			@include fontsize(24);
+			line-height: 160%;
+			margin-bottom: 15px;
+		}
+	}
+}
