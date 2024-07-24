@@ -80,7 +80,7 @@ get_header();
 					<p class="">見学、体験レッスンはこちらから！</p>
 				</a>
 
-				<p class="top__mv__txt">Let's enjoy Jazz Dance !!</p>
+				<p class="top__mv__txt">Let's keep on dancing!!</p>
 			</section>
 			<!-- / MV -->
 

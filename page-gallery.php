@@ -23,15 +23,15 @@ get_header();
 					<figure class="media__contents__movie">
 						<img src="/assets/img/media/movie.jpg" alt="" width="785" height="462" />
 					</figure>
-
 					<figure class="media__contents__movie">
 						<img src="/assets/img/media/movie.jpg" alt="" width="785" height="462" />
 					</figure>
-
 					<figure class="media__contents__movie">
 						<img src="/assets/img/media/movie.jpg" alt="" width="785" height="462" />
 					</figure>
-
+					<figure class="media__contents__movie">
+						<img src="/assets/img/media/movie.jpg" alt="" width="785" height="462" />
+					</figure>
 					<figure class="media__contents__movie">
 						<img src="/assets/img/media/movie.jpg" alt="" width="785" height="462" />
 					</figure>
@@ -41,11 +41,9 @@ get_header();
 					<figure class="media__contents__movie">
 						<img src="/assets/img/media/movie.jpg" alt="" width="785" height="462" />
 					</figure>
-
 					<figure class="media__contents__movie">
 						<img src="/assets/img/media/movie.jpg" alt="" width="785" height="462" />
 					</figure>
-
 					<figure class="media__contents__movie">
 						<img src="/assets/img/media/movie.jpg" alt="" width="785" height="462" />
 					</figure>
