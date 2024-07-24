@@ -437,3 +437,11 @@
 		}
 	}
 }
+
+.new{
+	color: red;
+	@include fontsize(12);
+	@include media(sm) {
+		@include fontsize(11);
+	}
+}

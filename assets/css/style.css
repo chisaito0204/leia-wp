@@ -941,21 +941,21 @@ button {
 }
 .top__newsBox__ttl {
   text-align: center;
+  font-weight: 600;
 }
 @media (min-width: 960px) {
   .top__newsBox__ttl {
     font-size: 20px;
     font-size: 1.25rem;
-    font-weight: 600;
     margin-bottom: 20px;
   }
 }
 @media (max-width: 959px) {
   .top__newsBox__ttl {
-    font-weight: 500;
     font-size: 18px;
     font-size: 1.125rem;
     margin-bottom: 10px;
+    line-height: 140%;
   }
 }
 .top__newsBox__txt {
@@ -4115,6 +4115,18 @@ button {
   color: #000;
   font-weight: 400;
   margin: 3px 20px 0;
+}
+
+.new {
+  color: red;
+  font-size: 12px;
+  font-size: 0.75rem;
+}
+@media (max-width: 959px) {
+  .new {
+    font-size: 11px;
+    font-size: 0.6875rem;
+  }
 }
 
 @media (min-width: 960px) {

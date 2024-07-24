@@ -87,8 +87,15 @@ get_header();
 			<!-- お知らせ -->
 			<section class="top__news">
 				<div class="top__newsBox">
-					<p class="top__newsBox__ttl">お知らせ</p>
-					<p class="top__newsBox__txt">テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+					<?php if (get_field('news_title')) : ?>
+						<p class="top__newsBox__ttl"><?php the_field('news_title'); ?></p>
+					<?php endif; ?>
+					<?php if (get_field('news_text_pc')) : ?>
+						<p class="top__newsBox__txt lg-only"><?php echo nl2br(esc_html(get_field('news_text_pc'))); ?></p>
+					<?php endif; ?>
+					<?php if (get_field('news_text_sp')) : ?>
+						<p class="top__newsBox__txt sm-only"><?php echo nl2br(esc_html(get_field('news_text_sp'))); ?></p>
+					<?php endif; ?>
 				</div>
 			</section>
 			<!-- / お知らせ -->
@@ -145,36 +152,53 @@ get_header();
 
 				<div class="top__blogBox swiper">
 					<div class="swiper-wrapper">
-						<div class="swiper-slide">
-							<a href="" class="top__blogBox__article">
-								<figure><img src="/assets/img/top/thumb.jpg" alt="" width="360" height="246" /></figure>
-								<div class="top__blogBox__articleTags">
-									<p class="top__blogBox__articleTags--tag">タグ</p>
-									<p class="top__blogBox__articleTags--date">2024/01/01</p>
+						<?php
+						$args = array(
+							'post_type' => 'blog',
+							'slug' => 'news',
+							'posts_per_page' => 3,
+							'order' => 'ASC',
+						);
+						?>
+						<?php $the_query = new WP_Query($args); ?>
+						<?php if ($the_query->have_posts()) : ?>
+							<?php while ($the_query->have_posts()) : ?>
+								<?php
+								$days = 7;
+								$today = date_i18n('U');
+								$entry = get_the_time('U');
+								$termn = date('U', ($today - $entry)) / 86400;
+								?>
+								<?php $the_query->the_post(); ?>
+								<div class="swiper-slide">
+									<a href="<?php the_permalink(); ?>" class="top__blogBox__article">
+										<figure><?php the_post_thumbnail('full'); ?></figure>
+										<div class="top__blogBox__articleTags">
+											<?php
+											$terms = get_the_terms($post->ID, 'blog_category');
+											if ($terms && !is_wp_error($terms)) {
+												foreach ($terms as $term) :
+													$url = get_term_link($term, 'blog_category');
+											?>
+													<p class="top__blogBox__articleTags--tag"><?php echo $term->name; ?></p>
+											<?php
+												endforeach;
+											} else {
+											}
+
+											if ($the_query->current_post < 2 && $days > $termn) {
+												echo '<span class="new">New!</span>';
+											} else {
+											}
+											?>
+											<p class="top__blogBox__articleTags--date"><?php the_time('Y/m/d'); ?></p>
+										</div>
+										<p class="top__blogBox__articleTxt"><?php the_title(); ?></p>
+									</a>
 								</div>
-								<p class="top__blogBox__articleTxt">タイトル入るタイトル入るタイトル入るタイトル入るタイトル入るタイトル入るタイトル入るタイトル入るタイトル入るタイトル入る</p>
-							</a>
-						</div>
-						<div class="swiper-slide">
-							<a href="" class="top__blogBox__article">
-								<figure><img src="/assets/img/top/thumb.jpg" alt="" width="360" height="246" /></figure>
-								<div class="top__blogBox__articleTags">
-									<p class="top__blogBox__articleTags--tag">タグ</p>
-									<p class="top__blogBox__articleTags--date">2024/01/01</p>
-								</div>
-								<p class="top__blogBox__articleTxt">タイトル入るタイトル入るタイトル入るタイトル入るタイトル入るタイトル入るタイトル入るタイトル入るタイトル入るタイトル入る</p>
-							</a>
-						</div>
-						<div class="swiper-slide">
-							<a href="" class="top__blogBox__article">
-								<figure><img src="/assets/img/top/thumb.jpg" alt="" width="360" height="246" /></figure>
-								<div class="top__blogBox__articleTags">
-									<p class="top__blogBox__articleTags--tag">タグ</p>
-									<p class="top__blogBox__articleTags--date">2024/01/01</p>
-								</div>
-								<p class="top__blogBox__articleTxt">タイトル入るタイトル入るタイトル入るタイトル入るタイトル入るタイトル入るタイトル入るタイトル入るタイトル入るタイトル入る</p>
-							</a>
-						</div>
+							<?php endwhile; ?>
+						<?php endif; ?>
+						<?php wp_reset_postdata(); ?>
 					</div>
 					<div class="swiper-pagination"></div>
 				</div>
@@ -481,7 +505,7 @@ get_header();
 						<figure class="iconImg02">
 							<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/top/ico_yen.svg')); ?>" alt="" width="73" height="73" />
 						</figure>
-						
+
 						<div>
 							<p class="top__lesson__feeBox--ttl">入会金 ￥11,000 （税込）</p>
 							<p class="top__lesson__feeBox--note">※入会金は返金致しません</p>

@@ -17,19 +17,21 @@ get_header();
 					<article class="articleDetail">
 						<h1 class="articleDetailTitle"><?php the_title(); ?></h1>
 						<div class="articleDetailCtg">
-							<?php
+							<div>
+								<?php
 
-							$terms = get_the_terms($post->ID, 'blog_category');
-							if ($terms && !is_wp_error($terms)) {
-								foreach ($terms as $term) :
-									$url = get_term_link($term, 'blog_category');
-							?>
-									<p class="blog__listInnerArticle--tag"><?php echo $term->name; ?></p>
-							<?php
-								endforeach;
-							} else {
-							}
-							?>
+								$terms = get_the_terms($post->ID, 'blog_category');
+								if ($terms && !is_wp_error($terms)) {
+									foreach ($terms as $term) :
+										$url = get_term_link($term, 'blog_category');
+								?>
+										<p class="blog__listInnerArticle--tag"><?php echo $term->name; ?></p>
+								<?php
+									endforeach;
+								} else {
+								}
+								?>
+							</div>
 							<p class="blog__listInnerArticle--date">posted: <?php the_time('Y/m/d'); ?><br />update: <?php the_modified_date('Y/m/d'); ?></p>
 						</div>
 						<div class="articleDetailContents--text">
@@ -38,18 +40,13 @@ get_header();
 					</article>
 
 					<aside class="blog__listInnerSidebar">
-						<form class="searchForm" action="" method="get">
-							<button class="searchBtn" type="submit">
-								<figure class="icon"><img src="<?php echo esc_url(get_theme_file_uri('/assets/img/common/icon_search.svg')); ?>" width="32" height="32" alt="検索マーク" /></figure>
-							</button>
-							<input class="searchInput" type="search" value="" name="s" id="s" />
-						</form>
+						<?php get_search_form(); ?>
 						<p class="blog__listInnerSidebar--txt">category</p>
 						<ul class="blog__listInnerSidebar--cate">
 							<?php
 							$terms = get_terms('blog_category', 'hide_empty=0');
 							foreach ($terms as $term) {
-								echo '<li class="blog__listInnerSidebar--cateText"><a href="' . get_term_link($term) . '">' . $term->name . '(' . "$term->count" . ')</a></li>';
+								echo '<li class="blog__listInnerSidebar--cateText"><a href="' . get_term_link($term) . '">' . '・'.$term->name . '(' . "$term->count" . ')</a></li>';
 							}
 							?>
 						</ul>

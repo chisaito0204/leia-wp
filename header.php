@@ -49,11 +49,10 @@
 <body <?php body_class(); ?>>
 	<?php wp_body_open(); ?>
 	<div id="page" class="site">
-	<?php
-// WordPressの条件タグを使用して、トップページかどうかを判定
-$isIndexPage = is_home();
-$headerClass = $isIndexPage ? 'header js-header' : 'header js-header notop';
-?>
+		<?php
+		$isIndexPage = is_front_page();
+		$headerClass = $isIndexPage ? 'header js-header' : 'header js-header notop';
+		?>
 		<header class="<?php echo $headerClass; ?>">
 			<div class="header__content">
 				<div class="header__logo">

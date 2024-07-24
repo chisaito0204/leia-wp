@@ -65,7 +65,6 @@ get_header();
 									<?php the_post_thumbnail('full'); ?>
 								</figure>
 								<div class="blog__listInnerArticle--box">
-									<p class="blog__listInnerArticle--date"><?php the_time('Y/m/d'); ?></p>
 									<?php
 
 									$terms = get_the_terms($post->ID, 'blog_category');
@@ -84,6 +83,7 @@ get_header();
 									} else {
 									}
 									?>
+									<p class="blog__listInnerArticle--date"><?php the_time('Y/m/d'); ?></p>
 									<h2 class="blog__listInnerArticle--title"><?php the_title(); ?></h2>
 									<div class="blog__listInnerArticle--text">
 										<?php
@@ -92,7 +92,7 @@ get_header();
 										echo $trimmed_content;
 										?>
 									</div>
-									<p class="blog__listInnerArticle--more">read more</p>
+									<p class="blog__listInnerArticle--more">Read more</p>
 									<a class="blogLink" href="<?php the_permalink(); ?>"></a>
 								</div>
 							</article>
