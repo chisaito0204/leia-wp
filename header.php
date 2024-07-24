@@ -20,15 +20,17 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 	<link rel="stylesheet" href="<?php echo esc_url(get_theme_file_uri('/assets/css/swiper-bundle.min.css')); ?>" />
-    <link rel="stylesheet" href="<?php echo esc_url(get_theme_file_uri('/assets/css/simplebar.min.css')); ?>" />
+	<link rel="stylesheet" href="<?php echo esc_url(get_theme_file_uri('/assets/css/simplebar.min.css')); ?>" />
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;200;300;400;500;600;700;800&family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet" />
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet" />
 	<link href="https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Caramel&display=swap" rel="stylesheet">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Caramel&display=swap" rel="stylesheet">
+	<script src="<?php echo esc_url(get_theme_file_uri('/assets/js/gsap.min.js')); ?>"></script>
+	<script src="<?php echo esc_url(get_theme_file_uri('/assets/js/ScrollTrigger.min.js')); ?>"></script>
+	<script src="<?php echo esc_url(get_theme_file_uri('/assets/js/swiper-bundle.min.js')); ?>"></script>
+	<script src="<?php echo esc_url(get_theme_file_uri('/assets/js/simplebar.min.js')); ?>"></script>
 	<?php wp_head(); ?>
 </head>
 <!-- Google tag (gtag.js) -->
@@ -47,12 +49,17 @@
 <body <?php body_class(); ?>>
 	<?php wp_body_open(); ?>
 	<div id="page" class="site">
-		<header class="header">
+	<?php
+// WordPressの条件タグを使用して、トップページかどうかを判定
+$isIndexPage = is_home();
+$headerClass = $isIndexPage ? 'header js-header' : 'header js-header notop';
+?>
+		<header class="<?php echo $headerClass; ?>">
 			<div class="header__content">
 				<div class="header__logo">
 					<a href="/">
 						<figure class="logo">
-							<img src="/assets/img/common/lds_logo-pink.png" alt="" width="147" height="28" />
+							<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/common/lds_logo-pink.png')); ?>" alt="" width="147" height="28" />
 						</figure>
 					</a>
 				</div>
@@ -79,7 +86,7 @@
 					<div class="header__spSideMenu--container">
 						<ul class="header__spSideMenu__list">
 							<figure class="logo">
-								<img src="/assets/img/common/lds_logo-white.png" alt="" width="165" height="37">
+								<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/common/lds_logo-white.png')); ?>" alt="" width="165" height="37">
 							</figure>
 							<li class="header__spSideMenu__item en">
 								<a href="/">Home</a>
@@ -107,9 +114,9 @@
 							</li>
 						</ul>
 						<div class="header__spSideMenu__sns">
-							<a href="https://x.com/leiadancestudio" target="_blank"><img src="/assets/img/common/x.svg" alt="X" width="24" height="24" /></a>
-							<a href="https://www.instagram.com/leia_dance_studio/" target="_blank"><img src="/assets/img/common/instagram.svg" alt="Instagram" width="24" height="24" /></a>
-							<a href="https://www.facebook.com/leia.dance.studio/" target="_blank"><img src="/assets/img/common/facebook.svg" alt="facebook" width="24" height="18" /></a>
+							<a href="https://x.com/leiadancestudio" target="_blank"><img src="<?php echo esc_url(get_theme_file_uri('/assets/img/common/x.svg')); ?>" alt="X" width="24" height="24" /></a>
+							<a href="https://www.instagram.com/leia_dance_studio/" target="_blank"><img src="<?php echo esc_url(get_theme_file_uri('/assets/img/common/instagram.svg')); ?>" alt="Instagram" width="24" height="24" /></a>
+							<a href="https://www.facebook.com/leia.dance.studio/" target="_blank"><img src="<?php echo esc_url(get_theme_file_uri('/assets/img/common/facebook.svg')); ?>" alt="facebook" width="24" height="18" /></a>
 						</div>
 						<p class="header__spSideMenu__txt">見学、体験レッスンは<a href="/lp">こちら</a>から！</p>
 					</div>

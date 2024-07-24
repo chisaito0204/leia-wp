@@ -39,9 +39,9 @@ get_header();
 			<div class="modSns">
 				<p class="modSns__txt">各SNSで Leia Dance Studioの<br class="sm-only" />最新情報を発信しています。<br />フォロー頂けると嬉しいです！</p>
 				<div class="modSnsLinks">
-					<a href="https://x.com/leiadancestudio" target="_blank"><img src="/assets/img/common/x-color.svg" alt="X" width="40" height="40" /></a>
-					<a href="https://www.instagram.com/leia_dance_studio/" target="_blank"><img src="/assets/img/common/insta-color.svg" alt="Instagram" width="43" height="43" /></a>
-					<a href="https://www.facebook.com/leia.dance.studio/" target="_blank"><img src="/assets/img/common/fb-color.svg" alt="facebook" width="46" height="46" /></a>
+					<a href="https://x.com/leiadancestudio" target="_blank"><img src="<?php echo esc_url(get_theme_file_uri('/assets/img/common/x-color.svg')); ?>" alt="X" width="40" height="40" /></a>
+					<a href="https://www.instagram.com/leia_dance_studio/" target="_blank"><img src="<?php echo esc_url(get_theme_file_uri('/assets/img/common/insta-color.svg')); ?>" alt="Instagram" width="43" height="43" /></a>
+					<a href="https://www.facebook.com/leia.dance.studio/" target="_blank"><img src="<?php echo esc_url(get_theme_file_uri('/assets/img/common/fb-color.svg')); ?>" alt="facebook" width="46" height="46" /></a>
 				</div>
 			</div>
 		</div>

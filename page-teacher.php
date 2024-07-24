@@ -10,7 +10,7 @@ get_header();
 		<div class="teacher">
 			<div class="top__teacherBox">
 				<figure class="top__teacherBox__prof">
-					<img src="/assets/img/top/Maya_Kohno.jpg" alt="河野麻耶" width="485" height="485" />
+					<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/top/Maya_Kohno.jpg')); ?>" alt="河野麻耶" width="485" height="485" />
 				</figure>
 				<div class="top__teacherBox__txtbox">
 					<p class="top__teacherBox__txtbox--ttl">教師</p>
@@ -50,7 +50,7 @@ get_header();
 					ミュージカルダンス、フラダンスなど多様なダンススタイルを取り入れてるのも特徴です。楽しく踊りながら美しい姿勢と凛とした所作も身に付けましょう！スタジオでお会いできるのを楽しみにしております！
 					<span class="teacher__messasge--dec">message</span>
 				</p>
-				<figure class="teacher__messasge--img"><img src="/assets/img/teacher/maya_kohno.png" alt="河野麻耶" width="298" height="298" /></figure>
+				<figure class="teacher__messasge--img"><img src="<?php echo esc_url(get_theme_file_uri('/assets/img/teacher/maya_kohno.png')); ?>" alt="河野麻耶" width="298" height="298" /></figure>
 			</div>
 
 			<div class="teacher__history">
@@ -90,9 +90,9 @@ get_header();
 				<p class="teacher__note sm-only">※横にスクロールできます</p>
 
 				<div class="teacher__historySlide">
-					<figure class="slideImg"><img src="/assets/img/teacher/teacher01.jpg" alt="河野麻耶" width="342" height="228" /></figure>
-					<figure class="slideImg"><img src="/assets/img/teacher/teacher02.jpg" alt="河野麻耶" width="342" height="228" /></figure>
-					<figure class="slideImg"><img src="/assets/img/teacher/teacher03.jpg" alt="河野麻耶" width="342" height="228" /></figure>
+					<figure class="slideImg"><img src="<?php echo esc_url(get_theme_file_uri('/assets/img/teacher/teacher01.jpg')); ?>" alt="河野麻耶" width="342" height="228" /></figure>
+					<figure class="slideImg"><img src="<?php echo esc_url(get_theme_file_uri('/assets/img/teacher/teacher01.jpg')); ?>" alt="河野麻耶" width="342" height="228" /></figure>
+					<figure class="slideImg"><img src="<?php echo esc_url(get_theme_file_uri('/assets/img/teacher/teacher01.jpg')); ?>" alt="河野麻耶" width="342" height="228" /></figure>
 				</div>
 
 				<p class="teacher__historyTitle">ジャズダンス公演歴</p>
@@ -235,7 +235,7 @@ get_header();
 				</div>
 
 				<div class="teacher__historyPart">
-					<figure class=""><img src="/assets/img/teacher/aya.jpg" alt="AYA" width="256" height="256" /></figure>
+					<figure class=""><img src="<?php echo esc_url(get_theme_file_uri('/assets/img/teacher/aya.jpg')); ?>" alt="AYA" width="256" height="256" /></figure>
 					<p class="teacher__historyPart--name">非常勤講師<br /><span class="en">AYA</span></p>
 				</div>
 			</div>

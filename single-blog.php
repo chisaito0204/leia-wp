@@ -6,13 +6,11 @@ get_header();
 	<main id="main" class="site-main">
 
 		<section class="blog">
-			<div class="modTtlBox">
-				<h2 class="modTitle blog">Blog..</h2>
-				<ul class="modBreadCrumb">
-					<li><a href="/">Home</a></li>
-					<li><a href="/blog">ブログ</a></li>
-					<li class="detail"><?php the_title(); ?></li>
-				</ul>
+			<div class="modTtlbg blog">
+				<div class="modTttlbox blog">
+					<h2 class="modTttlbox--ttl">Blog</h2>
+					<p class="modTttlbox--subttl">ブログ</p>
+				</div>
 			</div>
 			<div class="blog__list">
 				<div class="blog__listInner">
@@ -68,7 +66,8 @@ get_header();
 					$next_post = get_next_post(); // 次の投稿を取得
 					?>
 					<?php if ($prev_post || $next_post) : ?>
-						<?php if ($prev_post) : // 前の記事 ?>
+						<?php if ($prev_post) : // 前の記事 
+						?>
 							<a href="<?php echo esc_url(get_permalink($prev_post->ID)); ?>">
 								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
 									<path d="M10 3L3.14732 10.2829L10.0271 17.5402" stroke="#000" stroke-width="2" stroke-linecap="round"></path>
@@ -76,7 +75,8 @@ get_header();
 								<span class="prevTxt">prev</span>
 							</a>
 						<?php endif; ?>
-						<?php if ($next_post) : // 次の記事 ?>
+						<?php if ($next_post) : // 次の記事 
+						?>
 							<a href="<?php echo esc_url(get_permalink($next_post->ID)); ?>">
 								<span class="nextTxt">next</span>
 								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">

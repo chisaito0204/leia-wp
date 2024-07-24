@@ -16,7 +16,7 @@
 
 <!--footer-->
 <div class="pagetop">
-  <a href="#top"><img src="/assets/img/common/pagetop.svg" alt="" width="9" height="29"></a>
+  <a href="#top"><img src="<?php echo esc_url(get_theme_file_uri('/assets/img/common/pagetop.svg')); ?>" alt="" width="9" height="29"></a>
 </div>
 <footer class="footerSub">
   <a href="" class="footerSub__link" target="_blank"><span>メルマガの登録はこちらから</span></a>
@@ -26,7 +26,7 @@
     <div class="footer__logo">
       <a href="/">
         <figure class="logo">
-          <img src="/assets/img/common/lds_logo-white.png" alt="" width="247" height="55">
+          <img src="<?php echo esc_url(get_theme_file_uri('/assets/img/common/lds_logo-white.png')); ?>" alt="" width="247" height="55">
         </figure>
       </a>
     </div>
@@ -48,9 +48,9 @@
           <a href="https://studio-leia.jp/" target="_blank">運営Studio Leia</a>
         </div>
         <div class="footer__navLinkSns">
-          <a href="https://x.com/leiadancestudio" target="_blank"><img src="/assets/img/common/x.svg" alt="X" width="20" height="22"></a>
-          <a href="https://www.instagram.com/leia_dance_studio/" target="_blank"><img src="/assets/img/common/instagram.svg" alt="Instagram" width="24" height="24"></a>
-          <a href="https://www.facebook.com/leia.dance.studio/" target="_blank"><img src="/assets/img/common/facebook.svg" alt="facebook" width="24" height="24"></a>
+          <a href="https://x.com/leiadancestudio" target="_blank"><img src="<?php echo esc_url(get_theme_file_uri('/assets/img/common/x.svg')); ?>" alt="X" width="20" height="22"></a>
+          <a href="https://www.instagram.com/leia_dance_studio/" target="_blank"><img src="<?php echo esc_url(get_theme_file_uri('/assets/img/common/instagram.svg')); ?>" alt="Instagram" width="24" height="24"></a>
+          <a href="https://www.facebook.com/leia.dance.studio/" target="_blank"><img src="<?php echo esc_url(get_theme_file_uri('/assets/img/common/facebook.svg')); ?>" alt="facebook" width="24" height="24"></a>
         </div>
       </div>
 
@@ -69,10 +69,6 @@
 
 <script type="module" src="<?php echo esc_url(get_theme_file_uri('/assets/js/jquery-3.7.1.min.js')); ?>"></script>
 <script type="module" src="<?php echo esc_url(get_theme_file_uri('/assets/js/script.js')); ?>"></script>
-<script type="module" src="<?php echo esc_url(get_theme_file_uri('/assets/js/gsap.min.js')); ?>"></script>
-<script type="module" src=" <?php echo esc_url(get_theme_file_uri('/assets/js/ScrollTrigger.min.js')); ?>"></script>
-<script type="module" src="<?php echo esc_url(get_theme_file_uri('/assets/js/swiper-bundle.min.js')); ?>"></script>
-<script type="module" src="<?php echo esc_url(get_theme_file_uri('/assets/js/simplebar.min.js')); ?>"></script>
 </body>
 
 </html>

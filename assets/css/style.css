@@ -423,7 +423,7 @@ button {
 }
 .footerSub__link:before {
   content: "";
-  background: url("/assets/img/common/ico_mail-pink.svg") no-repeat;
+  background: url("../img/common/ico_mail-pink.svg") no-repeat;
   width: 28px;
   height: 20px;
   display: inline-block;
@@ -543,7 +543,7 @@ button {
 }
 .footer__navLinkOuter:after {
   content: "";
-  background: url("/assets/img/common/ico_outlink.svg") no-repeat;
+  background: url("../img/common/ico_outlink.svg") no-repeat;
   width: 13px;
   height: 13px;
   display: inline-block;
@@ -597,7 +597,7 @@ button {
 }
 .footer__navMail:before {
   content: "";
-  background: url("/assets/img/common/ico_mail-wh.svg") no-repeat;
+  background: url("../img/common/ico_mail-wh.svg") no-repeat;
   width: 23px;
   height: 23px;
   display: block;
@@ -1643,7 +1643,7 @@ button {
 .top__lesson__flow--ttl:before, .top__lesson__flow--ttl:after {
   content: "";
   display: inline-block;
-  background: url("/assets/img/common/ico-nyoro.svg") no-repeat;
+  background: url("../img/common/ico-nyoro.svg") no-repeat;
   width: 41px;
   height: 12px;
 }
@@ -1731,7 +1731,7 @@ button {
 .top__lesson__rule--ttl:before, .top__lesson__rule--ttl:after {
   content: "";
   display: inline-block;
-  background: url("/assets/img/common/ico-nyoro.svg") no-repeat;
+  background: url("../img/common/ico-nyoro.svg") no-repeat;
   width: 41px;
   height: 12px;
 }
@@ -1759,7 +1759,7 @@ button {
   }
 }
 .top__lesson__feeBox {
-  background: url("/assets/img/top/ticket.png") no-repeat;
+  background: url("../img/top/ticket.png") no-repeat;
   background-size: 100%;
   display: flex;
   align-items: center;
@@ -1772,7 +1772,7 @@ button {
 }
 @media (max-width: 959px) {
   .top__lesson__feeBox {
-    background: url("/assets/img/top/sp/ticket.png") no-repeat;
+    background: url("../img/top/sp/ticket.png") no-repeat;
     background-size: cover;
     padding: 26px 20px 26px 26px;
     gap: 45px;
@@ -2118,7 +2118,7 @@ button {
 }
 .top__faq__inner--qu:after {
   content: "";
-  background: url("/assets/img/common/ico_allow01.svg") no-repeat center;
+  background: url("../img/common/ico_allow01.svg") no-repeat center;
   display: block;
   width: 16px;
   height: 10px;
@@ -2187,7 +2187,7 @@ button {
 }
 .top__faq__box:after {
   content: "";
-  background: url("/assets/img/common/ico_allow01.svg") no-repeat;
+  background: url("../img/common/ico_allow01.svg") no-repeat;
   display: block;
   width: 16px;
   height: 10px;
@@ -2260,7 +2260,7 @@ button {
   }
 }
 .top__contact {
-  background: url("/assets/img/top/contact-bg.jpg") no-repeat;
+  background: url("../img/top/contact-bg.jpg") no-repeat;
   background-size: 100%;
 }
 @media (min-width: 960px) {
@@ -2605,7 +2605,7 @@ button {
 }
 .about__link:before {
   content: "";
-  background: url("/assets/img/common/allow-circle.svg") no-repeat;
+  background: url("../img/common/allow-circle.svg") no-repeat;
   display: inline-block;
   width: 25px;
   height: 25px;
@@ -2805,7 +2805,7 @@ button {
 }
 .teacher__history__subttl:before {
   content: "";
-  background: url("/assets/img/teacher/icon_crown.svg") no-repeat;
+  background: url("../img/teacher/icon_crown.svg") no-repeat;
   display: inline-block;
   width: 21px;
   height: 21px;
@@ -3313,7 +3313,7 @@ button {
 }
 .blog__listInnerArticle--more:after {
   content: "";
-  background: url("/assets/img/common/allow-small.svg") no-repeat;
+  background: url("../img/common/allow-small.svg") no-repeat;
   width: 101px;
   height: 7px;
   display: block;
@@ -3322,7 +3322,7 @@ button {
 }
 @media (max-width: 959px) {
   .blog__listInnerArticle--more:after {
-    background: url("/assets/img/common/allow-small.svg") no-repeat;
+    background: url("../img/common/allow-small.svg") no-repeat;
     width: 101px;
     height: 7px;
     right: -10px;
@@ -3334,13 +3334,13 @@ button {
   cursor: pointer;
 }
 .blog__listInnerArticle:hover .blog__listInnerArticle--more::after {
-  background: url("/assets/img/common/allow-small.svg") no-repeat;
+  background: url("../img/common/allow-small.svg") no-repeat;
   animation: SlideInAllow 1s ease;
   transform: none;
 }
 @media (max-width: 959px) {
   .blog__listInnerArticle:hover .blog__listInnerArticle--more::after {
-    background: url("/assets/img/common/allow-small.svg") no-repeat;
+    background: url("../img/common/allow-small.svg") no-repeat;
     width: 101px;
     height: 7px;
     background-size: 100%;
@@ -3748,25 +3748,25 @@ button {
 }
 @media (min-width: 960px) {
   .modTtlbg.con {
-    background: url("/assets/img/contact/title-bg.jpg") no-repeat;
+    background: url("../img/contact/title-bg.jpg") no-repeat;
     background-size: 100%;
   }
 }
 @media (max-width: 959px) {
   .modTtlbg.con {
-    background: url("/assets/img/contact/sp/title-bg.jpg") no-repeat;
+    background: url("../img/contact/sp/title-bg.jpg") no-repeat;
     background-size: 100%;
   }
 }
 @media (min-width: 960px) {
   .modTtlbg.blog {
-    background: url("/assets/img/blog/title-bg.jpg") no-repeat;
+    background: url("../img/blog/title-bg.jpg") no-repeat;
     background-size: 100%;
   }
 }
 @media (max-width: 959px) {
   .modTtlbg.blog {
-    background: url("/assets/img/blog/sp/title-bg.jpg") no-repeat;
+    background: url("../img/blog/sp/title-bg.jpg") no-repeat;
     background-size: 100%;
   }
 }
@@ -3881,14 +3881,14 @@ button {
 }
 .modMoreBtn:after {
   content: "";
-  background: url("/assets/img/common/allow.svg") no-repeat;
+  background: url("../img/common/allow.svg") no-repeat;
   width: 148px;
   height: 12px;
   display: block;
 }
 @media (max-width: 959px) {
   .modMoreBtn:after {
-    background: url("/assets/img/common/allow-small.svg") no-repeat;
+    background: url("../img/common/allow-small.svg") no-repeat;
     width: 106px;
     height: 7px;
     background-size: 100%;
@@ -3898,13 +3898,13 @@ button {
   opacity: 0.7;
 }
 .modMoreBtn:hover::after {
-  background: url("/assets/img/common/allow.svg") no-repeat;
+  background: url("../img/common/allow.svg") no-repeat;
   animation: SlideInAllow 1s ease;
   transform: none;
 }
 @media (max-width: 959px) {
   .modMoreBtn:hover::after {
-    background: url("/assets/img/common/allow-sp.svg") no-repeat;
+    background: url("../img/common/allow-sp.svg") no-repeat;
     width: 106px;
     height: 7px;
     background-size: 100%;

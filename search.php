@@ -1,65 +1,45 @@
 <?php
+
+/**
+ * The template for displaying search results pages
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#search-result
+ *
+ * @package WordPress
+ * @subpackage Twenty_Nineteen
+ * @since Twenty Nineteen 1.0
+ */
+
 get_header();
 ?>
 
 <div id="primary" class="content-area">
 	<main id="main" class="site-main">
 		<section class="blog">
-			<div class="modTtlbg blog">
-				<div class="modTttlbox blog">
-					<h2 class="modTttlbox--ttl">Blog</h2>
-					<p class="modTttlbox--subttl">ブログ</p>
-				</div>
+			<div class="modTtlBox">
+				<h2 class="modTitle blog">Blog..</h2>
+				<ul class="modBreadCrumb">
+					<li><a href="/">Home</a></li>
+					<li>ブログ</li>
+				</ul>
 			</div>
 			<div class="blog__list">
 
-				<p class="blog__listTitle">
-					<?php if (is_year()) :
-						array(
-							'date_query' => array(
-								array(
-									'year' => $year,
-								),
-							),
-						)
-					?>
-						<?php echo '：' . $year; ?>
-					<?php endif;  ?>
-				</p>
+				<p class="blog__listTitle">備忘録：<?php the_search_query(); ?> の検索結果</p>
 				<div class="blog__listInner">
 					<div class="blog__listInnerBox">
 						<?php
-
-						$args = array(
-							'post_type' => 'blog',
-							'taxonomy' => 'blog_category',
-							'paged' => $paged,
-							'posts_per_page' => 4,
+						$paged = get_query_var("paged") ? get_query_var("paged") : 1;
+						$query = new WP_Query(
+							array(
+								'paged' => 'post',
+								'posts_per_page' => 4,
+								'paged' => $paged
+							)
 						);
-
-						$year = get_the_date('Y');
-						// 年別アーカイブページのとき、クエリに年情報を追加。
-						if (is_year()) :
-							$args = array_merge(
-								$args,
-								array(
-									'date_query' => array(
-										array(
-											'year' => $year,
-										),
-									),
-								)
-							);
-						endif;
-
-						$my_query = new WP_Query($args);
+						if (have_posts()):
 						?>
-						<?php while ($my_query->have_posts()) : $my_query->the_post();
-							$days = 7;
-							$today = date_i18n('U');
-							$entry = get_the_time('U');
-							$termn = date('U', ($today - $entry)) / 86400;
-						?>
+						<?php while(have_posts()) : the_post(); ?>
 							<article class="blog__listInnerArticle">
 								<figure class="blog__listInnerArticle--thumb">
 									<?php the_post_thumbnail('full'); ?>
@@ -78,11 +58,6 @@ get_header();
 										endforeach;
 									} else {
 									}
-
-									if ($my_query->current_post < 2 && $days > $termn) {
-										echo '<span class="new">New!</span>';
-									} else {
-									}
 									?>
 									<h2 class="blog__listInnerArticle--title"><?php the_title(); ?></h2>
 									<div class="blog__listInnerArticle--text">
@@ -97,12 +72,15 @@ get_header();
 								</div>
 							</article>
 						<?php endwhile; ?>
+						<?php else : ?>
+							検索キーワードに該当する記事がありませんでした。
+					    <?php endif; ?>
 						<?php
 						$big = 999999999; // need an unlikely integer
 						$paged = max(get_query_var('paged'), 1);
 						$args = array(
 							'base' => str_replace($big, '%#%', esc_url(get_pagenum_link($big))),
-							'total' => $my_query->max_num_pages /*全ページ数 */,
+							'total' => $query->max_num_pages /*全ページ数 */,
 							'current' =>  $paged/*現在のページ数*/,
 							'show_all' => FALSE,
 							'end_size' => 1,
@@ -129,7 +107,7 @@ get_header();
 										</li>
 									<?php $i++;
 									endforeach; ?>
-									<?php if ($paged < $my_query->max_num_pages) : ?>
+									<?php if ($paged < $query->max_num_pages) : ?>
 										<li class="next">
 											<?php next_posts_link('<span>' . ">" . '</span>') ?>
 										</li>
@@ -142,7 +120,7 @@ get_header();
 					</div>
 
 					<aside class="blog__listInnerSidebar">
-						<?php get_search_form(); ?>
+					<?php get_search_form(); ?>
 						<p class="blog__listInnerSidebar--txt">category</p>
 						<ul class="blog__listInnerSidebar--cate">
 							<?php

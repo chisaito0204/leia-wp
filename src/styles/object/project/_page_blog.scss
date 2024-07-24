@@ -150,14 +150,14 @@
 					}
 					&:after {
 						content: "";
-						background: url("/assets/img/common/allow-small.svg") no-repeat;
+						background: url("../img/common/allow-small.svg") no-repeat;
 						width: 101px;
 						height: 7px;
 						display: block;
 						position: absolute;
 						right: 0;
 						@include media(sm) {
-							background: url("/assets/img/common/allow-small.svg") no-repeat;
+							background: url("../img/common/allow-small.svg") no-repeat;
 							width: 101px;
 							height: 7px;
 							right: -10px;
@@ -170,11 +170,11 @@
 					cursor: pointer;
 					.blog__listInnerArticle--more {
 						&::after {
-							background: url("/assets/img/common/allow-small.svg") no-repeat;
+							background: url("../img/common/allow-small.svg") no-repeat;
 							animation: SlideInAllow 1s ease;
 							transform: none;
 							@include media(sm) {
-								background: url("/assets/img/common/allow-small.svg") no-repeat;
+								background: url("../img/common/allow-small.svg") no-repeat;
 								width: 101px;
 								height: 7px;
 								background-size: 100%;

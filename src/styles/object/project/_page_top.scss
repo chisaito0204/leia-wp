@@ -778,7 +778,7 @@
 				&:after {
 					content: "";
 					display: inline-block;
-					background: url("/assets/img/common/ico-nyoro.svg") no-repeat;
+					background: url("../img/common/ico-nyoro.svg") no-repeat;
 					width: 41px;
 					height: 12px;
 				}
@@ -851,7 +851,7 @@
 				&:after {
 					content: "";
 					display: inline-block;
-					background: url("/assets/img/common/ico-nyoro.svg") no-repeat;
+					background: url("../img/common/ico-nyoro.svg") no-repeat;
 					width: 41px;
 					height: 12px;
 				}
@@ -874,7 +874,7 @@
 				margin: 50px 0;
 			}
 			&Box {
-				background: url("/assets/img/top/ticket.png") no-repeat;
+				background: url("../img/top/ticket.png") no-repeat;
 				background-size: 100%;
 				display: flex;
 				align-items: center;
@@ -883,7 +883,7 @@
 					padding: 33px 33px 33px 48px;
 				}
 				@include media(sm) {
-					background: url("/assets/img/top/sp/ticket.png") no-repeat;
+					background: url("../img/top/sp/ticket.png") no-repeat;
 					background-size: cover;
 					padding: 26px 20px 26px 26px;
 					gap: 45px;
@@ -1155,7 +1155,7 @@
 				}
 				&:after {
 					content: "";
-					background: url("/assets/img/common/ico_allow01.svg") no-repeat center;
+					background: url("../img/common/ico_allow01.svg") no-repeat center;
 					display: block;
 					width: 16px;
 					height: 10px;
@@ -1218,7 +1218,7 @@
 			}
 			&:after {
 				content: "";
-				background: url("/assets/img/common/ico_allow01.svg") no-repeat;
+				background: url("../img/common/ico_allow01.svg") no-repeat;
 				display: block;
 				width: 16px;
 				height: 10px;
@@ -1295,7 +1295,7 @@
 		}
 	}
 	&__contact {
-		background: url("/assets/img/top/contact-bg.jpg") no-repeat;
+		background: url("../img/top/contact-bg.jpg") no-repeat;
 		background-size: 100%;
 		@include media(lg) {
 			padding: 85px 0 135px;

@@ -12,7 +12,7 @@ get_header();
         <h2 class="modTitle"><span class="en">Leia Dance Studio</span>の<span class="pink">魅</span>力</h2>
         <h3 class="modSubTitle">About</h3>
         <figure>
-          <img src="/assets/img/about/fv.png" alt="Leia Dance Studioの魅力" width="830" height="566" />
+          <img src="<?php echo esc_url(get_theme_file_uri('/assets/img/about/fv.png')); ?>" alt="Leia Dance Studioの魅力" width="830" height="566" />
         </figure>
       </div>
       <p class="modText">
@@ -24,9 +24,9 @@ get_header();
       </p>
 
       <figure class="modBandImg">
-        <img src="/assets/img/about/band.jpg" alt="Leia Dance Studioの魅力" width="1440" height="353" />
+        <img src="<?php echo esc_url(get_theme_file_uri('/assets/img/about/band.jpg')); ?>" alt="Leia Dance Studioの魅力" width="1440" height="353" />
       </figure>
-
+      
       <div class="about__contents">
         <div class="about__contentsBox">
           <figure class="about__contentsBox__img">
@@ -35,7 +35,7 @@ get_header();
               <p class="about__contentsBox__imgCap--num">01</p>
               <p class="about__contentsBox__imgCap--txt">洗練されたジャズダンスを身近に</p>
             </figcaption>
-            <img src="/assets/img/about/about01.jpg" alt="洗練されたジャズダンスを身近に" width="680" height="435" />
+            <img src="<?php echo esc_url(get_theme_file_uri('/assets/img/about/about01.jpg')); ?>" alt="洗練されたジャズダンスを身近に" width="680" height="435" />
           </figure>
           <div class="about__contentsBox__text">ブロードウェイやディズニー、劇団四季、宝塚歌劇団などの華やかな舞台で踊られるショーダンスやミュージカルダンスを始め、様々なダンススタイルを融合した洗練されたジャズダンスを学ぶことができます。80年代、90年代の名曲から最近の流行の曲まで様々な楽曲で踊れます。 ジャズダンスを基本にミュージカルダンス、モダンダンス、フラダンス、フラメンコ、タップダンスなど多様なダンススタイルを取り入れた独自のカリキュラムで、幅広い表現力を身につけることができます。多彩な世界観の作品を通じて、より深いダンスの魅力を感じていただけます。</div>
         </div>
@@ -49,7 +49,7 @@ get_header();
               <p class="about__contentsBox__imgCap--num">02</p>
               <p class="about__contentsBox__imgCap--txt">豊富な経験と実績</p>
             </figcaption>
-            <img src="/assets/img/about/about02.jpg" alt="豊富な経験と実績" width="680" height="435" />
+            <img src="<?php echo esc_url(get_theme_file_uri('/assets/img/about/about02.jpg')); ?>" alt="豊富な経験と実績" width="680" height="435" />
           </figure>
         </div>
 
@@ -60,7 +60,7 @@ get_header();
               <p class="about__contentsBox__imgCap--num">03</p>
               <p class="about__contentsBox__imgCap--txt">初心者大歓迎！柔軟なカリキュラム！</p>
             </figcaption>
-            <img src="/assets/img/about/about03.jpg" alt="初心者大歓迎！柔軟なカリキュラム！" width="680" height="435" />
+            <img src="<?php echo esc_url(get_theme_file_uri('/assets/img/about/about03.jpg')); ?>" alt="初心者大歓迎！柔軟なカリキュラム！" width="680" height="435" />
           </figure>
           <div class="about__contentsBox__text">未経験者の方も大丈夫！各自のレベルに合わせた振付けで基礎から丁寧に指導いたしますので、初心者でも、経験者も安心して参加できます。教材は生徒のペースに合わせて振り付けは柔軟に調整し指導します。定期的に新しい作品に挑戦することができるので飽きずに続けられます。 Leia Dance Studio でジャズダンスの魅力を存分に楽しみながら、自身の成長を感じてみませんか？曲に合わせて楽しく体を動かしているうちに、動きも表現も、徐々に身についていきます。様々な作品に触れながら、ジャズダンスの世界を楽しみましょう!</div>
         </div>
@@ -73,7 +73,7 @@ get_header();
               <p class="about__contentsBox__imgCap--num">04</p>
               <p class="about__contentsBox__imgCap--txt">アットホームな雰囲気</p>
             </figcaption>
-            <img src="/assets/img/about/about04.jpg" alt="アットホームな雰囲気" width="680" height="435" />
+            <img src="<?php echo esc_url(get_theme_file_uri('/assets/img/about/about04.jpg')); ?>" alt="アットホームな雰囲気" width="680" height="435" />
           </figure>
         </div>
 
@@ -84,7 +84,7 @@ get_header();
               <p class="about__contentsBox__imgCap--num">05</p>
               <p class="about__contentsBox__imgCap--txt"> 健康と美の向上に</p>
             </figcaption>
-            <img src="/assets/img/about/about05.jpg" alt=" 健康と美の向上に" width="680" height="435" />
+            <img src="<?php echo esc_url(get_theme_file_uri('/assets/img/about/about05.jpg')); ?>" alt=" 健康と美の向上に" width="680" height="435" />
           </figure>
           <div class="about__contentsBox__text">ダンスを通じて、体の内側からも美しくなることを目指しています。
             ファッションやメイクなどの表面的な美しさだけではなく、姿勢や立ち振る舞いなど内面的な美しさが備わります。姿勢の改善や筋力の向上、柔軟性の強化だけでなく、心と体の健康を向上させる効果があります。スタジオでの時間は、日々のストレスを忘れ、心身をリフレッシュさせる貴重なひととき。美しい所作や凛とした姿勢を身につけ、健康で輝く自分を手に入れましょう。音楽に合わせて楽しく体を動かし、ポジティブなエネルギーで毎日をより豊かにします。</div>

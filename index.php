@@ -27,27 +27,28 @@ get_header();
 					<div class="swiper-wrapper">
 						<h1 class="swiper-slide">
 							<figure class="mvImg">
-								<img src="/assets/img/top/mv01.jpg" alt="ジャズダンス" width="1440" height="810" />
-							</figure>
-						</h1>
-						<!-- <h1 class="swiper-slide">
-              <figure class="mvImg">
-                <img src="/assets/img/top/mv02.jpg" alt="ジャズダンス" width="1440" height="810" />
-              </figure>
-            </h1> -->
-						<h1 class="swiper-slide">
-							<figure class="mvImg">
-								<img src="/assets/img/top/mv03.jpg" alt="ジャズダンス" width="1440" height="810" />
+								<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/top/mv01.jpg')); ?>" alt="ジャズダンス" width="1440" height="810" />
+
 							</figure>
 						</h1>
 						<h1 class="swiper-slide">
 							<figure class="mvImg">
-								<img src="/assets/img/top/mv04.jpg" alt="ジャズダンス" width="1440" height="810" />
+								<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/top/mv02.jpg')); ?>" alt="ジャズダンス" width="1440" height="810" />
 							</figure>
 						</h1>
 						<h1 class="swiper-slide">
 							<figure class="mvImg">
-								<img src="/assets/img/top/mv05.jpg" alt="ジャズダンス" width="1440" height="810" />
+								<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/top/mv03.jpg')); ?>" alt="ジャズダンス" width="1440" height="810" />
+							</figure>
+						</h1>
+						<h1 class="swiper-slide">
+							<figure class="mvImg">
+								<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/top/mv04.jpg')); ?>" alt="ジャズダンス" width="1440" height="810" />
+							</figure>
+						</h1>
+						<h1 class="swiper-slide">
+							<figure class="mvImg">
+								<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/top/mv05.jpg')); ?>" alt="ジャズダンス" width="1440" height="810" />
 							</figure>
 						</h1>
 					</div>
@@ -57,24 +58,24 @@ get_header();
 				<div class="top__mv__sns">
 					<a href="https://x.com/leiadancestudio" target="_blank">
 						<figure class="snsImg">
-							<img src="/assets/img/common/x.svg" alt="" width="20" height="20" />
+							<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/common/x.svg')); ?>" alt="" width="20" height="20" />
 						</figure>
 					</a>
 					<a href="https://www.instagram.com/leia_dance_studio/" target="_blank">
 						<figure class="snsImg">
-							<img src="/assets/img/common/instagram.svg" alt="" width="20" height="20" />
+							<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/common/instagram.svg')); ?>" alt="" width="20" height="20" />
 						</figure>
 					</a>
 					<a href="https://www.facebook.com/leia.dance.studio/" target="_blank">
 						<figure class="snsImg">
-							<img src="/assets/img/common/facebook.svg" alt="" width="20" height="20" />
+							<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/common/facebook.svg')); ?>" alt="" width="20" height="20" />
 						</figure>
 					</a>
 				</div>
 
 				<a href="/lp" class="top__mv__banner">
 					<figure class="bnImg">
-						<img src="/assets/img/common/icon_dance.svg" alt="" width="46" height="46" />
+						<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/common/icon_dance.svg')); ?>" alt="" width="46" height="46" />
 					</figure>
 					<p class="">見学、体験レッスンはこちらから！</p>
 				</a>
@@ -95,13 +96,13 @@ get_header();
 			<!-- LDSの特徴 -->
 			<section class="top__about">
 				<h2 class="top__title en">
-					<figure><img src="/assets/img/common/ttl_dec-left.svg" alt="" width="158" height="45" /></figure>
+					<figure><img src="<?php echo esc_url(get_theme_file_uri('/assets/img/common/ttl_dec-left.svg')); ?>" alt="" width="158" height="45" /></figure>
 					<p>Leia Dance Studio<span class="ja">とは</span></p>
-					<figure><img src="/assets/img/common/ttl_dec-right.svg" alt="" width="158" height="45" /></figure>
+					<figure><img src="<?php echo esc_url(get_theme_file_uri('/assets/img/common/ttl_dec-right.svg')); ?>" alt="" width="158" height="45" /></figure>
 				</h2>
 				<div class="top__aboutBox">
 					<figure>
-						<img src="/assets/img/top/about01.png" alt="" width="624" height="429" />
+						<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/top/about01.png')); ?>" alt="" width="624" height="429" />
 					</figure>
 					<p class="top__aboutBox__txt01">
 						<span>煌びやかな舞台のジャズダンスをあなたのものに！</span><br />
@@ -117,14 +118,14 @@ get_header();
 						日本ジャズダンス芸術協会主催コンクールにて成人部門特別賞、アダルト部門第1位、2007年コンクール最高位の<span>グランプリを「1920 U.S.A.」で受賞。</span>前身である金光郁子舞踊学園での商業公演や発表会、外部公演にも積極的に参加し豊富な経験を持っています。年齢、性別関係なく楽しく踊れる雰囲気のスタジオを作り、生徒さんが楽しく踊れる場を提供することを大切に考えています。
 					</p>
 					<figure class="aboutImg">
-						<img src="/assets/img/top/about02.png" alt="" width="665" height="420" />
+						<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/top/about02.png')); ?>" alt="" width="665" height="420" />
 						<p class="top__aboutBox__txt02">Jazz Dance</p>
 					</figure>
 				</div>
 
 				<div class="top__aboutBox">
 					<figure>
-						<img src="/assets/img/top/about03.png" alt="" width="635" height="436" />
+						<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/top/about03.png')); ?>" alt="" width="635" height="436" />
 					</figure>
 					<p class="top__aboutBox__txt01">
 						ダンスを通じて、体の内側からも美しくリフレッシュすることを目指しています。<br />
@@ -137,9 +138,9 @@ get_header();
 			<!-- 	NEWS(ブログ) -->
 			<section class="top__blog">
 				<h2 class="top__title en">
-					<figure><img src="/assets/img/common/ttl_dec-left.svg" alt="" width="158" height="45" /></figure>
+					<figure><img src="<?php echo esc_url(get_theme_file_uri('/assets/img/common/ttl_dec-left.svg')); ?>" alt="" width="158" height="45" /></figure>
 					<span>News<br /><span class="sub">お知らせ</span></span>
-					<figure><img src="/assets/img/common/ttl_dec-right.svg" alt="" width="158" height="45" /></figure>
+					<figure><img src="<?php echo esc_url(get_theme_file_uri('/assets/img/common/ttl_dec-right.svg')); ?>" alt="" width="158" height="45" /></figure>
 				</h2>
 
 				<div class="top__blogBox swiper">
@@ -183,21 +184,21 @@ get_header();
 
 			<!-- 動画バックグラウンド -->
 			<div class="top__video">
-				<video class="video" src="/assets/img/top/maya_monalisa_web_bgv.mp4" loop autoplay></video>
+				<video class="video" src="<?php echo esc_url(get_theme_file_uri('/assets/img/top/maya_monalisa_web_bgv.mp4')); ?>" loop autoplay></video>
 			</div>
 			<!-- / 動画バックグラウンド -->
 
 			<!-- 教師 -->
 			<section class="top__teacher">
 				<h2 class="top__title">
-					<figure><img src="/assets/img/common/ttl_dec-left.svg" alt="" width="158" height="45" /></figure>
+					<figure><img src="<?php echo esc_url(get_theme_file_uri('/assets/img/common/ttl_dec-left.svg')); ?>" alt="" width="158" height="45" /></figure>
 					教師
-					<figure><img src="/assets/img/common/ttl_dec-right.svg" alt="" width="158" height="45" /></figure>
+					<figure><img src="<?php echo esc_url(get_theme_file_uri('/assets/img/common/ttl_dec-right.svg')); ?>" alt="" width="158" height="45" /></figure>
 				</h2>
 
 				<div class="top__teacherBox">
 					<figure class="top__teacherBox__prof">
-						<img src="/assets/img/top/Maya_Kohno.jpg" alt="河野麻耶" width="485" height="485" />
+						<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/top/Maya_Kohno.jpg')); ?>" alt="河野麻耶" width="485" height="485" />
 					</figure>
 					<div class="top__teacherBox__txtbox">
 						<p class="top__teacherBox__txtbox--name">河野麻耶<br /><span>Maya Kohno</span></p>
@@ -222,13 +223,13 @@ get_header();
 			<!-- 生徒さまの声 -->
 			<section class="top__voice">
 				<h2 class="top__title">
-					<figure><img src="/assets/img/common/ttl_dec-left.svg" alt="" width="158" height="45" /></figure>
+					<figure><img src="<?php echo esc_url(get_theme_file_uri('/assets/img/common/ttl_dec-left.svg')); ?>" alt="" width="158" height="45" /></figure>
 					生徒さまの声
-					<figure><img src="/assets/img/common/ttl_dec-right.svg" alt="" width="158" height="45" /></figure>
+					<figure><img src="<?php echo esc_url(get_theme_file_uri('/assets/img/common/ttl_dec-right.svg')); ?>" alt="" width="158" height="45" /></figure>
 				</h2>
 
 				<div class="top__voice__box">
-					<figure><img src="/assets/img/top/woman01.svg" alt="" width="150" height="150" /></figure>
+					<figure><img src="<?php echo esc_url(get_theme_file_uri('/assets/img/top/woman01.svg')); ?>" alt="" width="150" height="150" /></figure>
 					<p class="top__voice__box--txt">
 						表現することが大好きです！河野麻耶先生の丁寧で楽しいレッスンに通い、毎日が心身ともに充実しています。<br />
 						<br />
@@ -236,7 +237,7 @@ get_header();
 					</p>
 				</div>
 				<div class="top__voice__box">
-					<figure><img src="/assets/img/top/woman02.svg" alt="" width="150" height="150" /></figure>
+					<figure><img src="<?php echo esc_url(get_theme_file_uri('/assets/img/top/woman02.svg')); ?>" alt="" width="150" height="150" /></figure>
 					<p class="top__voice__box--txt">
 						Leia Dance Studio の良いところ：自由が丘駅から近くて、とっても便利です。 生徒の年齢幅がありますが、みんな仲良くフォローもしてくれます<br />
 						<br />
@@ -244,7 +245,7 @@ get_header();
 					</p>
 				</div>
 				<div class="top__voice__box">
-					<figure><img src="/assets/img/top/woman01.svg" alt="" width="150" height="150" /></figure>
+					<figure><img src="<?php echo esc_url(get_theme_file_uri('/assets/img/top/woman01.svg')); ?>" alt="" width="150" height="150" /></figure>
 					<p class="top__voice__box--txt">
 						毎レッスン、その日集まったメンバーに合ったスピードで進むので久々のレッスンでも全く心配いらないです。わからないところも気軽に質問できる、アットホームな雰囲気が大好きです！<br />
 						<br />
@@ -256,9 +257,9 @@ get_header();
 			<!-- クラス -->
 			<section class="top__class">
 				<h2 class="top__title">
-					<figure><img src="/assets/img/common/ttl_dec-left.svg" alt="" width="158" height="45" /></figure>
+					<figure><img src="<?php echo esc_url(get_theme_file_uri('/assets/img/common/ttl_dec-left.svg')); ?>" alt="" width="158" height="45" /></figure>
 					クラス
-					<figure><img src="/assets/img/common/ttl_dec-right.svg" alt="" width="158" height="45" /></figure>
+					<figure><img src="<?php echo esc_url(get_theme_file_uri('/assets/img/common/ttl_dec-right.svg')); ?>" alt="" width="158" height="45" /></figure>
 				</h2>
 
 				<div class="top__classBox">
@@ -274,13 +275,13 @@ get_header();
 						<p class="top__classBox__txtbox--dec">One Team</p>
 					</div>
 					<figure class="top__classBox__img">
-						<img src="/assets/img/top/class01.jpg" alt="" width="588" height="315" />
+						<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/top/class01.jpg')); ?>" alt="" width="588" height="315" />
 					</figure>
 				</div>
 
 				<div class="top__classBox">
 					<figure class="top__classBox__img">
-						<img src="/assets/img/top/class02.jpg" alt="" width="588" height="315" />
+						<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/top/class02.jpg')); ?>" alt="" width="588" height="315" />
 					</figure>
 					<div class="top__classBox__txtbox">
 						<p class="top__classBox__txtbox--ttl">洗練されたダンスを身近に</p>
@@ -296,7 +297,7 @@ get_header();
 						<p class="top__classBox__txtbox--dec">Homey</p>
 					</div>
 					<figure class="top__classBox__img">
-						<img src="/assets/img/top/class03.jpg" alt="" width="588" height="315" />
+						<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/top/class03.jpg')); ?>" alt="" width="588" height="315" />
 					</figure>
 				</div>
 				<a href="" class="modMoreBtn">もっと詳しく</a>
@@ -306,9 +307,9 @@ get_header();
 			<!-- レッスン時間・料金 ・場所 -->
 			<section class="top__lesson">
 				<h2 class="top__title">
-					<figure><img src="/assets/img/common/ttl_dec-left.svg" alt="" width="158" height="45" /></figure>
+					<figure><img src="<?php echo esc_url(get_theme_file_uri('/assets/img/common/ttl_dec-left.svg')); ?>" alt="" width="158" height="45" /></figure>
 					レッスン時間・料金 ・場所
-					<figure><img src="/assets/img/common/ttl_dec-right.svg" alt="" width="158" height="45" /></figure>
+					<figure><img src="<?php echo esc_url(get_theme_file_uri('/assets/img/common/ttl_dec-right.svg')); ?>" alt="" width="158" height="45" /></figure>
 				</h2>
 
 				<h3 class="top__subtitle">︎<span>Schedule</span></h3>
@@ -397,7 +398,7 @@ get_header();
 
 					<div class="top__lesson__flow--box">
 						<figure class="top__lesson__flow--boxImg">
-							<img src="/assets/img/top/lesson-flow01.jpg" alt="" width="261" height="173" />
+							<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/top/lesson-flow01.jpg')); ?>" alt="" width="261" height="173" />
 						</figure>
 						<p class="top__lesson__flow--boxTxt">
 							<span>①エクササイズとストレッチ</span><br />
@@ -406,7 +407,7 @@ get_header();
 					</div>
 					<div class="top__lesson__flow--box">
 						<figure class="top__lesson__flow--boxImg">
-							<img src="/assets/img/top/lesson-flow02.jpg" alt="" width="261" height="173" />
+							<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/top/lesson-flow02.jpg')); ?>" alt="" width="261" height="173" />
 						</figure>
 						<p class="top__lesson__flow--boxTxt">
 							<span>②ステップ、ジャンプ、基本など（クロスフロア）</span><br />
@@ -415,7 +416,7 @@ get_header();
 					</div>
 					<div class="top__lesson__flow--box">
 						<figure class="top__lesson__flow--boxImg">
-							<img src="/assets/img/top/lesson-flow03.jpg" alt="" width="261" height="173" />
+							<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/top/lesson-flow03.jpg')); ?>" alt="" width="261" height="173" />
 						</figure>
 						<p class="top__lesson__flow--boxTxt">
 							<span>③作品を踊る</span><br />
@@ -478,8 +479,9 @@ get_header();
 
 					<div class="top__lesson__feeBox">
 						<figure class="iconImg02">
-							<img src="/assets/img/top/ico_yen.svg" alt="" width="73" height="73" />
+							<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/top/ico_yen.svg')); ?>" alt="" width="73" height="73" />
 						</figure>
+						
 						<div>
 							<p class="top__lesson__feeBox--ttl">入会金 ￥11,000 （税込）</p>
 							<p class="top__lesson__feeBox--note">※入会金は返金致しません</p>
@@ -487,7 +489,7 @@ get_header();
 					</div>
 					<div class="top__lesson__feeBox">
 						<figure class="iconImg01">
-							<img src="/assets/img/top/ico_dance.svg" alt="" width="113" height="113" />
+							<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/top/ico_dance.svg')); ?>" alt="" width="113" height="113" />
 						</figure>
 						<div>
 							<p class="top__lesson__feeBox--ttl">
@@ -540,16 +542,16 @@ get_header();
 				<p class="top__lesson__access--note">★正面玄関はこちらです</p>
 				<div class="top__lesson__access--box">
 					<figure class="studioImg">
-						<img src="/assets/img/top/studio01.jpg" alt="スタジオ写真" width="550" height="380" />
+						<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/top/studio01.jpg')); ?>" alt="スタジオ写真" width="550" height="380" />
 					</figure>
 					<figure class="studioImg">
-						<img src="/assets/img/top/studio02.jpg" alt="スタジオ写真" width="550" height="380" />
+						<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/top/studio02.jpg')); ?>" alt="スタジオ写真" width="550" height="380" />
 					</figure>
 					<figure class="studioImg">
-						<img src="/assets/img/top/studio03.jpg" alt="スタジオ写真" width="550" height="380" />
+						<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/top/studio03.jpg')); ?>" alt="スタジオ写真" width="550" height="380" />
 					</figure>
 					<figure class="studioImg">
-						<img src="/assets/img/top/studio04.jpg" alt="スタジオ写真" width="550" height="380" />
+						<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/top/studio04.jpg')); ?>" alt="スタジオ写真" width="550" height="380" />
 					</figure>
 				</div>
 			</section>
@@ -558,9 +560,9 @@ get_header();
 			<!-- FAQ -->
 			<section class="top__faq">
 				<h2 class="top__title en">
-					<figure><img src="/assets/img/common/ttl_dec-left.svg" alt="" width="158" height="45" /></figure>
+					<figure><img src="<?php echo esc_url(get_theme_file_uri('/assets/img/common/ttl_dec-left.svg')); ?>" alt="" width="158" height="45" /></figure>
 					<span>Faq<br /><span class="sub">よくあるご質問</span></span>
-					<figure><img src="/assets/img/common/ttl_dec-right.svg" alt="" width="158" height="45" /></figure>
+					<figure><img src="<?php echo esc_url(get_theme_file_uri('/assets/img/common/ttl_dec-right.svg')); ?>" alt="" width="158" height="45" /></figure>
 				</h2>
 
 				<div class="top__faq__inner">
@@ -603,59 +605,59 @@ get_header();
 			<!-- ダンスギャラリー -->
 			<section class="top__media">
 				<h2 class="top__title">
-					<figure><img src="/assets/img/common/ttl_dec-left.svg" alt="" width="158" height="45" /></figure>
+					<figure><img src="<?php echo esc_url(get_theme_file_uri('/assets/img/common/ttl_dec-left.svg')); ?>" alt="" width="158" height="45" /></figure>
 					ダンスギャラリー
-					<figure><img src="/assets/img/common/ttl_dec-right.svg" alt="" width="158" height="45" /></figure>
+					<figure><img src="<?php echo esc_url(get_theme_file_uri('/assets/img/common/ttl_dec-right.svg')); ?>" alt="" width="158" height="45" /></figure>
 				</h2>
 
 				<div class="swiper lg-only">
 					<div class="swiper-wrapper">
 						<div class="swiper-slide">
 							<figure class="mediaImg">
-								<img src="/assets/img/top/media01.jpg" alt="過去メディア動画" width="406" height="228" />
+								<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/top/media01.jpg')); ?>" alt="過去メディア動画" width="406" height="228" />
 							</figure>
 							<figure class="btn">
-								<img src="/assets/img/common/load.svg" alt="再生ボタン" width="52" height="52" />
+								<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/common/load.svg')); ?>" alt="再生ボタン" width="52" height="52" />
 							</figure>
 						</div>
 						<div class="swiper-slide">
 							<figure class="mediaImg">
-								<img src="/assets/img/top/media02.jpg" alt="過去メディア動画" width="406" height="228" />
+								<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/top/media02.jpg')); ?>" alt="過去メディア動画" width="406" height="228" />
 							</figure>
 							<figure class="btn">
-								<img src="/assets/img/common/load.svg" alt="再生ボタン" width="52" height="52" />
+								<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/common/load.svg')); ?>" alt="再生ボタン" width="52" height="52" />
 							</figure>
 						</div>
 						<div class="swiper-slide">
 							<figure class="mediaImg">
-								<img src="/assets/img/top/media03.jpg" alt="過去メディア動画" width="406" height="228" />
+								<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/top/media03.jpg')); ?>" alt="過去メディア動画" width="406" height="228" />
 							</figure>
 							<figure class="btn">
-								<img src="/assets/img/common/load.svg" alt="再生ボタン" width="52" height="52" />
+								<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/common/load.svg')); ?>" alt="再生ボタン" width="52" height="52" />
 							</figure>
 						</div>
 						<div class="swiper-slide">
 							<figure class="mediaImg">
-								<img src="/assets/img/top/media01.jpg" alt="過去メディア動画" width="406" height="228" />
+								<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/top/media01.jpg')); ?>" alt="過去メディア動画" width="406" height="228" />
 							</figure>
 							<figure class="btn">
-								<img src="/assets/img/common/load.svg" alt="再生ボタン" width="52" height="52" />
+								<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/common/load.svg')); ?>" alt="再生ボタン" width="52" height="52" />
 							</figure>
 						</div>
 						<div class="swiper-slide">
 							<figure class="mediaImg">
-								<img src="/assets/img/top/media02.jpg" alt="過去メディア動画" width="406" height="228" />
+								<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/top/media02.jpg')); ?>" alt="過去メディア動画" width="406" height="228" />
 							</figure>
 							<figure class="btn">
-								<img src="/assets/img/common/load.svg" alt="再生ボタン" width="52" height="52" />
+								<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/common/load.svg')); ?>" alt="再生ボタン" width="52" height="52" />
 							</figure>
 						</div>
 						<div class="swiper-slide">
 							<figure class="mediaImg">
-								<img src="/assets/img/top/media03.jpg" alt="過去メディア動画" width="406" height="228" />
+								<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/top/media03.jpg')); ?>" alt="過去メディア動画" width="406" height="228" />
 							</figure>
 							<figure class="btn">
-								<img src="/assets/img/common/load.svg" alt="再生ボタン" width="52" height="52" />
+								<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/common/load.svg')); ?>" alt="再生ボタン" width="52" height="52" />
 							</figure>
 						</div>
 					</div>
@@ -665,26 +667,26 @@ get_header();
 				<div class="top__media__sp sm-only">
 					<div class="top__media__spVideo">
 						<figure class="mediaImg">
-							<img src="/assets/img/top/media01.jpg" alt="過去メディア動画" width="406" height="228" />
+							<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/top/media01.jpg')); ?>" alt="過去メディア動画" width="406" height="228" />
 						</figure>
 						<figure class="btn">
-							<img src="/assets/img/common/load.svg" alt="再生ボタン" width="52" height="52" />
+							<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/common/load.svg')); ?>" alt="再生ボタン" width="52" height="52" />
 						</figure>
 					</div>
 					<div class="top__media__spVideo">
 						<figure class="mediaImg">
-							<img src="/assets/img/top/media02.jpg" alt="過去メディア動画" width="406" height="228" />
+							<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/top/media02.jpg')); ?>" alt="過去メディア動画" width="406" height="228" />
 						</figure>
 						<figure class="btn">
-							<img src="/assets/img/common/load.svg" alt="再生ボタン" width="52" height="52" />
+							<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/common/load.svg')); ?>" alt="再生ボタン" width="52" height="52" />
 						</figure>
 					</div>
 					<div class="top__media__spVideo">
 						<figure class="mediaImg">
-							<img src="/assets/img/top/media03.jpg" alt="過去メディア動画" width="406" height="228" />
+							<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/top/media03.jpg')); ?>" alt="過去メディア動画" width="406" height="228" />
 						</figure>
 						<figure class="btn">
-							<img src="/assets/img/common/load.svg" alt="再生ボタン" width="52" height="52" />
+							<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/common/load.svg')); ?>" alt="再生ボタン" width="52" height="52" />
 						</figure>
 					</div>
 				</div>
@@ -697,10 +699,10 @@ get_header();
 			<div class="top__banner">
 				<a href="/lp">
 					<figure class="bannerImg lg-only">
-						<img src="/assets/img/top/banner.jpg" alt="" width="1087" height="594" />
+						<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/top/banner.jpg')); ?>" alt="" width="1087" height="594" />
 					</figure>
 					<figure class="bannerImg sm-only">
-						<img src="/assets/img/top/sp/banner.jpg" alt="" width="356" height="376" />
+						<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/top/sp/banner.jpg')); ?>" alt="" width="356" height="376" />
 					</figure>
 				</a>
 			</div>
@@ -709,9 +711,9 @@ get_header();
 			<!-- CONTACT -->
 			<section class="top__contact" id="contact">
 				<h2 class="top__title en">
-					<figure><img src="/assets/img/common/ttl_dec-left.svg" alt="" width="158" height="45" /></figure>
+					<figure><img src="<?php echo esc_url(get_theme_file_uri('/assets/img/common/ttl_dec-left.svg')); ?>" alt="" width="158" height="45" /></figure>
 					<span>Contact<br /><span class="sub">お問い合わせ</span></span>
-					<figure><img src="/assets/img/common/ttl_dec-right.svg" alt="" width="158" height="45" /></figure>
+					<figure><img src="<?php echo esc_url(get_theme_file_uri('/assets/img/common/ttl_dec-right.svg')); ?>" alt="" width="158" height="45" /></figure>
 				</h2>
 				<div class="top__contactForm">
 					<p class="top__contactForm__note">

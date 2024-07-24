@@ -12,7 +12,7 @@ get_header();
         <h2 class="modTitle"><span class="pink">ク</span>ラス</h2>
         <h3 class="modSubTitle">Jazz Dance</h3>
         <figure>
-          <img src="/assets/img/class/fv.png" alt="Leia Dance Studioの魅力" width="830" height="566" />
+          <img src="<?php echo esc_url(get_theme_file_uri('/assets/img/class/fv.png')); ?>" alt="Leia Dance Studioの魅力" width="830" height="566" />
         </figure>
       </div>
       <p class="modText">
@@ -22,14 +22,14 @@ get_header();
       </p>
 
       <figure class="modBandImg">
-        <img src="/assets/img/class/band.jpg" alt="Leia Dance Studioの魅力" width="1440" height="353" />
+        <img src="<?php echo esc_url(get_theme_file_uri('/assets/img/class/band.jpg')); ?>" alt="Leia Dance Studioの魅力" width="1440" height="353" />
       </figure>
       
       <section class="top__lesson">
         <h2 class="top__title">
-          <figure><img src="/assets/img/common/ttl_dec-left.svg" alt="" width="158" height="45" /></figure>
+          <figure><img src="<?php echo esc_url(get_theme_file_uri('/assets/img/common/ttl_dec-left.svg')); ?>" alt="" width="158" height="45" /></figure>
           レッスン時間・料金 ・場所
-          <figure><img src="/assets/img/common/ttl_dec-right.svg" alt="" width="158" height="45" /></figure>
+          <figure><img src="<?php echo esc_url(get_theme_file_uri('/assets/img/common/ttl_dec-right.svg')); ?>" alt="" width="158" height="45" /></figure>
         </h2>
 
         <h3 class="top__subtitle ja">︎<span>レッスンについて</span></h3>
@@ -129,7 +129,7 @@ get_header();
 
           <div class="top__lesson__flow--box">
             <figure class="top__lesson__flow--boxImg">
-              <img src="/assets/img/top/lesson-flow01.jpg" alt="" width="261" height="173" />
+              <img src="<?php echo esc_url(get_theme_file_uri('/assets/img/top/lesson-flow01.jpg')); ?>" alt="" width="261" height="173" />
             </figure>
             <p class="top__lesson__flow--boxTxt">
               ①エクササイズとストレッチ<br />
@@ -138,7 +138,7 @@ get_header();
           </div>
           <div class="top__lesson__flow--box">
             <figure class="top__lesson__flow--boxImg">
-              <img src="/assets/img/top/lesson-flow02.jpg" alt="" width="261" height="173" />
+              <img src="<?php echo esc_url(get_theme_file_uri('/assets/img/top/lesson-flow02.jpg')); ?>" alt="" width="261" height="173" />
             </figure>
             <p class="top__lesson__flow--boxTxt">②ステップ、ジャンプ、基本など（クロスフロア）<br>
               当日の作品に出てくるステップや基本の動きなどを先に練習します。その他、ジャズダンスに必要な基本もこのパートで行います。ジャンプの基本やピルエット（ターン）の練習なども行います。
@@ -146,7 +146,7 @@ get_header();
           </div>
           <div class="top__lesson__flow--box">
             <figure class="top__lesson__flow--boxImg">
-              <img src="/assets/img/top/lesson-flow03.jpg" alt="" width="261" height="173" />
+              <img src="<?php echo esc_url(get_theme_file_uri('/assets/img/top/lesson-flow03.jpg')); ?>" alt="" width="261" height="173" />
             </figure>
             <p class="top__lesson__flow--boxTxt">③作品を踊る<br>
               いきなり音楽に合わせるのではなく、カウントで振付します。その後、音楽に合わせて踊っていきます。初心者の方には無理ない範囲での振付にしたり、経験者には更にレベルアップとなるような振付けを行うなど臨機応変に対応いたします。分からないときには、随時質問して頂いて大丈夫です。なお各教材のワンポイントレッスン（初心者向け、経験者向け）をメルマガ（登録はこちら→）でも配信しています。
@@ -208,7 +208,7 @@ get_header();
 
           <div class="top__lesson__feeBox">
             <figure class="iconImg02">
-              <img src="/assets/img/top/ico_yen.svg" alt="" width="73" height="73" />
+              <img src="<?php echo esc_url(get_theme_file_uri('/assets/img/top/ico_yen.svg')); ?>" alt="" width="73" height="73" />
             </figure>
             <div>
               <p class="top__lesson__feeBox--ttl">入会金 ￥11,000 （税込）</p>
@@ -217,7 +217,7 @@ get_header();
           </div>
           <div class="top__lesson__feeBox">
             <figure class="iconImg01">
-              <img src="/assets/img/top/ico_dance.svg" alt="" width="113" height="113" />
+              <img src="<?php echo esc_url(get_theme_file_uri('/assets/img/top/ico_dance.svg')); ?>" alt="" width="113" height="113" />
             </figure>
             <div>
               <p class="top__lesson__feeBox--ttl">
@@ -267,16 +267,16 @@ get_header();
         <p class="top__lesson__access--note">★正面玄関はこちらです</p>
         <div class="top__lesson__access--box">
           <figure class="studioImg">
-            <img src="/assets/img/top/studio01.jpg" alt="スタジオ写真" width="550" height="380" />
+            <img src="<?php echo esc_url(get_theme_file_uri('/assets/img/top/studio01.jpg')); ?>" alt="スタジオ写真" width="550" height="380" />
           </figure>
           <figure class="studioImg">
-            <img src="/assets/img/top/studio02.jpg" alt="スタジオ写真" width="550" height="380" />
+            <img src="<?php echo esc_url(get_theme_file_uri('/assets/img/top/studio02.jpg')); ?>" alt="スタジオ写真" width="550" height="380" />
           </figure>
           <figure class="studioImg">
-            <img src="/assets/img/top/studio03.jpg" alt="スタジオ写真" width="550" height="380" />
+            <img src="<?php echo esc_url(get_theme_file_uri('/assets/img/top/studio03.jpg')); ?>" alt="スタジオ写真" width="550" height="380" />
           </figure>
           <figure class="studioImg">
-            <img src="/assets/img/top/studio04.jpg" alt="スタジオ写真" width="550" height="380" />
+            <img src="<?php echo esc_url(get_theme_file_uri('/assets/img/top/studio04.jpg')); ?>" alt="スタジオ写真" width="550" height="380" />
           </figure>
         </div>
       </section>

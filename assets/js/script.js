@@ -27,6 +27,16 @@ $(document).ready(function () {
   });
 });
 
+const articleLists = document.querySelectorAll('.blog__listInnerArticle');
+
+articleLists.forEach(article => {
+  const blogLink = article.querySelector('.blogLink');
+  article.addEventListener('click', function () {
+    const link = blogLink.getAttribute('href');
+    window.location.href = link;
+  });
+});
+
 /*********************
  * 1. header / footer
  *********************/
