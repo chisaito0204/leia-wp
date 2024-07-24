@@ -745,8 +745,9 @@ get_header();
 						折り返しメールにて担当者から連絡いたします。メールアドレスは間違いないよう記載ください。<br />
 						体験レッスン、レッスン内容などについてもお気軽にご連絡ください。
 					</p>
+					<?php echo apply_shortcodes('[contact-form-7 id="17bf4a9" title="お問い合わせ"]'); ?>
 
-					<p class="top__contactForm__txt">お名前(必須)<span class="pink">*</span></p>
+					<!-- <p class="top__contactForm__txt">お名前(必須)<span class="pink">*</span></p>
 					<input type="text" name="name" value="" class="" />
 					<p class="top__contactForm__txt">メールアドレス(必須)<span class="pink">*</span></p>
 					<input type="email" name="mail" value="" class="" />
@@ -757,7 +758,8 @@ get_header();
 
 					<div class="submit">
 						<input type="submit" value="送信" class="wpcf7-form-control wpcf7-submit" /><span class="ajax-loader"></span>
-					</div>
+					</div> -->
+
 				</div>
 			</section>
 			<!-- 	/ CONTACT -->

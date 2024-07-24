@@ -5,4 +5,45 @@
 	@include media(sm) {
 		margin-bottom: 80px;
 	}
+	&__complete{
+		text-align: center;
+		@include media(lg) {
+			margin: 100px 0;
+		}
+		@include media(sm) {
+			margin: 80px 0;
+		}
+		&--ttl{
+			font-family: $serif;
+			@include media(lg) {
+				margin-bottom: 50px;
+				@include fontsize(80);
+			}
+			@include media(sm) {
+				margin-bottom: 30px;
+				@include fontsize(36);
+			}
+		}
+		&--subttl{
+			@include media(lg) {
+				@include fontsize(30);
+				margin-bottom: 20px;
+			}
+			@include media(sm) {
+				@include fontsize(22);
+				margin-bottom: 20px;
+				line-height: 160%;
+			}
+		}
+		&--msg{
+			@include media(lg) {
+				@include fontsize(18);
+				line-height: 180%;
+			}
+			@include media(sm) {
+				@include fontsize(16);
+				line-height: 160%;
+			}
+		}
+	}
 }
