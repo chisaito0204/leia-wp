@@ -4387,6 +4387,10 @@ button {
     max-width: 100% !important;
   }
 }
+.lum-lightbox {
+  z-index: 999;
+}
+
 .lp {
   margin-bottom: 50px;
 }
