@@ -72,7 +72,7 @@
 			position: relative;
 			z-index: 10;
 		}
-		&.ja{
+		&.ja {
 			font-family: $noto;
 		}
 		&:before {
@@ -96,7 +96,7 @@
 			display: block;
 			width: 485px;
 			height: 3px;
-			background: #AFAFB0;
+			background: #afafb0;
 			position: absolute;
 			left: 0;
 			bottom: -10px;
@@ -810,7 +810,7 @@
 					}
 				}
 				&Txt {
-					> span{
+					> span {
 						font-weight: bold;
 					}
 					@include media(lg) {
@@ -1079,7 +1079,7 @@
 			iframe {
 				width: 100%;
 			}
-			&--note{
+			&--note {
 				font-family: $noto;
 				@include media(lg) {
 					@include fontsize(16);
@@ -1103,12 +1103,12 @@
 					width: 90%;
 					margin: auto;
 				}
-				.studioImg{
+				.studioImg {
 					flex: 0 0 49%;
 					@include media(sm) {
 						margin-bottom: 15px;
 					}
-					img{
+					img {
 						width: 100%;
 						height: auto;
 					}
@@ -1282,7 +1282,7 @@
 			width: 90%;
 			margin: 0 auto 80px;
 		}
-		> a{
+		> a {
 			display: inline-block;
 		}
 		.bannerImg {
@@ -1291,6 +1291,63 @@
 				@include media(sm) {
 					width: 100%;
 				}
+			}
+		}
+	}
+	&__mailmaga {
+		text-align: center;
+		margin-bottom: 50px;
+		form {
+			input[type="text"],
+			input[type="password"],
+			input[type="email"],
+			select {
+				height: 3em;
+				box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+				border: none;
+				border-radius: 0.3rem;
+				outline: none;
+				padding: 8px;
+			}
+			input[type="button"] {
+				color: #fff;
+				background: $pink;
+				appearance: none;
+				border-radius: 6px;
+				border: 0;
+				font-weight: bold;
+				@include fontsize(16);
+				padding: 8px 15px;
+				margin-top: 15px;
+			}
+		}
+		&--ttl {
+			text-align: center;
+			@include fontsize(18);
+			font-weight: bold;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin-bottom: 30px;
+			&:before {
+				content: "";
+				background: url("../img/common/ico_mail-pink.svg") no-repeat;
+				width: 28px;
+				height: 20px;
+				display: inline-block;
+				margin-right: 10px;
+			}
+			@include media(sm) {
+				@include fontsize(16);
+			}
+		}
+		&--txt {
+			max-width: 240px;
+			margin: 10px auto;
+			text-align: left;
+			font-weight: bold;
+			@include fontsize(16);
+			@include media(sm) {
 			}
 		}
 	}

@@ -732,6 +732,22 @@ get_header();
 			</div>
 			<!-- / 体験見学LPバナー-->
 
+			<!-- メルマガ登録 -->
+			<div class="top__mailmaga">
+				<p class="top__mailmaga--ttl">メールマガジンの登録</p>
+				<form name="frmLMM99407" method="post">
+					<input type="hidden" name="account" value="dance">
+					<input type="hidden" name="domain" value="mm.studio-leia.jp">
+					<p class="top__mailmaga--txt">お名前</p>
+					<input type="text" style="width:240px;" name="user_name"><br>
+					<p class="top__mailmaga--txt">メールアドレス</p>
+					<input type="text" style="width:240px;" name="user_mail"><br>
+					<input type="button" name="join" value="参加" onclick="jf_MMWindowOpen99407('join');">
+					<input type="button" name="resign" value="退会" onclick="jf_MMWindowOpen99407('resign');">
+				</form>
+			</div>
+			<!-- / メルマガ登録 -->
+
 			<!-- CONTACT -->
 			<section class="top__contact" id="contact">
 				<h2 class="top__title en">
