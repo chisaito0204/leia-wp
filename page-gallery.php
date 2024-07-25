@@ -37,17 +37,143 @@ get_header();
 					</figure>
 				</div>
 
-				<div class="media__contents">
-					<figure class="media__contents__movie">
-						<img src="/assets/img/media/movie.jpg" alt="" width="785" height="462" />
-					</figure>
-					<figure class="media__contents__movie">
-						<img src="/assets/img/media/movie.jpg" alt="" width="785" height="462" />
-					</figure>
-					<figure class="media__contents__movie">
-						<img src="/assets/img/media/movie.jpg" alt="" width="785" height="462" />
-					</figure>
-				</div>
+				<ul class="media__contents grid">
+					<li class="item">
+						<a href="<?php echo esc_url(get_theme_file_uri('/assets/img/gallery/10000.jpg')); ?>" class="luminous">
+							<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/gallery/10000.jpg')); ?>" alt="" width="800" height="533">
+						</a>
+					</li>
+					<li class="item">
+						<a href="<?php echo esc_url(get_theme_file_uri('/assets/img/gallery/10001.jpg')); ?>" class="luminous">
+							<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/gallery/10001.jpg')); ?>" alt="" width="800" height="533">
+						</a>
+					</li>
+					<li class="item">
+						<a href="<?php echo esc_url(get_theme_file_uri('/assets/img/gallery/10002.jpg')); ?>" class="luminous">
+							<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/gallery/10002.jpg')); ?>" alt="" width="800" height="533">
+						</a>
+					</li>
+					<li class="item">
+						<a href="<?php echo esc_url(get_theme_file_uri('/assets/img/gallery/10003.jpg')); ?>" class="luminous">
+							<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/gallery/10003.jpg')); ?>" alt="" width="800" height="533">
+						</a>
+					</li>
+					<li class="item">
+						<a href="<?php echo esc_url(get_theme_file_uri('/assets/img/gallery/10004.jpg')); ?>" class="luminous">
+							<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/gallery/10004.jpg')); ?>" alt="" width="800" height="533">
+						</a>
+					</li>
+					<li class="item">
+						<a href="<?php echo esc_url(get_theme_file_uri('/assets/img/gallery/10005.jpg')); ?>" class="luminous">
+							<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/gallery/10005.jpg')); ?>" alt="" width="800" height="533">
+						</a>
+					</li>
+					<li class="item">
+						<a href="<?php echo esc_url(get_theme_file_uri('/assets/img/gallery/10006.png')); ?>" class="luminous">
+							<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/gallery/10006.png')); ?>" alt="" width="800" height="533">
+						</a>
+					</li>
+					<li class="item">
+						<a href="<?php echo esc_url(get_theme_file_uri('/assets/img/gallery/10007.jpg')); ?>" class="luminous">
+							<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/gallery/10007.jpg')); ?>" alt="" width="800" height="533">
+						</a>
+					</li>
+					<li class="item">
+						<a href="<?php echo esc_url(get_theme_file_uri('/assets/img/gallery/10008.jpg')); ?>" class="luminous">
+							<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/gallery/10008.jpg')); ?>" alt="" width="800" height="533">
+						</a>
+					</li>
+					<li class="item">
+						<a href="<?php echo esc_url(get_theme_file_uri('/assets/img/gallery/10009.jpg')); ?>" class="luminous">
+							<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/gallery/10009.jpg')); ?>" alt="" width="800" height="533">
+						</a>
+					</li>
+					<li class="item">
+						<a href="<?php echo esc_url(get_theme_file_uri('/assets/img/gallery/10010.jpg')); ?>" class="luminous">
+							<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/gallery/10010.jpg')); ?>" alt="" width="800" height="533">
+						</a>
+					</li>
+					<li class="item">
+						<a href="<?php echo esc_url(get_theme_file_uri('/assets/img/gallery/10011.jpg')); ?>" class="luminous">
+							<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/gallery/10011.jpg')); ?>" alt="" width="800" height="533">
+						</a>
+					</li>
+					<li class="item">
+						<a href="<?php echo esc_url(get_theme_file_uri('/assets/img/gallery/10012.jpg')); ?>" class="luminous">
+							<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/gallery/10012.jpg')); ?>" alt="" width="800" height="533">
+						</a>
+					</li>
+					<li class="item">
+						<a href="<?php echo esc_url(get_theme_file_uri('/assets/img/gallery/10013.jpg')); ?>" class="luminous">
+							<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/gallery/10013.jpg')); ?>" alt="" width="800" height="533">
+						</a>
+					</li>
+					<li class="item">
+						<a href="<?php echo esc_url(get_theme_file_uri('/assets/img/gallery/10014.jpg')); ?>" class="luminous">
+							<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/gallery/10014.jpg')); ?>" alt="" width="800" height="533">
+						</a>
+					</li>
+					<li class="item">
+						<a href="<?php echo esc_url(get_theme_file_uri('/assets/img/gallery/10015.jpg')); ?>" class="luminous">
+							<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/gallery/10015.jpg')); ?>" alt="" width="800" height="533">
+						</a>
+					</li>
+					<li class="item">
+						<a href="<?php echo esc_url(get_theme_file_uri('/assets/img/gallery/10016.jpg')); ?>" class="luminous">
+							<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/gallery/10016.jpg')); ?>" alt="" width="800" height="533">
+						</a>
+					</li>
+					<li class="item">
+						<a href="<?php echo esc_url(get_theme_file_uri('/assets/img/gallery/10017.jpg')); ?>" class="luminous">
+							<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/gallery/10017.jpg')); ?>" alt="" width="800" height="533">
+						</a>
+					</li>
+					<li class="item">
+						<a href="<?php echo esc_url(get_theme_file_uri('/assets/img/gallery/10018.jpg')); ?>" class="luminous">
+							<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/gallery/10018.jpg')); ?>" alt="" width="800" height="533">
+						</a>
+					</li>
+					<li class="item">
+						<a href="<?php echo esc_url(get_theme_file_uri('/assets/img/gallery/10019.jpg')); ?>" class="luminous">
+							<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/gallery/10019.jpg')); ?>" alt="" width="800" height="533">
+						</a>
+					</li>
+					<li class="item">
+						<a href="<?php echo esc_url(get_theme_file_uri('/assets/img/gallery/10020.jpg')); ?>" class="luminous">
+							<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/gallery/10020.jpg')); ?>" alt="" width="800" height="533">
+						</a>
+					</li>
+					<li class="item">
+						<a href="<?php echo esc_url(get_theme_file_uri('/assets/img/gallery/10021.jpg')); ?>" class="luminous">
+							<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/gallery/10021.jpg')); ?>" alt="" width="800" height="533">
+						</a>
+					</li>
+					<li class="item">
+						<a href="<?php echo esc_url(get_theme_file_uri('/assets/img/gallery/10022.jpg')); ?>" class="luminous">
+							<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/gallery/10022.jpg')); ?>" alt="" width="800" height="533">
+						</a>
+					</li>
+					<li class="item">
+						<a href="<?php echo esc_url(get_theme_file_uri('/assets/img/gallery/10023.jpg')); ?>" class="luminous">
+							<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/gallery/10023.jpg')); ?>" alt="" width="800" height="533">
+						</a>
+					</li>
+					<li class="item">
+						<a href="<?php echo esc_url(get_theme_file_uri('/assets/img/gallery/10024.jpg')); ?>" class="luminous">
+							<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/gallery/10024.jpg')); ?>" alt="" width="800" height="533">
+						</a>
+					</li>
+					<li class="item">
+						<a href="<?php echo esc_url(get_theme_file_uri('/assets/img/gallery/10025.jpg')); ?>" class="luminous">
+							<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/gallery/10025.jpg')); ?>" alt="" width="800" height="533">
+						</a>
+					</li>
+					<li class="item">
+						<a href="<?php echo esc_url(get_theme_file_uri('/assets/img/gallery/10026.png')); ?>" class="luminous">
+							<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/gallery/10026.png')); ?>" alt="" width="800" height="533">
+						</a>
+					</li>
+				</ul>
 			</div>
 
 			<div class="modSns">

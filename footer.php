@@ -68,6 +68,8 @@
 <?php wp_footer(); ?>
 
 <script type="module" src="<?php echo esc_url(get_theme_file_uri('/assets/js/jquery-3.7.1.min.js')); ?>"></script>
+<script src="https://unpkg.com/muuri@0.8.0/dist/muuri.min.js"></script>
+<script src="<?php echo esc_url(get_theme_file_uri('/assets/js/luminous.min.js')); ?>"></script>
 <script type="module" src="<?php echo esc_url(get_theme_file_uri('/assets/js/script.js')); ?>"></script>
 </body>
 
