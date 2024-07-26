@@ -1,23 +1,14 @@
 <?php get_header(); ?>
 <section class="blog">
-  <div class="modTtlBox">
-    <h2 class="modTitle blog">Blog..</h2>
-    <ul class="modBreadCrumb">
-      <li><a href="/">Home</a></li>
-      <li><a href="/blog">ブログ</a></li>
-      <li>
-        <?php $url = get_term_link($term, $taxonomy); ?>
-        <?php
-        $term_object = get_queried_object();
-        echo $term_object->name;
-        ?>
-        カテゴリー
-      </li>
-    </ul>
+  <div class="modTtlbg blog">
+    <div class="modTttlbox blog">
+      <h2 class="modTttlbox--ttl">Blog</h2>
+      <p class="modTttlbox--subttl">ブログ</p>
+    </div>
   </div>
   <div class="blog__list">
 
-    <p class="blog__listTitle">備忘録：
+    <p class="blog__listTitle">カテゴリー：
       <?php
       $term_object = get_queried_object();
       echo $term_object->name;
@@ -68,7 +59,7 @@
                 echo $trimmed_content;
                 ?>
               </div>
-              <p class="blog__listInnerArticle--more">read more</p>
+              <p class="blog__listInnerArticle--more">Read more</p>
               <a class="blogLink" href="<?php the_permalink(); ?>"></a>
             </div>
           </article>
@@ -118,12 +109,7 @@
       </div>
 
       <aside class="blog__listInnerSidebar">
-        <form class="searchForm" action="" method="get">
-          <button class="searchBtn" type="submit">
-            <figure class="icon"><img src="<?php echo esc_url(get_theme_file_uri('/assets/img/common/icon_search.svg')); ?>" width="32" height="32" alt="検索マーク" /></figure>
-          </button>
-          <input class="searchInput" type="search" value="" name="s" id="s" />
-        </form>
+        <?php get_search_form(); ?>
         <p class="blog__listInnerSidebar--txt">category</p>
         <ul class="blog__listInnerSidebar--cate">
           <?php

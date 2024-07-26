@@ -23,7 +23,7 @@ get_header();
 							),
 						)
 					?>
-						<?php echo '：' . $year; ?>
+						<?php echo $year . '年'; ?>
 					<?php endif;  ?>
 				</p>
 				<div class="blog__listInner">

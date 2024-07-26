@@ -155,9 +155,15 @@ get_header();
 						<?php
 						$args = array(
 							'post_type' => 'blog',
-							'slug' => 'news',
 							'posts_per_page' => 3,
 							'order' => 'ASC',
+							'tax_query' => array(
+								array(
+									'taxonomy' => 'blog_category',
+									'field'    => 'slug',
+									'terms'    => 'news',
+								),
+							),
 						);
 						?>
 						<?php $the_query = new WP_Query($args); ?>
@@ -174,23 +180,25 @@ get_header();
 									<a href="<?php the_permalink(); ?>" class="top__blogBox__article">
 										<figure><?php the_post_thumbnail('full'); ?></figure>
 										<div class="top__blogBox__articleTags">
-											<?php
-											$terms = get_the_terms($post->ID, 'blog_category');
-											if ($terms && !is_wp_error($terms)) {
-												foreach ($terms as $term) :
-													$url = get_term_link($term, 'blog_category');
-											?>
-													<p class="top__blogBox__articleTags--tag"><?php echo $term->name; ?></p>
-											<?php
-												endforeach;
-											} else {
-											}
+											<div class="top__blogBox__articleTags--box">
+												<?php
+												$terms = get_the_terms($post->ID, 'blog_category');
+												if ($terms && !is_wp_error($terms)) {
+													foreach ($terms as $term) :
+														$url = get_term_link($term, 'blog_category');
+												?>
+														<p class="top__blogBox__articleTags--tag"><?php echo $term->name; ?></p>
+												<?php
+													endforeach;
+												} else {
+												}
 
-											if ($the_query->current_post < 2 && $days > $termn) {
-												echo '<span class="new">New!</span>';
-											} else {
-											}
-											?>
+												if ($the_query->current_post < 2 && $days > $termn) {
+													echo '<span class="new">New!</span>';
+												} else {
+												}
+												?>
+											</div>
 											<p class="top__blogBox__articleTags--date"><?php the_time('Y/m/d'); ?></p>
 										</div>
 										<p class="top__blogBox__articleTxt"><?php the_title(); ?></p>
@@ -202,7 +210,7 @@ get_header();
 					</div>
 					<div class="swiper-pagination"></div>
 				</div>
-				<a href="" class="modMoreBtn">もっと詳しく</a>
+				<a href="/blog" class="modMoreBtn">もっと詳しく</a>
 			</section>
 			<!-- 	/ NEWS(ブログ) -->
 
@@ -240,7 +248,7 @@ get_header();
 						</p>
 					</div>
 				</div>
-				<a href="" class="modMoreBtn">もっと詳しく</a>
+				<a href="/teacher" class="modMoreBtn">もっと詳しく</a>
 			</section>
 			<!-- 	/ 教師 -->
 
@@ -324,7 +332,7 @@ get_header();
 						<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/top/class03.jpg')); ?>" alt="" width="588" height="315" />
 					</figure>
 				</div>
-				<a href="" class="modMoreBtn">もっと詳しく</a>
+				<a href="/about" class="modMoreBtn">もっと詳しく</a>
 			</section>
 			<!-- 	/ クラス -->
 
@@ -622,7 +630,7 @@ get_header();
 						</span>
 					</div>
 				</div>
-				<a href="" class="modMoreBtn">もっと詳しく</a>
+				<a href="/faq" class="modMoreBtn">もっと詳しく</a>
 			</section>
 			<!-- 	/ FAQ -->
 
@@ -715,7 +723,7 @@ get_header();
 					</div>
 				</div>
 
-				<a href="" class="modMoreBtn">もっと詳しく</a>
+				<a href="/gallery" class="modMoreBtn">もっと詳しく</a>
 			</section>
 			<!-- / ダンスギャラリー -->
 

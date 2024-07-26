@@ -342,6 +342,11 @@
 					justify-content: space-between;
 					align-items: center;
 					margin: 8px 0;
+					&--box{
+						display: flex;
+						align-items: center;
+						gap: 5px;
+					}
 					&--tag {
 						border-radius: 0.3rem;
 						background: #e12c6d;

@@ -28,7 +28,7 @@
 			margin: 0 auto;
 			@include media(lg) {
 				display: flex;
-				gap: 60px;
+				gap: 40px;
 				width: 70%;
 			}
 			@include media(sm) {
@@ -250,134 +250,142 @@
 					}
 				}
 			}
+			&Box {
+				@include media(lg) {
+					max-width: 920px;
+					width: 100%;
+				}
+			}
 		}
 	}
 }
 .article {
-    &Detail {
-        background: #fff;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-        @include media(lg) {
-            max-width: 920px;
-            width: 100%;
-            padding: 80px 64px;
-            margin-bottom: 40px;
-        }
-        @include media(sm) {
-            padding: 30px 20px;
-        }
-        &Title {
-            font-family: $noto;
-            font-weight: 600;
-            @include media(lg) {
-                @include fontsize(24);
-                line-height: 2rem;
-                margin-bottom: 25px;
-            }
-            @include media(sm) {
-                @include fontsize(18);
-                line-height: 1.7rem;
-                margin-bottom: 20px;
-            }
-        }
-        &Ctg {
-            display: flex;
-            align-items: flex-start;
-            justify-content: space-between;
-            @include media(lg) {
-                margin-bottom: 30px;
-            }
-            @include media(sm) {
-                margin-bottom: 20px;
-            }
-        }
-        &Mv {
-            img {
-                width: 100%;
-                height: auto;
-            }
-        }
-        &Contents {
-            font-family: $noto;
-            @include media(lg) {
-                margin-top: 60px;
-            }
-            @include media(sm) {
-                margin-top: 30px;
-            }
-            &--ttl {
-                border-bottom: solid 1px #ddd;
-                @include media(lg) {
-                    @include fontsize(18);
-                    padding-bottom: 15px;
-                    margin-bottom: 25px;
-                }
-                @include media(sm) {
-                    @include fontsize(16);
-                    line-height: 1.5rem;
-                    padding-bottom: 10px;
-                    margin-bottom: 20px;
-                }
-            }
-            &--subttl {
-                position: relative;
-                padding-left: 20px;
-                @include media(lg) {
-                    @include fontsize(16);
-                    margin-bottom: 20px;
-                }
-                @include media(sm) {
-                    @include fontsize(14);
-                    line-height: 1.5rem;
-                    margin-bottom: 15px;
-                }
-                &:before {
-                    content: "";
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    background: $pink;
-                    display: inline-block;
-                    width: 5px;
-                    height: 16px;
-                    border-radius: 0.3rem;
-                    @include media(sm) {
-                        top: 5px;
-                    }
-                }
-            }
-            &--text {
-                @include media(lg) {
-                    @include fontsize(16);
-                    line-height: 2.3rem;
-                }
-                @include media(sm) {
-                    @include fontsize(14);
-                    line-height: 1.8rem;
-                }
-            }
-        }
-		&--btn{
+	&Detail {
+		background: #fff;
+		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+		@include media(lg) {
+			// max-width: 920px;
+			// width: 100%;
+			padding: 80px 64px;
+			margin-bottom: 40px;
+		}
+		@include media(sm) {
+			padding: 30px 20px;
+		}
+		&Title {
+			font-family: $noto;
+			font-weight: 600;
+			@include media(lg) {
+				@include fontsize(24);
+				line-height: 2rem;
+				margin-bottom: 25px;
+			}
+			@include media(sm) {
+				@include fontsize(18);
+				line-height: 1.7rem;
+				margin-bottom: 20px;
+			}
+		}
+		&Ctg {
+			display: flex;
+			align-items: flex-start;
+			justify-content: space-between;
+			@include media(lg) {
+				margin-bottom: 30px;
+			}
+			@include media(sm) {
+				margin-bottom: 20px;
+			}
+		}
+		&Mv {
+			img {
+				width: 100%;
+				height: auto;
+			}
+		}
+		&Contents {
+			font-family: $noto;
+			@include media(lg) {
+				margin-top: 60px;
+			}
+			@include media(sm) {
+				margin-top: 30px;
+			}
+			&--text {
+				@include media(lg) {
+					@include fontsize(16);
+					line-height: 2.3rem;
+				}
+				@include media(sm) {
+					@include fontsize(14);
+					line-height: 1.8rem;
+				}
+				h2 {
+					border-bottom: solid 1px #ddd;
+					font-weight: bold;
+					@include media(lg) {
+						@include fontsize(18);
+						padding-bottom: 15px;
+						margin-bottom: 25px;
+						line-height: 140%;
+					}
+					@include media(sm) {
+						@include fontsize(16);
+						line-height: 1.5rem;
+						padding-bottom: 10px;
+						margin-bottom: 20px;
+					}
+				}
+				h3 {
+					position: relative;
+					padding-left: 20px;
+					@include media(lg) {
+						@include fontsize(16);
+						margin-bottom: 20px;
+						line-height: 120%;
+					}
+					@include media(sm) {
+						@include fontsize(14);
+						line-height: 1.5rem;
+						margin-bottom: 15px;
+					}
+					&:before {
+						content: "";
+						position: absolute;
+						top: 0;
+						left: 0;
+						background: $pink;
+						display: inline-block;
+						width: 5px;
+						height: 16px;
+						border-radius: 0.3rem;
+						@include media(sm) {
+							top: 5px;
+						}
+					}
+				}
+			}
+		}
+		&--btn {
 			color: $pink;
 			font-weight: bold;
-			&.prev{
-				&:before{
-					content: '<';
+			&.prev {
+				&:before {
+					content: "<";
 					font-family: $poppins;
 					margin-right: 5px;
 					font-weight: 500;
 				}
 			}
-			&.next{
+			&.next {
 				margin-left: 40px;
-				&:after{
-					content: '>';
+				&:after {
+					content: ">";
 					font-family: $poppins;
 					margin-right: 5px;
 					font-weight: 500;
 				}
 			}
-			
 		}
-    }
+	}
 }

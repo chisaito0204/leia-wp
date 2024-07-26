@@ -16,16 +16,15 @@ get_header();
 <div id="primary" class="content-area">
 	<main id="main" class="site-main">
 		<section class="blog">
-			<div class="modTtlBox">
-				<h2 class="modTitle blog">Blog..</h2>
-				<ul class="modBreadCrumb">
-					<li><a href="/">Home</a></li>
-					<li>ブログ</li>
-				</ul>
+			<div class="modTtlbg blog">
+				<div class="modTttlbox blog">
+					<h2 class="modTttlbox--ttl">Blog</h2>
+					<p class="modTttlbox--subttl">ブログ</p>
+				</div>
 			</div>
 			<div class="blog__list">
 
-				<p class="blog__listTitle">備忘録：<?php the_search_query(); ?> の検索結果</p>
+				<p class="blog__listTitle">”<?php the_search_query(); ?>” の検索結果</p>
 				<div class="blog__listInner">
 					<div class="blog__listInnerBox">
 						<?php
