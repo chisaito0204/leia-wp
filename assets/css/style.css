@@ -974,6 +974,9 @@ button {
     font-size: 0.875rem;
   }
 }
+.top__about {
+  margin-bottom: 100px;
+}
 .top__aboutBox {
   display: flex;
   gap: 60px;

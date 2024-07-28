@@ -85,19 +85,19 @@ get_header();
 			<!-- / MV -->
 
 			<!-- お知らせ -->
-			<section class="top__news">
-				<div class="top__newsBox">
-					<?php if (get_field('news_title')) : ?>
+			<?php if (get_field('news_title')) : ?>
+				<section class="top__news">
+					<div class="top__newsBox">
 						<p class="top__newsBox__ttl"><?php the_field('news_title'); ?></p>
-					<?php endif; ?>
-					<?php if (get_field('news_text_pc')) : ?>
-						<p class="top__newsBox__txt lg-only"><?php echo nl2br(esc_html(get_field('news_text_pc'))); ?></p>
-					<?php endif; ?>
-					<?php if (get_field('news_text_sp')) : ?>
-						<p class="top__newsBox__txt sm-only"><?php echo nl2br(esc_html(get_field('news_text_sp'))); ?></p>
-					<?php endif; ?>
-				</div>
-			</section>
+						<?php if (get_field('news_text_pc')) : ?>
+							<p class="top__newsBox__txt lg-only"><?php echo nl2br(esc_html(get_field('news_text_pc'))); ?></p>
+						<?php endif; ?>
+						<?php if (get_field('news_text_sp')) : ?>
+							<p class="top__newsBox__txt sm-only"><?php echo nl2br(esc_html(get_field('news_text_sp'))); ?></p>
+						<?php endif; ?>
+					</div>
+				</section>
+			<?php endif; ?>
 			<!-- / お知らせ -->
 
 			<!-- LDSの特徴 -->
@@ -142,32 +142,33 @@ get_header();
 			</section>
 			<!-- / LDSの特徴 -->
 
-			<!-- 	NEWS(ブログ) -->
-			<section class="top__blog">
-				<h2 class="top__title en">
-					<figure><img src="<?php echo esc_url(get_theme_file_uri('/assets/img/common/ttl_dec-left.svg')); ?>" alt="" width="158" height="45" /></figure>
-					<span>News<br /><span class="sub">お知らせ</span></span>
-					<figure><img src="<?php echo esc_url(get_theme_file_uri('/assets/img/common/ttl_dec-right.svg')); ?>" alt="" width="158" height="45" /></figure>
-				</h2>
+			<!-- NEWS(ブログ) -->
+			<?php
+			$args = array(
+				'post_type' => 'blog',
+				'posts_per_page' => 3,
+				'order' => 'ASC',
+				'tax_query' => array(
+					array(
+						'taxonomy' => 'blog_category',
+						'field'    => 'slug',
+						'terms'    => 'news',
+					),
+				),
+			);
+			$the_query = new WP_Query($args);
+			?>
 
-				<div class="top__blogBox swiper">
-					<div class="swiper-wrapper">
-						<?php
-						$args = array(
-							'post_type' => 'blog',
-							'posts_per_page' => 3,
-							'order' => 'ASC',
-							'tax_query' => array(
-								array(
-									'taxonomy' => 'blog_category',
-									'field'    => 'slug',
-									'terms'    => 'news',
-								),
-							),
-						);
-						?>
-						<?php $the_query = new WP_Query($args); ?>
-						<?php if ($the_query->have_posts()) : ?>
+			<?php if ($the_query->have_posts()) : ?>
+				<section class="top__blog">
+					<h2 class="top__title en">
+						<figure><img src="<?php echo esc_url(get_theme_file_uri('/assets/img/common/ttl_dec-left.svg')); ?>" alt="" width="158" height="45" /></figure>
+						<span>News<br /><span class="sub">お知らせ</span></span>
+						<figure><img src="<?php echo esc_url(get_theme_file_uri('/assets/img/common/ttl_dec-right.svg')); ?>" alt="" width="158" height="45" /></figure>
+					</h2>
+
+					<div class="top__blogBox swiper">
+						<div class="swiper-wrapper">
 							<?php while ($the_query->have_posts()) : ?>
 								<?php
 								$days = 7;
@@ -190,12 +191,10 @@ get_header();
 														<p class="top__blogBox__articleTags--tag"><?php echo $term->name; ?></p>
 												<?php
 													endforeach;
-												} else {
 												}
 
 												if ($the_query->current_post < 2 && $days > $termn) {
 													echo '<span class="new">New!</span>';
-												} else {
 												}
 												?>
 											</div>
@@ -205,13 +204,13 @@ get_header();
 									</a>
 								</div>
 							<?php endwhile; ?>
-						<?php endif; ?>
-						<?php wp_reset_postdata(); ?>
+						</div>
+						<div class="swiper-pagination"></div>
 					</div>
-					<div class="swiper-pagination"></div>
-				</div>
-				<a href="/blog" class="modMoreBtn">もっと詳しく</a>
-			</section>
+					<a href="/blog" class="modMoreBtn">もっと詳しく</a>
+				</section>
+			<?php endif; ?>
+			<?php wp_reset_postdata(); ?>
 			<!-- 	/ NEWS(ブログ) -->
 
 			<!-- 動画バックグラウンド -->
