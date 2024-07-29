@@ -4,7 +4,11 @@
  * 0. common
  * 1. header / footer
  * 2. Swiper
- * 3. Tab
+ * 3. Faq Toggle
+ * 4. Tab
+ * 5. Muuri
+ * 6. Luminous
+ * 7. modal-video
  *********************/
 
 /*********************
@@ -209,4 +213,13 @@ document.addEventListener("DOMContentLoaded", function () {});
  *********************/
 document.addEventListener("DOMContentLoaded", function () {
   new LuminousGallery(document.querySelectorAll(".luminous"));
+});
+
+
+/*********************
+ * 7. modal-video
+ *********************/
+
+$(function(){
+  $(".js-modal-video").modalVideo();
 });

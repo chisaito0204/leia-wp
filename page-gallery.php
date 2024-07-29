@@ -20,36 +20,29 @@ get_header();
 
 			<div>
 				<div class="media__contents show">
-					<figure class="media__contents__movie">
-						<img src="/assets/img/media/movie.jpg" alt="" width="785" height="462" />
-					</figure>
-					<figure class="media__contents__movie">
-						<img src="/assets/img/media/movie.jpg" alt="" width="785" height="462" />
-					</figure>
-					<figure class="media__contents__movie">
-						<img src="/assets/img/media/movie.jpg" alt="" width="785" height="462" />
-					</figure>
-					<figure class="media__contents__movie">
-						<img src="/assets/img/media/movie.jpg" alt="" width="785" height="462" />
-					</figure>
-					<figure class="media__contents__movie">
-						<img src="/assets/img/media/movie.jpg" alt="" width="785" height="462" />
-					</figure>
+					<?php if (CFS()->get('gallery_video')) : ?>
+						<?php
+						$videos = CFS()->get('gallery_video');
+						foreach ($videos as $video) :
+						?>
+							<iframe width="335" height="210" src="<?php echo esc_url($video['gallery_video_url']); ?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+						<?php endforeach; ?>
+					<?php endif; ?>
 				</div>
 
-				<?php if(CFS()->get('gallery_photo')): ?>
-				<ul class="media__contents grid">
-					<?php
-					$photos = CFS()->get('gallery_photo');
-					foreach ($photos as $photo) :
-					?>
-						<li class="item">
-							<a href="<?php echo esc_url($photo['gallery_photo_image']); ?>" class="luminous">
-								<img src="<?php echo esc_url($photo['gallery_photo_image']); ?>" alt="" width="800" height="533">
-							</a>
-						</li>
-					<?php endforeach; ?>
-				</ul>
+				<?php if (CFS()->get('gallery_photo')) : ?>
+					<ul class="media__contents grid">
+						<?php
+						$photos = CFS()->get('gallery_photo');
+						foreach ($photos as $photo) :
+						?>
+							<li class="item">
+								<a href="<?php echo esc_url($photo['gallery_photo_image']); ?>" class="luminous">
+									<img src="<?php echo esc_url($photo['gallery_photo_image']); ?>" alt="" width="800" height="533">
+								</a>
+							</li>
+						<?php endforeach; ?>
+					</ul>
 				<?php endif; ?>
 			</div>
 

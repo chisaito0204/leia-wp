@@ -69,6 +69,11 @@
 				margin-top: 5px;
 			}
 		}
+		iframe{
+			@include media(sm) {
+				width: 100%;
+			}
+		}
 	}
 }
 
@@ -111,3 +116,4 @@
 .lum-lightbox{
 	z-index: 999;
 }
+

@@ -4366,6 +4366,11 @@ button {
     margin-top: 5px;
   }
 }
+@media (max-width: 959px) {
+  .media__contents iframe {
+    width: 100%;
+  }
+}
 
 .grid {
   position: relative;

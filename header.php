@@ -21,6 +21,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 	<link rel="stylesheet" href="<?php echo esc_url(get_theme_file_uri('/assets/css/swiper-bundle.min.css')); ?>" />
 	<link rel="stylesheet" href="<?php echo esc_url(get_theme_file_uri('/assets/css/simplebar.min.css')); ?>" />
+	<link rel="stylesheet" href="<?php echo esc_url(get_theme_file_uri('/assets/css/modal-video.min.css')); ?>" />
 	<link rel="stylesheet" type="text/css" href="<?php echo esc_url(get_theme_file_uri('/assets/css/luminous-basic.min.css')); ?>" />
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;200;300;400;500;600;700;800&family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet" />
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -28,10 +29,12 @@
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Caramel&display=swap" rel="stylesheet">
+	<script src="<?php echo esc_url(get_theme_file_uri('/assets/js/jquery-3.7.1.min.js')); ?>"></script>
 	<script src="<?php echo esc_url(get_theme_file_uri('/assets/js/gsap.min.js')); ?>"></script>
 	<script src="<?php echo esc_url(get_theme_file_uri('/assets/js/ScrollTrigger.min.js')); ?>"></script>
 	<script src="<?php echo esc_url(get_theme_file_uri('/assets/js/swiper-bundle.min.js')); ?>"></script>
 	<script src="<?php echo esc_url(get_theme_file_uri('/assets/js/simplebar.min.js')); ?>"></script>
+	<script src="<?php echo esc_url(get_theme_file_uri('/assets/js/jquery-modal-video.min.js')); ?>"></script>
 	<?php wp_head(); ?>
 </head>
 <!-- Google tag (gtag.js) -->
