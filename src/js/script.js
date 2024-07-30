@@ -9,6 +9,7 @@
  * 5. Muuri
  * 6. Luminous
  * 7. modal-video
+ * 8. GSAP
  *********************/
 
 /*********************
@@ -215,11 +216,187 @@ document.addEventListener("DOMContentLoaded", function () {
   new LuminousGallery(document.querySelectorAll(".luminous"));
 });
 
-
 /*********************
  * 7. modal-video
  *********************/
 
-$(function(){
+$(function () {
   $(".js-modal-video").modalVideo();
+});
+
+/*********************
+ * 7. GSAP
+ *********************/
+/*!
+ * GSAP 3.12.2
+ * https://greensock.com
+ *
+ * @license Copyright 2008-2023, GreenSock. All rights reserved.
+ * Subject to the terms at https://greensock.com/standard-license or for
+ * Club GreenSock members, the agreement issued with that membership.
+ * @author: Jack Doyle, jack@greensock.com
+ */
+/*!
+ * ScrollToPlugin 3.12.2
+ * https://greensock.com
+ *
+ * @license Copyright 2008-2023, GreenSock. All rights reserved.
+ * Subject to the terms at https://greensock.com/standard-license or for
+ * Club GreenSock members, the agreement issued with that membership.
+ * @author: Jack Doyle, jack@greensock.com
+ */
+
+window.matchMedia("(max-width: 959px)").matches;
+const getDeviceType = (tb = false) => {
+  if (
+    tb &&
+    window.matchMedia("(min-width: 960px) and (max-width: 1200px)").matches
+  ) {
+    return "tb";
+  } else if (window.matchMedia("(max-width: 959px)").matches) {
+    return "sp";
+  } else {
+    return "pc";
+  }
+};
+
+gsap.config({
+  nullTargetWarn: false,
+});
+
+gsap.utils.toArray(".top__title").forEach((target) => {
+  gsap.set(".top__title", {
+    opacity: 0,
+    y: 50,
+  });
+  gsap.to(target, {
+    opacity: 1,
+    y: 0,
+    ease: "power3.out",
+    duration: 1,
+    scrollTrigger: {
+      trigger: target,
+    },
+  });
+});
+
+const topAbout = gsap.timeline();
+topAbout.set(".i01", {
+  autoAlpha: 0,
+  x: -20,
+});
+topAbout.set(".t01", {
+  autoAlpha: 0,
+  x: 20,
+});
+topAbout.set(".i02", {
+  autoAlpha: 0,
+  x: 20,
+});
+topAbout.set(".t02", {
+  autoAlpha: 0,
+  x: -20,
+});
+topAbout.set(".i03", {
+  autoAlpha: 0,
+  x: -20,
+});
+topAbout.set(".t03", {
+  autoAlpha: 0,
+  x: 20,
+});
+
+
+
+topAbout.to(".i01", {
+  autoAlpha: 1,
+  x: 0,
+  duration: 1,
+  ease: "power3.out",
+});
+topAbout.to(".t01", {
+  autoAlpha: 1,
+  x: 0,
+  duration: 1,
+  ease: "power3.out",
+});
+topAbout.to(".i02", {
+  autoAlpha: 1,
+  x: 0,
+  duration: 1,
+  ease: "power3.out",
+});
+topAbout.to(".t02", {
+  autoAlpha: 1,
+  x: 0,
+  duration: 1,
+  ease: "power3.out",
+});
+topAbout.to(".i03", {
+  autoAlpha: 1,
+  x: 0,
+  duration: 1,
+  ease: "power3.out",
+});
+topAbout.to(".t03", {
+  autoAlpha: 1,
+  x: 0,
+  duration: 1,
+  ease: "power3.out",
+});
+
+
+
+ScrollTrigger.create({
+  trigger: ".top__about",
+  animation: topAbout,
+  // start: getDeviceType() === "sp" ? "top top+=10%" : "top top+=8%",
+  paused: true,
+  // markers: true,
+});
+
+gsap.utils.toArray(".modTitle").forEach((target) => {
+  gsap.set(".modTitle", {
+    opacity: 0,
+    x: 50,
+  });
+  gsap.to(target, {
+    opacity: 1,
+    x: 0,
+    ease: "power3.out",
+    duration: 1,
+    scrollTrigger: {
+      trigger: target,
+    },
+  });
+});
+
+gsap.utils.toArray(".modSubTitle").forEach((target) => {
+  gsap.set(".modSubTitle", {
+    opacity: 0,
+    y: -100,
+  });
+  gsap.to(target, {
+    opacity: 1,
+    y: 0,
+    ease: "power3.out",
+    duration: 1.8,
+    scrollTrigger: {
+      trigger: target,
+    },
+  });
+});
+
+gsap.utils.toArray(".modFV__img").forEach((target) => {
+  gsap.set(".modFV__img", {
+    autoAlpha: 0,
+  });
+  gsap.to(target, {
+    autoAlpha: 1,
+    delay: 0.3,
+    duration: 3,
+    scrollTrigger: {
+      trigger: target,
+    },
+  });
 });

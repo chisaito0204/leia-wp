@@ -108,10 +108,10 @@ get_header();
 					<figure><img src="<?php echo esc_url(get_theme_file_uri('/assets/img/common/ttl_dec-right.svg')); ?>" alt="" width="158" height="45" /></figure>
 				</h2>
 				<div class="top__aboutBox">
-					<figure>
+					<figure class="aboutImg i01">
 						<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/top/about01.png')); ?>" alt="" width="624" height="429" />
 					</figure>
-					<p class="top__aboutBox__txt01">
+					<p class="top__aboutBox__txt01 t01">
 						<span>煌びやかな舞台のジャズダンスをあなたのものに！</span><br />
 						ブロードウェイやディズニー、劇団四季、宝塚歌劇団の華やかなショーダンスやミュージカルダンスを、経験豊富な教師が親切丁寧に教えます。<br />
 						<span>未経験者、初心者も大歓迎です。</span><br />
@@ -120,21 +120,21 @@ get_header();
 				</div>
 
 				<div class="top__aboutBox">
-					<p class="top__aboutBox__txt01">
+					<p class="top__aboutBox__txt01 t02">
 						Leia Dance Studio主催の<span>河野麻耶（こうのまや）</span>は、祖母・金光郁子のもとで1歳よりダンスを学び<span>舞踊歴は40年以上</span>にわたります。<br />
 						日本ジャズダンス芸術協会主催コンクールにて成人部門特別賞、アダルト部門第1位、2007年コンクール最高位の<span>グランプリを「1920 U.S.A.」で受賞。</span>前身である金光郁子舞踊学園での商業公演や発表会、外部公演にも積極的に参加し豊富な経験を持っています。年齢、性別関係なく楽しく踊れる雰囲気のスタジオを作り、生徒さんが楽しく踊れる場を提供することを大切に考えています。
 					</p>
-					<figure class="aboutImg">
+					<figure class="aboutImg i02">
 						<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/top/about02.png')); ?>" alt="" width="665" height="420" />
 						<p class="top__aboutBox__txt02">Jazz Dance</p>
 					</figure>
 				</div>
 
 				<div class="top__aboutBox">
-					<figure>
+					<figure class="aboutImg i03">
 						<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/top/about03.png')); ?>" alt="" width="635" height="436" />
 					</figure>
-					<p class="top__aboutBox__txt01">
+					<p class="top__aboutBox__txt01 t03">
 						ダンスを通じて、体の内側からも美しくリフレッシュすることを目指しています。<br />
 						ファッションやメイクなどの表面的な美しさだけではなく、姿勢や立ち振る舞いなど<span>内面的な美しさ</span>が備わります。何気ない仕草や行動もどんどん素敵になっていきます。姿勢の改善や柔軟性の強化だけでなく、心と体の健康を向上させる効果があります。ダンスを楽しみながら、<span>健康で美しい体、そして心のリフレッシュ</span>を手に入れましょう！
 					</p>

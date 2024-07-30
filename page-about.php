@@ -11,7 +11,7 @@ get_header();
       <div class="modFV">
         <h2 class="modTitle"><span class="en">Leia Dance Studio</span>の<span class="pink">魅</span>力</h2>
         <h3 class="modSubTitle">About</h3>
-        <figure>
+        <figure class="modFV__img">
           <img src="<?php echo esc_url(get_theme_file_uri('/assets/img/about/fv.png')); ?>" alt="Leia Dance Studioの魅力" width="830" height="566" />
         </figure>
       </div>
