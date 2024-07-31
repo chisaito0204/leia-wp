@@ -30,7 +30,7 @@ get_header();
 						<span class="qu">全くの初心者ですが大丈夫でしょうか？</span>
 					</div>
 					<div class="top__faq__inner--an">
-						<span class="an">はい、全くダンス未経験者でも問題ありません。初心者でも<a href="/teacher">教師</a>がしっかりと丁寧に指導いたしますので安心して参加して下さい。</span>
+						<span class="an">はい、全くダンス未経験者でも問題ありません。初心者でも<a href="/teacher">講師</a>がしっかりと丁寧に指導いたしますので安心して参加して下さい。</span>
 					</div>
 				</div>
 				<div class="top__faq__inner">
@@ -117,7 +117,7 @@ get_header();
 						<span class="qu">レッスン風景の撮影は？</span>
 					</div>
 					<div class="top__faq__inner--an" style="display: none;">
-						<span class="an">レッスン風景の撮影は基本的に禁止しております。ご自身の自習用などでの撮影については、教師にご相談ください。 </span>
+						<span class="an">レッスン風景の撮影は基本的に禁止しております。ご自身の自習用などでの撮影については、講師にご相談ください。 </span>
 					</div>
 				</div>
 				<div class="top__faq__inner">

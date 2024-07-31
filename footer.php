@@ -36,7 +36,7 @@
         <li class="footer__navList__item"><a href="/">Home</a></li>
         <li class="footer__navList__item"><a href="/about">About</a></li>
         <li class="footer__navList__item"><a href="/class">クラス</a></li>
-        <li class="footer__navList__item"><a href="/teacher">教師</a></li>
+        <li class="footer__navList__item"><a href="/teacher">講師</a></li>
         <li class="footer__navList__item"><a href="/contact">Contact</a></li>
         <li class="footer__navList__item"><a href="/blog">Blog</a></li>
         <li class="footer__navList__item"><a href="/faq">Faq</a></li>

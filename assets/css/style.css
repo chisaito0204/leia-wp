@@ -4203,6 +4203,10 @@ button {
   }
 }
 
+.jarallax {
+  height: 100vh;
+}
+
 @media (min-width: 960px) {
   .contact {
     margin-bottom: 100px;

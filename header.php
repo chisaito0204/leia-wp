@@ -22,6 +22,7 @@
 	<link rel="stylesheet" href="<?php echo esc_url(get_theme_file_uri('/assets/css/swiper-bundle.min.css')); ?>" />
 	<link rel="stylesheet" href="<?php echo esc_url(get_theme_file_uri('/assets/css/simplebar.min.css')); ?>" />
 	<link rel="stylesheet" href="<?php echo esc_url(get_theme_file_uri('/assets/css/modal-video.min.css')); ?>" />
+	<link rel="stylesheet" href="<?php echo esc_url(get_theme_file_uri('/assets/css/jarallax.min.css')); ?>" />
 	<link rel="stylesheet" type="text/css" href="<?php echo esc_url(get_theme_file_uri('/assets/css/luminous-basic.min.css')); ?>" />
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;200;300;400;500;600;700;800&family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet" />
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -35,6 +36,8 @@
 	<script src="<?php echo esc_url(get_theme_file_uri('/assets/js/swiper-bundle.min.js')); ?>"></script>
 	<script src="<?php echo esc_url(get_theme_file_uri('/assets/js/simplebar.min.js')); ?>"></script>
 	<script src="<?php echo esc_url(get_theme_file_uri('/assets/js/jquery-modal-video.min.js')); ?>"></script>
+	<script src="<?php echo esc_url(get_theme_file_uri('/assets/js/jarallax.min.js')); ?>"></script>
+	<script src="<?php echo esc_url(get_theme_file_uri('/assets/js/jarallax-video.min.js')); ?>"></script>
 	<?php wp_head(); ?>
 </head>
 <!-- Google tag (gtag.js) -->
@@ -71,7 +74,7 @@
 						<li class="header__nav__item"><a href="/">Home</a></li>
 						<li class="header__nav__item ja"><a href="/about">5つの魅力</a></li>
 						<li class="header__nav__item ja"><a href="/class">クラス</a></li>
-						<li class="header__nav__item ja"><a href="/teacher">教師</a></li>
+						<li class="header__nav__item ja"><a href="/teacher">講師</a></li>
 						<li class="header__nav__item ja"><a href="/contact">お問合せ</a></li>
 						<li class="header__nav__item"><a href="/blog">Blog</a></li>
 						<li class="header__nav__item"><a href="/faq">Faq</a></li>
@@ -101,7 +104,7 @@
 								<a href="/class">クラス</a>
 							</li>
 							<li class="header__spSideMenu__item">
-								<a href="/teacher">教師</a>
+								<a href="/teacher">講師</a>
 							</li>
 							<li class="header__spSideMenu__item">
 								<a href="/contact">お問合せ</a>

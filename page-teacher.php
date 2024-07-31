@@ -13,7 +13,7 @@ get_header();
 					<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/top/Maya_Kohno.jpg')); ?>" alt="河野麻耶" width="485" height="485" />
 				</figure>
 				<div class="top__teacherBox__txtbox">
-					<p class="top__teacherBox__txtbox--ttl">教師</p>
+					<p class="top__teacherBox__txtbox--ttl">講師</p>
 					<h2 class="top__teacherBox__txtbox--name">河野麻耶<br /><span>Maya Kohno</span></h2>
 					<ul class="top__teacherBox__txtbox--text">
 						<li>舞踊家</li>

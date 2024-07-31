@@ -10,6 +10,7 @@
  * 6. Luminous
  * 7. modal-video
  * 8. GSAP
+ * 9. jarallax
  *********************/
 
 /*********************
@@ -311,19 +312,19 @@ topAbout.set(".t03", {
 topAbout.to(".i01", {
   autoAlpha: 1,
   x: 0,
-  duration: 1,
+  duration: 0.5,
   ease: "power3.out",
 });
 topAbout.to(".t01", {
   autoAlpha: 1,
   x: 0,
-  duration: 1,
+  duration: 0.8,
   ease: "power3.out",
 });
 topAbout.to(".i02", {
   autoAlpha: 1,
   x: 0,
-  duration: 1,
+  duration: 0.5,
   ease: "power3.out",
 });
 topAbout.to(".t02", {
@@ -335,7 +336,7 @@ topAbout.to(".t02", {
 topAbout.to(".i03", {
   autoAlpha: 1,
   x: 0,
-  duration: 1,
+  duration: 0.5,
   ease: "power3.out",
 });
 topAbout.to(".t03", {
@@ -400,3 +401,10 @@ gsap.utils.toArray(".modFV__img").forEach((target) => {
     },
   });
 });
+
+
+/*********************
+ * 9. jarallax
+ *********************/
+
+jarallax(document.querySelectorAll(".jarallax"));

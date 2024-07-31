@@ -28,7 +28,6 @@ get_header();
 						<h1 class="swiper-slide">
 							<figure class="mvImg">
 								<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/top/mv01.jpg')); ?>" alt="ジャズダンス" width="1440" height="810" />
-
 							</figure>
 						</h1>
 						<h1 class="swiper-slide">
@@ -113,7 +112,7 @@ get_header();
 					</figure>
 					<p class="top__aboutBox__txt01 t01">
 						<span>煌びやかな舞台のジャズダンスをあなたのものに！</span><br />
-						ブロードウェイやディズニー、劇団四季、宝塚歌劇団の華やかなショーダンスやミュージカルダンスを、経験豊富な教師が親切丁寧に教えます。<br />
+						ブロードウェイやディズニー、劇団四季、宝塚歌劇団の華やかなショーダンスやミュージカルダンスを、経験豊富な講師が親切丁寧に教えます。<br />
 						<span>未経験者、初心者も大歓迎です。</span><br />
 						本格的なジャズダンスを基本に、<span>ミュージカルダンス、モダンダンス、フラダンス、フラメンコ</span>など多彩なスタイルを融合した独自カリキュラムで、幅広い表現力が身につきます。80年代、90年代の懐かしい名曲から最新のヒット曲、ミュージカルの有名曲など様々な楽曲で楽しく踊れます。
 					</p>
@@ -214,16 +213,16 @@ get_header();
 			<!-- 	/ NEWS(ブログ) -->
 
 			<!-- 動画バックグラウンド -->
-			<div class="top__video">
-				<video class="video" src="<?php echo esc_url(get_theme_file_uri('/assets/img/top/maya_monalisa_web_bgv.mp4')); ?>" loop autoplay></video>
+			<div class="top__video jarallax">
+				<video class="video jarallax-img" src="<?php echo esc_url(get_theme_file_uri('/assets/img/top/maya_monalisa.mp4')); ?>" loop autoplay muted playsinline></video>
 			</div>
 			<!-- / 動画バックグラウンド -->
 
-			<!-- 教師 -->
+			<!-- 講師 -->
 			<section class="top__teacher">
 				<h2 class="top__title">
 					<figure><img src="<?php echo esc_url(get_theme_file_uri('/assets/img/common/ttl_dec-left.svg')); ?>" alt="" width="158" height="45" /></figure>
-					教師
+					講師
 					<figure><img src="<?php echo esc_url(get_theme_file_uri('/assets/img/common/ttl_dec-right.svg')); ?>" alt="" width="158" height="45" /></figure>
 				</h2>
 
@@ -249,7 +248,7 @@ get_header();
 				</div>
 				<a href="/teacher" class="modMoreBtn">もっと詳しく</a>
 			</section>
-			<!-- 	/ 教師 -->
+			<!-- 	/ 講師 -->
 
 			<!-- 生徒さまの声 -->
 			<section class="top__voice">
@@ -433,7 +432,7 @@ get_header();
 						</figure>
 						<p class="top__lesson__flow--boxTxt">
 							<span>①エクササイズとストレッチ</span><br />
-							いきなり踊って怪我をしないため、そして、美しい体づくりには欠かせません。エクササイズは、本場米国プロ直伝のスタイルをベースにしています。慣れないうちは難しい動きもあるかもしれませんが、心配はいりません。教師のお手本を見ながら、丁寧な指導のもとで繰り返し練習することで、自然と身についていきます。ヒップアップ効果のある動きも取り入れてます。クラッシックバレエの基本であるバーレッスンもこのパートで行うときがあります。
+							いきなり踊って怪我をしないため、そして、美しい体づくりには欠かせません。エクササイズは、本場米国プロ直伝のスタイルをベースにしています。慣れないうちは難しい動きもあるかもしれませんが、心配はいりません。講師のお手本を見ながら、丁寧な指導のもとで繰り返し練習することで、自然と身についていきます。ヒップアップ効果のある動きも取り入れてます。クラッシックバレエの基本であるバーレッスンもこのパートで行うときがあります。
 						</p>
 					</div>
 					<div class="top__lesson__flow--box">
@@ -614,7 +613,7 @@ get_header();
 					</div>
 					<div class="top__faq__inner--an" style="display: none;">
 						<span class="an">
-							はい、全くダンス未経験者でも問題ありません。初心者でも<a href="/teacher">教師</a>がしっかりと丁寧に指導いたしますので安心して参加して下さい。
+							はい、全くダンス未経験者でも問題ありません。初心者でも<a href="/teacher">講師</a>がしっかりと丁寧に指導いたしますので安心して参加して下さい。
 						</span>
 					</div>
 				</div>

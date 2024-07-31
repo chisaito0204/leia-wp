@@ -139,7 +139,7 @@
 			height: 200px;
 		}
 	}
-	&Ttlbg{
+	&Ttlbg {
 		&.con {
 			@include media(lg) {
 				background: url("../img/contact/title-bg.jpg") no-repeat;
@@ -221,8 +221,8 @@
 			width: 100%;
 			height: auto;
 			@include media(sm) {
-				 aspect-ratio: 3/1;
-				 object-fit: cover;
+				aspect-ratio: 3/1;
+				object-fit: cover;
 			}
 		}
 	}
@@ -270,9 +270,9 @@
 			}
 		}
 	}
-	&Sns{
+	&Sns {
 		margin-top: 60px;
-		&__txt{
+		&__txt {
 			text-align: center;
 			@include media(lg) {
 				@include fontsize(16);
@@ -285,7 +285,7 @@
 				margin-bottom: 30px;
 			}
 		}
-		&Links{
+		&Links {
 			display: flex;
 			align-items: center;
 			justify-content: center;
@@ -438,10 +438,14 @@
 	}
 }
 
-.new{
+.new {
 	color: red;
 	@include fontsize(12);
 	@include media(sm) {
 		@include fontsize(11);
 	}
+}
+
+.jarallax {
+	height: 100vh;
 }
