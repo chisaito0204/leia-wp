@@ -35,10 +35,11 @@ get_header();
 						<?php
 						$photos = CFS()->get('gallery_photo');
 						foreach ($photos as $photo) :
+						$alt_text = isset($photo['gallery_photo_alt']) ? esc_attr($photo['gallery_photo_alt']) : '';
 						?>
 							<li class="item">
 								<a href="<?php echo esc_url($photo['gallery_photo_image']); ?>" class="luminous">
-									<img src="<?php echo esc_url($photo['gallery_photo_image']); ?>" alt="" width="800" height="533">
+									<img src="<?php echo esc_url($photo['gallery_photo_image']); ?>" alt="<?php echo $alt_text; ?>" width="800" height="533">
 								</a>
 							</li>
 						<?php endforeach; ?>

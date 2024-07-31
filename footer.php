@@ -19,7 +19,7 @@
   <a href="#top"><img src="<?php echo esc_url(get_theme_file_uri('/assets/img/common/pagetop.svg')); ?>" alt="" width="9" height="29"></a>
 </div>
 <footer class="footerSub">
-  <a href="" class="footerSub__link" target="_blank"><span>メルマガの登録はこちらから</span></a>
+  <a href="/#mailmaga" class="footerSub__link" target="_blank"><span>メルマガの登録はこちらから</span></a>
 </footer>
 <footer class="footer">
   <div class="footer__contents">

@@ -623,8 +623,8 @@ get_header();
 					</div>
 					<div class="top__faq__inner--an" style="display: none;">
 						<span class="an">
-							Ｔシャツ、タイツ／レギンス／ロングパンツ、ダンスシューズ（バレエシューズ、ジャズダンスシューズなど屋内用シューズ）など動きやすい服装でお越しください。<br />
-							不明な方、ご心配な方はお問い合わせください。
+						Ｔシャツ、タイツ／レギンス／ロングパンツ、ダンスシューズ（バレエシューズ、ジャズダンスシューズなど屋内用シューズ）など動きやすい服装でお越しください。<br />
+						不明な方、ご心配な方はお問い合わせください。
 						</span>
 					</div>
 				</div>
@@ -643,52 +643,16 @@ get_header();
 				<div class="swiper lg-only">
 					<div class="swiper-wrapper">
 						<div class="swiper-slide">
-							<figure class="mediaImg">
-								<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/top/media01.jpg')); ?>" alt="過去メディア動画" width="406" height="228" />
-							</figure>
-							<figure class="btn">
-								<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/common/load.svg')); ?>" alt="再生ボタン" width="52" height="52" />
-							</figure>
+							<iframe width="350" height="210" src="https://www.youtube.com/embed/991zxRKctC8?si=cjfsnv3dCSCoJd56" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 						</div>
 						<div class="swiper-slide">
-							<figure class="mediaImg">
-								<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/top/media02.jpg')); ?>" alt="過去メディア動画" width="406" height="228" />
-							</figure>
-							<figure class="btn">
-								<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/common/load.svg')); ?>" alt="再生ボタン" width="52" height="52" />
-							</figure>
+							<iframe width="350" height="210" src="https://www.youtube.com/embed/LhvjzKYFJJw?si=jQxNAWpTp1gXOtX-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 						</div>
 						<div class="swiper-slide">
-							<figure class="mediaImg">
-								<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/top/media03.jpg')); ?>" alt="過去メディア動画" width="406" height="228" />
-							</figure>
-							<figure class="btn">
-								<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/common/load.svg')); ?>" alt="再生ボタン" width="52" height="52" />
-							</figure>
+							<iframe width="350" height="210" src="https://www.youtube.com/embed/1jEHCU8bp1A?si=kF-HB5Fi7yW4T4Y4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 						</div>
 						<div class="swiper-slide">
-							<figure class="mediaImg">
-								<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/top/media01.jpg')); ?>" alt="過去メディア動画" width="406" height="228" />
-							</figure>
-							<figure class="btn">
-								<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/common/load.svg')); ?>" alt="再生ボタン" width="52" height="52" />
-							</figure>
-						</div>
-						<div class="swiper-slide">
-							<figure class="mediaImg">
-								<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/top/media02.jpg')); ?>" alt="過去メディア動画" width="406" height="228" />
-							</figure>
-							<figure class="btn">
-								<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/common/load.svg')); ?>" alt="再生ボタン" width="52" height="52" />
-							</figure>
-						</div>
-						<div class="swiper-slide">
-							<figure class="mediaImg">
-								<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/top/media03.jpg')); ?>" alt="過去メディア動画" width="406" height="228" />
-							</figure>
-							<figure class="btn">
-								<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/common/load.svg')); ?>" alt="再生ボタン" width="52" height="52" />
-							</figure>
+							<iframe width="350" height="210" src="https://www.youtube.com/embed/AzGRiG1nrYM?si=zFDplSrZhNzzpDPg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 						</div>
 					</div>
 					<div class="swiper-pagination"></div>
@@ -696,28 +660,13 @@ get_header();
 
 				<div class="top__media__sp sm-only">
 					<div class="top__media__spVideo">
-						<figure class="mediaImg">
-							<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/top/media01.jpg')); ?>" alt="過去メディア動画" width="406" height="228" />
-						</figure>
-						<figure class="btn">
-							<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/common/load.svg')); ?>" alt="再生ボタン" width="52" height="52" />
-						</figure>
+					<iframe width="350" height="210" src="https://www.youtube.com/embed/LhvjzKYFJJw?si=jQxNAWpTp1gXOtX-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 					</div>
 					<div class="top__media__spVideo">
-						<figure class="mediaImg">
-							<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/top/media02.jpg')); ?>" alt="過去メディア動画" width="406" height="228" />
-						</figure>
-						<figure class="btn">
-							<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/common/load.svg')); ?>" alt="再生ボタン" width="52" height="52" />
-						</figure>
+					<iframe width="350" height="210" src="https://www.youtube.com/embed/991zxRKctC8?si=cjfsnv3dCSCoJd56" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 					</div>
 					<div class="top__media__spVideo">
-						<figure class="mediaImg">
-							<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/top/media03.jpg')); ?>" alt="過去メディア動画" width="406" height="228" />
-						</figure>
-						<figure class="btn">
-							<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/common/load.svg')); ?>" alt="再生ボタン" width="52" height="52" />
-						</figure>
+					<iframe width="350" height="210" src="https://www.youtube.com/embed/1jEHCU8bp1A?si=kF-HB5Fi7yW4T4Y4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 					</div>
 				</div>
 
@@ -739,7 +688,7 @@ get_header();
 			<!-- / 体験見学LPバナー-->
 
 			<!-- メルマガ登録 -->
-			<div class="top__mailmaga">
+			<div class="top__mailmaga" id="mailmaga">
 				<p class="top__mailmaga--ttl">メールマガジンの登録</p>
 				<form name="frmLMM99407" method="post">
 					<input type="hidden" name="account" value="dance">
