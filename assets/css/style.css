@@ -3944,8 +3944,8 @@ button {
 }
 @media (max-width: 959px) {
   .modMoreBtn {
-    font-size: 16px;
-    font-size: 1rem;
+    font-size: 15px;
+    font-size: 0.9375rem;
     margin: 30px 20px 0 auto;
   }
 }

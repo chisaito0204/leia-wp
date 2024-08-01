@@ -239,7 +239,7 @@
 			margin: 50px 100px 0 auto;
 		}
 		@include media(sm) {
-			@include fontsize(16);
+			@include fontsize(15);
 			margin: 30px 20px 0 auto;
 		}
 		&:after {
