@@ -690,6 +690,14 @@ get_header();
 			<!-- メルマガ登録 -->
 			<div class="top__mailmaga" id="mailmaga">
 				<p class="top__mailmaga--ttl">メールマガジンの登録</p>
+				<script language="javascript" type="text/javascript">
+				function jf_MMWindowOpen99407(ptype){
+					window.open("about:blank","MMSUB","width=500,height=200,scrollbars=yes,status=yes,resizable=yes");
+					document.frmLMM99407.target = "MMSUB";
+					document.frmLMM99407.action = "https://api.lolipop.jp/api/api.php?cmd=mm&type="+ptype;
+					document.frmLMM99407.submit();
+					}
+				</script>
 				<form name="frmLMM99407" method="post">
 					<input type="hidden" name="account" value="dance">
 					<input type="hidden" name="domain" value="mm.studio-leia.jp">
