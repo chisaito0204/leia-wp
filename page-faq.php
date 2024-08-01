@@ -9,7 +9,7 @@ get_header();
 	<main id="main" class="site-main">
 		<div class="faq">
 			<div class="modTttlbox faq">
-				<h2 class="modTttlbox--ttl">Faq</h2>
+				<h2 class="modTttlbox--ttl">FAQ</h2>
 				<p class="modTttlbox--subttl">よくあるご質問</p>
 			</div>
 			<section class="top__faq">
