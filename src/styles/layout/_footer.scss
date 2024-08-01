@@ -25,7 +25,7 @@
       @include media(sm) {
         @include fontsize(14);
       }
-      > span {
+      > a {
         border-bottom: solid 1px $pink;
       }
       &:before {

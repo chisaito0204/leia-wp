@@ -19,7 +19,7 @@
   <a href="#top"><img src="<?php echo esc_url(get_theme_file_uri('/assets/img/common/pagetop.svg')); ?>" alt="" width="9" height="29"></a>
 </div>
 <footer class="footerSub">
-  <a href="/#mailmaga" class="footerSub__link" target="_blank"><span>メルマガの登録はこちらから</span></a>
+  <div class="footerSub__link"><a href="/#mailmaga" >メルマガの登録はこちらから</a></div>
 </footer>
 <footer class="footer">
   <div class="footer__contents">
@@ -39,7 +39,7 @@
         <li class="footer__navList__item"><a href="/teacher">講師</a></li>
         <li class="footer__navList__item"><a href="/contact">Contact</a></li>
         <li class="footer__navList__item"><a href="/blog">Blog</a></li>
-        <li class="footer__navList__item"><a href="/faq">Faq</a></li>
+        <li class="footer__navList__item"><a href="/faq">FAQ</a></li>
         <li class="footer__navList__item"><a href="/gallery">ダンスギャラリー</a></li>
       </ul>
 

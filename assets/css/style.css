@@ -418,7 +418,7 @@ button {
     font-size: 0.875rem;
   }
 }
-.footerSub__link > span {
+.footerSub__link > a {
   border-bottom: solid 1px #E12C6D;
 }
 .footerSub__link:before {
@@ -1226,9 +1226,17 @@ button {
 }
 @media (min-width: 960px) {
   .top__teacherBox__txtbox--ttl {
-    font-size: 36px;
-    font-size: 2.25rem;
+    font-size: 30px;
+    font-size: 1.875rem;
     margin-bottom: 60px;
+  }
+}
+@media (max-width: 959px) {
+  .top__teacherBox__txtbox--ttl {
+    font-size: 22px;
+    font-size: 1.375rem;
+    margin-top: 50px;
+    margin-bottom: -30px;
   }
 }
 .top__teacherBox__txtbox--name {
@@ -1237,16 +1245,16 @@ button {
 }
 @media (min-width: 960px) {
   .top__teacherBox__txtbox--name {
-    font-size: 32px;
-    font-size: 2rem;
+    font-size: 28px;
+    font-size: 1.75rem;
     line-height: 150%;
     margin-bottom: 30px;
   }
 }
 @media (max-width: 959px) {
   .top__teacherBox__txtbox--name {
-    font-size: 26px;
-    font-size: 1.625rem;
+    font-size: 24px;
+    font-size: 1.5rem;
     margin-top: 50px;
     line-height: 150%;
   }
@@ -1256,14 +1264,14 @@ button {
 }
 @media (min-width: 960px) {
   .top__teacherBox__txtbox--name > span {
-    font-size: 26px;
-    font-size: 1.625rem;
+    font-size: 22px;
+    font-size: 1.375rem;
   }
 }
 @media (max-width: 959px) {
   .top__teacherBox__txtbox--name > span {
-    font-size: 24px;
-    font-size: 1.5rem;
+    font-size: 20px;
+    font-size: 1.25rem;
   }
 }
 @media (min-width: 960px) {
@@ -3677,6 +3685,10 @@ button {
   .articleDetailContents--text h3:before {
     top: 5px;
   }
+}
+.articleDetailContents--text p a {
+  color: #E12C6D;
+  border-bottom: solid 1px #E12C6D;
 }
 .articleDetail--btn {
   color: #E12C6D;

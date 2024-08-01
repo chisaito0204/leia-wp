@@ -77,7 +77,7 @@
 						<li class="header__nav__item ja"><a href="/teacher">講師</a></li>
 						<li class="header__nav__item ja"><a href="/contact">お問合せ</a></li>
 						<li class="header__nav__item"><a href="/blog">Blog</a></li>
-						<li class="header__nav__item"><a href="/faq">Faq</a></li>
+						<li class="header__nav__item"><a href="/faq">FAQ</a></li>
 						<li class="header__nav__item"><a href="/gallery">ダンスギャラリー</a></li>
 					</ul>
 				</nav>
@@ -113,7 +113,7 @@
 								<a href="/blog">Blog</a>
 							</li>
 							<li class="header__spSideMenu__item en">
-								<a href="/faq">Faq</a>
+								<a href="/faq">FAQ</a>
 							</li>
 							<li class="header__spSideMenu__item">
 								<a href="/gallery">ダンスギャラリー</a>

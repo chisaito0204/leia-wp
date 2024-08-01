@@ -441,30 +441,35 @@
 				flex: 0 0 43%;
 				&--ttl {
 					@include media(lg) {
-						@include fontsize(36);
+						@include fontsize(30);
 						margin-bottom: 60px;
+					}
+					@include media(sm) {
+						@include fontsize(22);
+						margin-top: 50px;
+						margin-bottom: -30px;
 					}
 				}
 				&--name {
 					border-bottom: solid 1px $pink;
 					width: 50%;
 					@include media(lg) {
-						@include fontsize(32);
+						@include fontsize(28);
 						line-height: 150%;
 						margin-bottom: 30px;
 					}
 					@include media(sm) {
-						@include fontsize(26);
+						@include fontsize(24);
 						margin-top: 50px;
 						line-height: 150%;
 					}
 					> span {
 						font-family: $serif;
 						@include media(lg) {
-							@include fontsize(26);
+							@include fontsize(22);
 						}
 						@include media(sm) {
-							@include fontsize(24);
+							@include fontsize(20);
 						}
 					}
 				}

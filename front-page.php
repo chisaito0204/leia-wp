@@ -591,7 +591,7 @@ get_header();
 			<section class="top__faq">
 				<h2 class="top__title en">
 					<figure><img src="<?php echo esc_url(get_theme_file_uri('/assets/img/common/ttl_dec-left.svg')); ?>" alt="" width="158" height="45" /></figure>
-					<span>Faq<br /><span class="sub">よくあるご質問</span></span>
+					<span>FAQ<br /><span class="sub">よくあるご質問</span></span>
 					<figure><img src="<?php echo esc_url(get_theme_file_uri('/assets/img/common/ttl_dec-right.svg')); ?>" alt="" width="158" height="45" /></figure>
 				</h2>
 

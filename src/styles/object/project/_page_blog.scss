@@ -364,6 +364,12 @@
 						}
 					}
 				}
+				p{
+					a{
+						color: $pink;
+						border-bottom: solid 1px $pink;
+					}
+				}
 			}
 		}
 		&--btn {
