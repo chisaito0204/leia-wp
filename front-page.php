@@ -146,7 +146,7 @@ get_header();
 			$args = array(
 				'post_type' => 'blog',
 				'posts_per_page' => 3,
-				'order' => 'ASC',
+				// 'order' => 'DESC',
 				'tax_query' => array(
 					array(
 						'taxonomy' => 'blog_category',
@@ -168,14 +168,14 @@ get_header();
 
 					<div class="top__blogBox swiper">
 						<div class="swiper-wrapper">
-							<?php while ($the_query->have_posts()) : ?>
+							<?php while ($the_query->have_posts()) : $the_query->the_post();?>
 								<?php
 								$days = 7;
 								$today = date_i18n('U');
 								$entry = get_the_time('U');
 								$termn = date('U', ($today - $entry)) / 86400;
 								?>
-								<?php $the_query->the_post(); ?>
+
 								<div class="swiper-slide">
 									<a href="<?php the_permalink(); ?>" class="top__blogBox__article">
 										<figure><?php the_post_thumbnail('full'); ?></figure>
@@ -450,7 +450,7 @@ get_header();
 						</figure>
 						<p class="top__lesson__flow--boxTxt">
 							<span>③作品を踊る</span><br />
-							いきなり音楽に合わせるのではなく、カウントで振付します。その後、音楽に合わせて踊っていきます。初心者の方には無理ない範囲での振付にしたり、経験者には更にレベルアップとなるような振付けを行うなど臨機応変に対応いたします。分からないときには、随時質問して頂いて大丈夫です。なお各教材のワンポイントレッスン（初心者向け、経験者向け）をメルマガ（登録はこちら→）でも配信しています。
+							いきなり音楽に合わせるのではなく、カウントで振付します。その後、音楽に合わせて踊っていきます。初心者の方には無理ない範囲での振付にしたり、経験者には更にレベルアップとなるような振付けを行うなど臨機応変に対応いたします。分からないときには、随時質問して頂いて大丈夫です。なお各教材のワンポイントレッスン（初心者向け、経験者向け）をメルマガ（登録は<a href="#mailmaga">こちら→</a>）でも配信しています。
 						</p>
 					</div>
 				</div>
@@ -623,8 +623,8 @@ get_header();
 					</div>
 					<div class="top__faq__inner--an" style="display: none;">
 						<span class="an">
-						Ｔシャツ、タイツ／レギンス／ロングパンツ、ダンスシューズ（バレエシューズ、ジャズダンスシューズなど屋内用シューズ）など動きやすい服装でお越しください。<br />
-						不明な方、ご心配な方はお問い合わせください。
+							Ｔシャツ、タイツ／レギンス／ロングパンツ、ダンスシューズ（バレエシューズ、ジャズダンスシューズなど屋内用シューズ）など動きやすい服装でお越しください。<br />
+							不明な方、ご心配な方はお問い合わせください。
 						</span>
 					</div>
 				</div>
@@ -660,13 +660,13 @@ get_header();
 
 				<div class="top__media__sp sm-only">
 					<div class="top__media__spVideo">
-					<iframe width="350" height="210" src="https://www.youtube.com/embed/LhvjzKYFJJw?si=jQxNAWpTp1gXOtX-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+						<iframe width="350" height="210" src="https://www.youtube.com/embed/LhvjzKYFJJw?si=jQxNAWpTp1gXOtX-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 					</div>
 					<div class="top__media__spVideo">
-					<iframe width="350" height="210" src="https://www.youtube.com/embed/991zxRKctC8?si=cjfsnv3dCSCoJd56" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+						<iframe width="350" height="210" src="https://www.youtube.com/embed/991zxRKctC8?si=cjfsnv3dCSCoJd56" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 					</div>
 					<div class="top__media__spVideo">
-					<iframe width="350" height="210" src="https://www.youtube.com/embed/1jEHCU8bp1A?si=kF-HB5Fi7yW4T4Y4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+						<iframe width="350" height="210" src="https://www.youtube.com/embed/1jEHCU8bp1A?si=kF-HB5Fi7yW4T4Y4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 					</div>
 				</div>
 
@@ -691,11 +691,11 @@ get_header();
 			<div class="top__mailmaga" id="mailmaga">
 				<p class="top__mailmaga--ttl">メールマガジンの登録</p>
 				<script language="javascript" type="text/javascript">
-				function jf_MMWindowOpen99407(ptype){
-					window.open("about:blank","MMSUB","width=500,height=200,scrollbars=yes,status=yes,resizable=yes");
-					document.frmLMM99407.target = "MMSUB";
-					document.frmLMM99407.action = "https://api.lolipop.jp/api/api.php?cmd=mm&type="+ptype;
-					document.frmLMM99407.submit();
+					function jf_MMWindowOpen99407(ptype) {
+						window.open("about:blank", "MMSUB", "width=500,height=200,scrollbars=yes,status=yes,resizable=yes");
+						document.frmLMM99407.target = "MMSUB";
+						document.frmLMM99407.action = "https://api.lolipop.jp/api/api.php?cmd=mm&type=" + ptype;
+						document.frmLMM99407.submit();
 					}
 				</script>
 				<form name="frmLMM99407" method="post">

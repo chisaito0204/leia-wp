@@ -1689,6 +1689,10 @@ button {
 .top__lesson__flow--boxTxt > span {
   font-weight: bold;
 }
+.top__lesson__flow--boxTxt > a {
+  color: #E12C6D;
+  border-bottom: solid 1px #E12C6D;
+}
 @media (min-width: 960px) {
   .top__lesson__flow--boxTxt {
     font-size: 16px;
@@ -3918,7 +3922,7 @@ button {
   border-bottom: solid 1px #E12C6D;
 }
 .modBandImg {
-  margin-bottom: 70px;
+  margin-bottom: 100px;
 }
 .modBandImg img {
   width: 100%;

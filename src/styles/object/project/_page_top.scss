@@ -819,6 +819,10 @@
 					> span {
 						font-weight: bold;
 					}
+					> a{
+						color: $pink;
+						border-bottom: solid 1px $pink;
+					}
 					@include media(lg) {
 						@include fontsize(16);
 						line-height: 160%;
