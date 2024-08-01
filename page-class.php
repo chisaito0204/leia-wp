@@ -132,7 +132,7 @@ get_header();
               <img src="<?php echo esc_url(get_theme_file_uri('/assets/img/top/lesson-flow01.jpg')); ?>" alt="" width="261" height="173" />
             </figure>
             <p class="top__lesson__flow--boxTxt">
-              ①エクササイズとストレッチ<br />
+              <span>①エクササイズとストレッチ</span><br />
               いきなり踊って怪我をしないため、そして、美しい体づくりには欠かせません。エクササイズは、本場米国プロ直伝のスタイルをベースにしています。慣れないうちは難しい動きもあるかもしれませんが、心配はいりません。講師のお手本を見ながら、丁寧な指導のもとで繰り返し練習することで、自然と身についていきます。ヒップアップ効果のある動きも取り入れてます。クラッシックバレエの基本であるバーレッスンもこのパートで行うときがあります。
             </p>
           </div>
@@ -140,7 +140,7 @@ get_header();
             <figure class="top__lesson__flow--boxImg">
               <img src="<?php echo esc_url(get_theme_file_uri('/assets/img/top/lesson-flow02.jpg')); ?>" alt="" width="261" height="173" />
             </figure>
-            <p class="top__lesson__flow--boxTxt">②ステップ、ジャンプ、基本など（クロスフロア）<br>
+            <p class="top__lesson__flow--boxTxt"><span>②ステップ、ジャンプ、基本など（クロスフロア）</span><br>
               当日の作品に出てくるステップや基本の動きなどを先に練習します。その他、ジャズダンスに必要な基本もこのパートで行います。ジャンプの基本やピルエット（ターン）の練習なども行います。
             </p>
           </div>
@@ -148,7 +148,7 @@ get_header();
             <figure class="top__lesson__flow--boxImg">
               <img src="<?php echo esc_url(get_theme_file_uri('/assets/img/top/lesson-flow03.jpg')); ?>" alt="" width="261" height="173" />
             </figure>
-            <p class="top__lesson__flow--boxTxt">③作品を踊る<br>
+            <p class="top__lesson__flow--boxTxt"><span>③作品を踊る</span><br>
               いきなり音楽に合わせるのではなく、カウントで振付します。その後、音楽に合わせて踊っていきます。初心者の方には無理ない範囲での振付にしたり、経験者には更にレベルアップとなるような振付けを行うなど臨機応変に対応いたします。分からないときには、随時質問して頂いて大丈夫です。なお各教材のワンポイントレッスン（初心者向け、経験者向け）をメルマガ（登録はこちら→）でも配信しています。
             </p>
           </div>
