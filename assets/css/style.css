@@ -4274,7 +4274,7 @@ button {
 }
 
 .wpcf7-spinner {
-  display: none;
+  display: none !important;
 }
 
 .media {
