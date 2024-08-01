@@ -254,7 +254,8 @@ get_header();
 				<div class="submit">
 					<input type="submit" value="送信" class="wpcf7-form-control wpcf7-submit" /><span class="ajax-loader"></span>
 				</div> -->
-				<?php echo apply_shortcodes('[contact-form-7 id="aff9edd" title="LP申し込みフォーム"]'); ?>
+				<?php //echo apply_shortcodes('[contact-form-7 id="aff9edd" title="LP申し込みフォーム"]'); ?>
+				<?php the_content() ?>
 			</div>
 
 			<div class="modSns">
