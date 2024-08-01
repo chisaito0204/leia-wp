@@ -43,6 +43,12 @@ articleLists.forEach((article) => {
   });
 });
 
+
+// お問い合わせ
+document.addEventListener( 'wpcf7mailsent', function( event ) {
+  location = 'thanks';
+}, false );
+
 /*********************
  * 1. header / footer
  *********************/

@@ -716,7 +716,7 @@ get_header();
 						折り返しメールにて担当者から連絡いたします。メールアドレスは間違いないよう記載ください。<br />
 						体験レッスン、レッスン内容などについてもお気軽にご連絡ください。
 					</p>
-					<?php echo apply_shortcodes('[contact-form-7 id="17bf4a9" title="お問い合わせ"]'); ?>
+					<?php echo apply_shortcodes('[contact-form-7 id="b5a40c5" title="お問い合わせ"]'); ?>
 
 					<!-- <p class="top__contactForm__txt">お名前(必須)<span class="pink">*</span></p>
 					<input type="text" name="name" value="" class="" />
