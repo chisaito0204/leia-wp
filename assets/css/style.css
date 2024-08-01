@@ -2108,7 +2108,7 @@ button {
 }
 @media (max-width: 959px) {
   .top__faq__inner--qu .qu {
-    width: 90%;
+    width: 85%;
   }
 }
 .top__faq__inner--qu:before {
@@ -2413,7 +2413,7 @@ button {
 .top__contactForm input[type=email]:focus,
 .top__contactForm textarea:focus {
   outline: 0;
-  background: #eee;
+  background: #FCE9F0;
 }
 .top__contactForm .submit {
   text-align: center;
@@ -4271,6 +4271,10 @@ button {
     font-size: 1rem;
     line-height: 160%;
   }
+}
+
+.wpcf7-spinner {
+  display: none;
 }
 
 .media {
