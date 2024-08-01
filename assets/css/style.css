@@ -1700,8 +1700,8 @@ button {
   .top__lesson__flow--boxTxt {
     font-size: 14px;
     font-size: 0.875rem;
-    line-height: 160%;
-    margin: 10px 0 20px;
+    line-height: 180%;
+    margin: 10px 0 30px;
   }
 }
 @media (min-width: 960px) {
