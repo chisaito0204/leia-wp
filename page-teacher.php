@@ -91,8 +91,8 @@ get_header();
 
 				<div class="teacher__historySlide">
 					<figure class="slideImg"><img src="<?php echo esc_url(get_theme_file_uri('/assets/img/teacher/teacher01.jpg')); ?>" alt="河野麻耶" width="342" height="228" /></figure>
-					<figure class="slideImg"><img src="<?php echo esc_url(get_theme_file_uri('/assets/img/teacher/teacher01.jpg')); ?>" alt="河野麻耶" width="342" height="228" /></figure>
-					<figure class="slideImg"><img src="<?php echo esc_url(get_theme_file_uri('/assets/img/teacher/teacher01.jpg')); ?>" alt="河野麻耶" width="342" height="228" /></figure>
+					<figure class="slideImg"><img src="<?php echo esc_url(get_theme_file_uri('/assets/img/teacher/teacher02.jpg')); ?>" alt="河野麻耶" width="342" height="228" /></figure>
+					<figure class="slideImg"><img src="<?php echo esc_url(get_theme_file_uri('/assets/img/teacher/teacher03.jpg')); ?>" alt="河野麻耶" width="342" height="228" /></figure>
 				</div>
 
 				<p class="teacher__historyTitle">ジャズダンス公演歴</p>
