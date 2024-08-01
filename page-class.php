@@ -262,7 +262,7 @@ get_header();
             <span class="indent01">・着替えスペースあり。近所にコンビニあり。スタジオの電話連絡先はございません。</span>
           </p>
 
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d202.73399019658558!2d139.6705624!3d35.6093848!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f5e150067731%3A0xc67dae953be8382e!2sLeia%20Dance%20Studio!5e0!3m2!1sja!2sjp!4v1715928679204!5m2!1sja!2sjp" width="1080" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2898.6031322731833!2d139.66810364800756!3d35.60875517766585!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f5e150067731%3A0xc67dae953be8382e!2sLeia%20Dance%20Studio!5e0!3m2!1sja!2sjp!4v1720500231626!5m2!1sja!2sjp" width="1080" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         <p class="top__lesson__access--note">★正面玄関はこちらです</p>
         <div class="top__lesson__access--box">

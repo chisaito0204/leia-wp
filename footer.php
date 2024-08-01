@@ -45,7 +45,7 @@
 
       <div class="footer__navLink">
         <div class="footer__navLinkOuter">
-          <a href="https://studio-leia.jp/" target="_blank">運営Studio Leia</a>
+          <a href="https://studio-leia.jp/" target="_blank">運営(Studio  Leia)</a>
         </div>
         <div class="footer__navLinkSns">
           <a href="https://x.com/leiadancestudio" target="_blank"><img src="<?php echo esc_url(get_theme_file_uri('/assets/img/common/x.svg')); ?>" alt="X" width="20" height="22"></a>

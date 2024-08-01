@@ -2713,6 +2713,10 @@ button {
   color: #E12C6D;
   font-weight: bold;
 }
+.teacher__text > a {
+  color: #E12C6D;
+  border-bottom: solid 1px #E12C6D;
+}
 @media (min-width: 960px) {
   .teacher__messasge {
     display: flex;

@@ -27,6 +27,10 @@
 			color: $pink;
 			font-weight: bold;
 		}
+		> a{
+			color: $pink;
+			border-bottom: solid 1px $pink;
+		}
 	}
 	&__messasge {
 		@include media(lg) {
