@@ -225,6 +225,10 @@
 				@include media(sm) {
 					@include fontsize(14);
 				}
+				> a {
+					color: $pink;
+					border-bottom: solid 1px $pink;
+				}
 			}
 		}
 	}
@@ -819,7 +823,7 @@
 					> span {
 						font-weight: bold;
 					}
-					> a{
+					> a {
 						color: $pink;
 						border-bottom: solid 1px $pink;
 					}
@@ -1417,7 +1421,7 @@
 				}
 				&:focus {
 					outline: 0;
-					background: #FCE9F0;
+					background: #fce9f0;
 				}
 			}
 			.submit {

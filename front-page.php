@@ -11,8 +11,8 @@
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
  * @package WordPress
- * @subpackage chisa
- * @since chisa
+ * @subpackage Leia Dance Studio
+ * @since Leia Dance Studio
  */
 
 get_header();
@@ -89,10 +89,10 @@ get_header();
 					<div class="top__newsBox">
 						<p class="top__newsBox__ttl"><?php the_field('news_title'); ?></p>
 						<?php if (get_field('news_text_pc')) : ?>
-							<p class="top__newsBox__txt lg-only"><?php echo nl2br(esc_html(get_field('news_text_pc'))); ?></p>
+							<p class="top__newsBox__txt lg-only"><?php echo nl2br(wp_kses_post(get_field('news_text_pc'))); ?></p>
 						<?php endif; ?>
 						<?php if (get_field('news_text_sp')) : ?>
-							<p class="top__newsBox__txt sm-only"><?php echo nl2br(esc_html(get_field('news_text_sp'))); ?></p>
+							<p class="top__newsBox__txt sm-only"><?php echo nl2br(wp_kses_post(get_field('news_text_sp'))); ?></p>
 						<?php endif; ?>
 					</div>
 				</section>

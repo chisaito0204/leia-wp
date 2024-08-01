@@ -27,7 +27,7 @@
 			color: $pink;
 			font-weight: bold;
 		}
-		> a{
+		> a {
 			color: $pink;
 			border-bottom: solid 1px $pink;
 		}
@@ -37,11 +37,12 @@
 			display: flex;
 			justify-content: center;
 			align-items: center;
+			flex-wrap: wrap;
 			gap: 80px;
-			margin-bottom: 100px;
+			margin-bottom: 30px;
 		}
 		@include media(sm) {
-			margin-bottom: 80px;
+			margin-bottom: 30px;
 		}
 		&--dec {
 			position: absolute;
@@ -94,6 +95,24 @@
 					border: 15px solid transparent;
 					border-top: 15px solid #fce9f0;
 				}
+			}
+		}
+		&--note {
+			@include media(lg) {
+				@include fontsize(16);
+				line-height: 160%;
+				width: 60%;
+				margin: 0 auto 100px;
+			}
+			@include media(sm) {
+				@include fontsize(14);
+				line-height: 160%;
+				width: 90%;
+				margin: 0 auto 80px;
+			}
+			> a {
+				color: $pink;
+				border-bottom: solid 1px $pink;
 			}
 		}
 		&--img {
@@ -384,7 +403,7 @@
 			}
 		}
 	}
-	&__note{
+	&__note {
 		@include fontsize(14);
 		margin-bottom: 40px;
 	}
