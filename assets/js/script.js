@@ -158,7 +158,7 @@ const createSwiper = () => {
 };
 
 /*********************
- * 3. Faq Toggle
+ * 3. FAQ Toggle
  *********************/
 $(function () {
   $(".top__faq__inner").on("click", function () {

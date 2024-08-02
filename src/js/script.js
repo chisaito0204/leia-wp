@@ -167,7 +167,7 @@ const createSwiper = () => {
 };
 
 /*********************
- * 3. Faq Toggle
+ * 3. FAQ Toggle
  *********************/
 $(function () {
   $(".top__faq__inner").on("click", function () {
@@ -351,8 +351,6 @@ topAbout.to(".t03", {
   duration: 1,
   ease: "power3.out",
 });
-
-
 
 ScrollTrigger.create({
   trigger: ".top__about",
