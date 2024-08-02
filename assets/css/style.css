@@ -840,6 +840,12 @@ button {
 }
 .top__mv {
   position: relative;
+  margin-bottom: 100px;
+}
+@media (max-width: 959px) {
+  .top__mv {
+    margin-bottom: 80px;
+  }
 }
 .top__mv .swiper .swiper-slide-active .mvImg,
 .top__mv .swiper .swiper-slide-duplicate-active .mvImg,

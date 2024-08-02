@@ -109,6 +109,10 @@
 	}
 	&__mv {
 		position: relative;
+		margin-bottom: 100px;
+		@include media(sm) {
+			margin-bottom: 80px;
+		}
 		.swiper {
 			.swiper-slide-active .mvImg,
 			.swiper-slide-duplicate-active .mvImg,

@@ -1,19 +1,8 @@
 <?php
 
-/**
- * The main template file
- *
- * This is the most generic template file in a WordPress theme
- * and one of the two required files for a theme (the other being style.css).
- * It is used to display a page when nothing more specific matches a query.
- * E.g., it puts together the home page when no home.php file exists.
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- *
- * @package WordPress
- * @subpackage Leia Dance Studio
- * @since Leia Dance Studio
- */
+/*
+Template Name: top
+*/
 
 get_header();
 ?>
@@ -84,16 +73,17 @@ get_header();
 			<!-- / MV -->
 
 			<!-- お知らせ -->
-			<?php if (get_field('news_title')) : ?>
+			<?php
+			$news_title = CFS()->get('news_title');
+			$news_text_pc = CFS()->get('news_text_pc');
+			$news_text_sp = CFS()->get('news_text_sp');
+
+			if ($news_title && $news_text_pc && $news_text_sp) : ?>
 				<section class="top__news">
 					<div class="top__newsBox">
-						<p class="top__newsBox__ttl"><?php the_field('news_title'); ?></p>
-						<?php if (get_field('news_text_pc')) : ?>
-							<p class="top__newsBox__txt lg-only"><?php echo nl2br(wp_kses_post(get_field('news_text_pc'))); ?></p>
-						<?php endif; ?>
-						<?php if (get_field('news_text_sp')) : ?>
-							<p class="top__newsBox__txt sm-only"><?php echo nl2br(wp_kses_post(get_field('news_text_sp'))); ?></p>
-						<?php endif; ?>
+						<p class="top__newsBox__ttl"><?php echo CFS()->get('news_title'); ?></p>
+						<p class="top__newsBox__txt lg-only"><?php echo CFS()->get('news_text_pc'); ?></p>
+						<p class="top__newsBox__txt sm-only"><?php echo CFS()->get('news_text_sp'); ?></p>
 					</div>
 				</section>
 			<?php endif; ?>
@@ -168,7 +158,7 @@ get_header();
 
 					<div class="top__blogBox swiper">
 						<div class="swiper-wrapper">
-							<?php while ($the_query->have_posts()) : $the_query->the_post();?>
+							<?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
 								<?php
 								$days = 7;
 								$today = date_i18n('U');
