@@ -61,26 +61,25 @@ window.addEventListener("scroll", function () {
 
 document.addEventListener("DOMContentLoaded", function () {
   var spMenuBtn = document.querySelector(".header__spMenuBtn");
-  var bodyHtml = document.querySelectorAll("body, html");
   var spSideMenu = document.querySelector(".header__spSideMenu");
   var body = document.body;
 
   if (spMenuBtn) {
     spMenuBtn.addEventListener("click", function () {
-      bodyHtml.forEach(function (element) {
-        element.animate({ scrollTop: 0 }, 100);
-      });
-
-      spMenuBtn.classList.toggle("is-open");
-      if (spSideMenu) {
-        spSideMenu.classList.toggle("is-open");
-      }
       if (spMenuBtn.classList.contains("is-open")) {
-        body.style.position = "fixed";
-        body.style.top = "0";
+        // メニューが閉じるとき
+        body.style.overflow = "";
+        spMenuBtn.classList.remove("is-open");
+        if (spSideMenu) {
+          spSideMenu.classList.remove("is-open");
+        }
       } else {
-        body.style.position = "";
-        body.style.top = "";
+        // メニューが開くとき
+        body.style.overflow = "hidden";
+        spMenuBtn.classList.add("is-open");
+        if (spSideMenu) {
+          spSideMenu.classList.add("is-open");
+        }
       }
     });
   }

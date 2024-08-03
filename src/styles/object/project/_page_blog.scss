@@ -237,7 +237,7 @@
 					}
 					&Text {
 						position: relative;
-						padding-left: 15px;
+						// padding-left: 15px;
 						font-family: $noto;
 						@include media(lg) {
 							@include fontsize(14);
@@ -364,10 +364,27 @@
 						}
 					}
 				}
-				p{
-					a{
+				p {
+					a {
 						color: $pink;
 						border-bottom: solid 1px $pink;
+					}
+				}
+				.wp-block-list {
+					li {
+						position: relative;
+						padding-left: 12px;
+						&:before {
+							content: "";
+							display: inline-block;
+							border-radius: 50%;
+							background: $pink;
+							width: 6px;
+							height: 6px;
+							position: absolute;
+							top: 15px;
+							left: 0;
+						}
 					}
 				}
 			}

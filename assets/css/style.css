@@ -3529,7 +3529,6 @@ button {
 }
 .blog__listInnerSidebar--cateText {
   position: relative;
-  padding-left: 15px;
   font-family: "Noto Sans", "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
 }
 @media (min-width: 960px) {
@@ -3695,6 +3694,21 @@ button {
 .articleDetailContents--text p a {
   color: #E12C6D;
   border-bottom: solid 1px #E12C6D;
+}
+.articleDetailContents--text .wp-block-list li {
+  position: relative;
+  padding-left: 12px;
+}
+.articleDetailContents--text .wp-block-list li:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  background: #E12C6D;
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  top: 15px;
+  left: 0;
 }
 .articleDetail--btn {
   color: #E12C6D;

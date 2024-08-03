@@ -26,7 +26,7 @@ get_header();
 										foreach ($terms as $term) :
 											$url = get_term_link($term, 'blog_category');
 									?>
-											<p class="blog__listInnerArticle--tag"><?php echo $term->name; ?></p>
+											<p class="blog__listInnerArticle--tag"><a href="<?php echo $url ?>"><?php echo $term->name; ?></a></p>
 									<?php
 										endforeach;
 									} else {
@@ -68,7 +68,7 @@ get_header();
 							<?php
 							$terms = get_terms('blog_category', 'hide_empty=0');
 							foreach ($terms as $term) {
-								echo '<li class="blog__listInnerSidebar--cateText"><a href="' . get_term_link($term) . '">' . '・' . $term->name . '(' . "$term->count" . ')</a></li>';
+								echo '<li class="blog__listInnerSidebar--cateText"><a href="' . get_term_link($term) . '">' . $term->name . '(' . "$term->count" . ')</a></li>';
 							}
 							?>
 						</ul>
