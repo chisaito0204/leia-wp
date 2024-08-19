@@ -679,7 +679,8 @@ get_header();
 
 			<!-- メルマガ登録 -->
 			<div class="top__mailmaga" id="mailmaga">
-				<p class="top__mailmaga--ttl">メールマガジンの登録</p>
+				<p class="top__mailmaga--ttl">公式メールマガジンの登録</p>
+				<p class="top__mailmaga--subttl">Leia Dance Studio 公式メルマガ<br class="sm-only"> "Let's keep on dancing!" では、<br>レッスンの作品やプチアドバイス、<br class="sm-only">イベント情報など最新情報を発信しています！</p>
 				<script language="javascript" type="text/javascript">
 					function jf_MMWindowOpen99407(ptype) {
 						window.open("about:blank", "MMSUB", "width=500,height=200,scrollbars=yes,status=yes,resizable=yes");

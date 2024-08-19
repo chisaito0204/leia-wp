@@ -1362,6 +1362,15 @@
 				@include fontsize(16);
 			}
 		}
+		&--subttl {
+			@include fontsize(16);
+			margin-bottom: 30px;
+			line-height: 180%;
+			@include media(sm) {
+				@include fontsize(14);
+				line-height: 160%;
+			}
+		}
 		&--txt {
 			max-width: 240px;
 			margin: 10px auto;

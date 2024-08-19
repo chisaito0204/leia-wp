@@ -2338,6 +2338,19 @@ button {
     font-size: 1rem;
   }
 }
+.top__mailmaga--subttl {
+  font-size: 16px;
+  font-size: 1rem;
+  margin-bottom: 30px;
+  line-height: 180%;
+}
+@media (max-width: 959px) {
+  .top__mailmaga--subttl {
+    font-size: 14px;
+    font-size: 0.875rem;
+    line-height: 160%;
+  }
+}
 .top__mailmaga--txt {
   max-width: 240px;
   margin: 10px auto;
