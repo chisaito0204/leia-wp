@@ -318,8 +318,10 @@
 	&__blog {
 		margin: 100px 0;
 		&Box {
-			@include media(sm) {
-				padding-bottom: 40px;
+			&.swiper {
+				@include media(sm) {
+					padding-bottom: 40px;
+				}
 			}
 			.swiper-wrapper {
 				@include media(lg) {

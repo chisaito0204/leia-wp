@@ -1083,7 +1083,7 @@ button {
   margin: 100px 0;
 }
 @media (max-width: 959px) {
-  .top__blogBox {
+  .top__blogBox.swiper {
     padding-bottom: 40px;
   }
 }
