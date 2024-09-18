@@ -43,11 +43,14 @@ articleLists.forEach((article) => {
   });
 });
 
-
 // お問い合わせ
-document.addEventListener( 'wpcf7mailsent', function( event ) {
-  location = 'thanks';
-}, false );
+document.addEventListener(
+  "wpcf7mailsent",
+  function (event) {
+    location = "thanks";
+  },
+  false
+);
 
 /*********************
  * 1. header / footer
@@ -86,9 +89,6 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-
-
-
 /*********************
  * 2. Swiper
  *********************/
@@ -122,7 +122,7 @@ const mediaSwiper = new Swiper(".top__media .swiper", {
   },
 });
 
-const breakPoint = 767;
+const breakPoint = 945;
 let recommendSwiper;
 let mySwiperBool;
 
@@ -315,8 +315,6 @@ topAbout.set(".t03", {
   x: 20,
 });
 
-
-
 topAbout.to(".i01", {
   autoAlpha: 1,
   x: 0,
@@ -407,7 +405,6 @@ gsap.utils.toArray(".modFV__img").forEach((target) => {
     },
   });
 });
-
 
 /*********************
  * 9. jarallax

@@ -44,8 +44,8 @@ articleLists.forEach(article => {
 });
 
 // お問い合わせ
-document.addEventListener('wpcf7mailsent', function (event) {
-  location = 'thanks';
+document.addEventListener("wpcf7mailsent", function (event) {
+  location = "thanks";
 }, false);
 
 /*********************
@@ -118,7 +118,7 @@ const mediaSwiper = new Swiper(".top__media .swiper", {
   }
 });
 
-const breakPoint = 767;
+const breakPoint = 945;
 let recommendSwiper;
 let mySwiperBool;
 
