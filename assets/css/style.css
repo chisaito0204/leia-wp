@@ -3705,7 +3705,7 @@ button {
 .articleDetailContents--text h3:before {
   content: "";
   position: absolute;
-  top: 0;
+  top: 3px;
   left: 0;
   background: #E12C6D;
   display: inline-block;
