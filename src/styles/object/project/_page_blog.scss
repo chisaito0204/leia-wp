@@ -38,7 +38,7 @@
 				background: #fff;
 				box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 				display: flex;
-				align-items: center;
+				align-items: start;
 				@include media(lg) {
 					max-width: 800px;
 					width: 100%;
@@ -71,14 +71,14 @@
 				&--date {
 					display: inline-block;
 					font-family: $noto;
-					line-height: 1.5rem;
 					@include media(lg) {
 						@include fontsize(14);
 						margin-left: 10px;
+						line-height: 1.5rem;
 					}
 					@include media(sm) {
 						@include fontsize(12);
-						margin-left: 5px;
+						// margin-left: 5px;
 					}
 				}
 				&--tag {
@@ -90,11 +90,13 @@
 					@include media(lg) {
 						@include fontsize(14);
 						padding: 5px 7px;
+						margin-bottom: 5px;
 					}
 					@include media(sm) {
 						@include fontsize(12);
 						padding: 3px 5px;
 						border-radius: 0.1rem;
+						margin-bottom: 3px;
 					}
 				}
 				&--title {
@@ -281,7 +283,7 @@
 				margin-bottom: 25px;
 			}
 			@include media(sm) {
-				@include fontsize(18);
+				@include fontsize(22);
 				line-height: 1.7rem;
 				margin-bottom: 20px;
 			}
@@ -290,11 +292,19 @@
 			display: flex;
 			align-items: flex-start;
 			justify-content: space-between;
+			flex-wrap: wrap;
 			@include media(lg) {
 				margin-bottom: 30px;
+				gap: 10px;
 			}
 			@include media(sm) {
 				margin-bottom: 20px;
+				gap: 5px;
+			}
+			.blog__listInnerArticle--date {
+				@include media(sm) {
+					line-height: 1rem;
+				}
 			}
 		}
 		&Mv {
@@ -324,13 +334,13 @@
 					border-bottom: solid 1px #ddd;
 					font-weight: bold;
 					@include media(lg) {
-						@include fontsize(18);
+						@include fontsize(20);
 						padding-bottom: 15px;
 						margin-bottom: 25px;
 						line-height: 140%;
 					}
 					@include media(sm) {
-						@include fontsize(16);
+						@include fontsize(18);
 						line-height: 1.5rem;
 						padding-bottom: 10px;
 						margin-bottom: 20px;
@@ -340,12 +350,12 @@
 					position: relative;
 					padding-left: 20px;
 					@include media(lg) {
-						@include fontsize(16);
+						@include fontsize(18);
 						margin-bottom: 20px;
 						line-height: 120%;
 					}
 					@include media(sm) {
-						@include fontsize(14);
+						@include fontsize(16);
 						line-height: 1.5rem;
 						margin-bottom: 15px;
 					}
@@ -384,6 +394,9 @@
 							position: absolute;
 							top: 15px;
 							left: 0;
+							@include media(sm) {
+								top: 12px;
+							}
 						}
 					}
 				}

@@ -1118,9 +1118,12 @@ button {
   justify-content: space-between;
   align-items: center;
   margin: 8px 0;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 .top__blogBox__articleTags--box {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 5px;
 }
@@ -3296,7 +3299,7 @@ button {
   background: #fff;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
   display: flex;
-  align-items: center;
+  align-items: start;
 }
 @media (min-width: 960px) {
   .blog__listInnerArticle {
@@ -3331,20 +3334,19 @@ button {
 .blog__listInnerArticle--date {
   display: inline-block;
   font-family: "Noto Sans", "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
-  line-height: 1.5rem;
 }
 @media (min-width: 960px) {
   .blog__listInnerArticle--date {
     font-size: 14px;
     font-size: 0.875rem;
     margin-left: 10px;
+    line-height: 1.5rem;
   }
 }
 @media (max-width: 959px) {
   .blog__listInnerArticle--date {
     font-size: 12px;
     font-size: 0.75rem;
-    margin-left: 5px;
   }
 }
 .blog__listInnerArticle--tag {
@@ -3359,6 +3361,7 @@ button {
     font-size: 14px;
     font-size: 0.875rem;
     padding: 5px 7px;
+    margin-bottom: 5px;
   }
 }
 @media (max-width: 959px) {
@@ -3367,6 +3370,7 @@ button {
     font-size: 0.75rem;
     padding: 3px 5px;
     border-radius: 0.1rem;
+    margin-bottom: 3px;
   }
 }
 .blog__listInnerArticle--title {
@@ -3596,8 +3600,8 @@ button {
 }
 @media (max-width: 959px) {
   .articleDetailTitle {
-    font-size: 18px;
-    font-size: 1.125rem;
+    font-size: 22px;
+    font-size: 1.375rem;
     line-height: 1.7rem;
     margin-bottom: 20px;
   }
@@ -3606,15 +3610,23 @@ button {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 @media (min-width: 960px) {
   .articleDetailCtg {
     margin-bottom: 30px;
+    gap: 10px;
   }
 }
 @media (max-width: 959px) {
   .articleDetailCtg {
     margin-bottom: 20px;
+    gap: 5px;
+  }
+}
+@media (max-width: 959px) {
+  .articleDetailCtg .blog__listInnerArticle--date {
+    line-height: 1rem;
   }
 }
 .articleDetailMv img {
@@ -3654,8 +3666,8 @@ button {
 }
 @media (min-width: 960px) {
   .articleDetailContents--text h2 {
-    font-size: 18px;
-    font-size: 1.125rem;
+    font-size: 20px;
+    font-size: 1.25rem;
     padding-bottom: 15px;
     margin-bottom: 25px;
     line-height: 140%;
@@ -3663,8 +3675,8 @@ button {
 }
 @media (max-width: 959px) {
   .articleDetailContents--text h2 {
-    font-size: 16px;
-    font-size: 1rem;
+    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 1.5rem;
     padding-bottom: 10px;
     margin-bottom: 20px;
@@ -3676,16 +3688,16 @@ button {
 }
 @media (min-width: 960px) {
   .articleDetailContents--text h3 {
-    font-size: 16px;
-    font-size: 1rem;
+    font-size: 18px;
+    font-size: 1.125rem;
     margin-bottom: 20px;
     line-height: 120%;
   }
 }
 @media (max-width: 959px) {
   .articleDetailContents--text h3 {
-    font-size: 14px;
-    font-size: 0.875rem;
+    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.5rem;
     margin-bottom: 15px;
   }
@@ -3724,6 +3736,11 @@ button {
   position: absolute;
   top: 15px;
   left: 0;
+}
+@media (max-width: 959px) {
+  .articleDetailContents--text .wp-block-list li:before {
+    top: 12px;
+  }
 }
 .articleDetail--btn {
   color: #E12C6D;

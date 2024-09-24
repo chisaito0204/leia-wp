@@ -355,8 +355,11 @@
 					justify-content: space-between;
 					align-items: center;
 					margin: 8px 0;
+					gap: 10px;
+					flex-wrap: wrap;
 					&--box {
 						display: flex;
+						flex-wrap: wrap;
 						align-items: center;
 						gap: 5px;
 					}
