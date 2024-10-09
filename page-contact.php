@@ -21,7 +21,7 @@ get_header();
 					講師や運営スタッフはレッスン時以外は自由が丘スタジオには不在のため、下記フォームまたはメールにてご連絡ください。<br />
 					体験レッスン、レッスン内容、出張レッスン、近所で教えて欲しいなどご質問・ご意見もお気軽にご連絡ください。
 				</p>
-				<?php the_content(); ?>
+				<?php echo apply_shortcodes('[contact-form-7 id="b5a40c5" title="お問い合わせ"]'); ?>
 
 				<!-- <p class="top__contactForm__txt">お名前(必須)<span class="pink">*</span></p>
 				<input type="text" name="name" value="" class="" />
