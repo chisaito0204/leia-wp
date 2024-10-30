@@ -6,8 +6,8 @@ get_header();
 ?>
 
 <div id="primary" class="content-area">
-	<main id="main" class="site-main">
-	<div class="about">
+  <main id="main" class="site-main">
+    <div class="about">
       <div class="modFV">
         <h2 class="modTitle"><span class="en">Leia Dance Studio</span>の<span class="pink">魅</span>力</h2>
         <h3 class="modSubTitle">About</h3>
@@ -16,7 +16,7 @@ get_header();
         </figure>
       </div>
       <p class="modText">
-        自由ヶ丘で本格的なジャズダンス、<br class="sm-only">ミュージカル・ショーダンスを中心に<br />
+        田園調布と自由が丘で本格的なジャズダンス、<br class="sm-only">ミュージカル・ショーダンスを中心に<br />
         親切・丁寧に教えております。ジャズダンスを元に<br />
         フラメンコ、フラダンス、タップなど様々なダンスを<br class="sm-only">融合した金光ダンスを、<br />
         初心者始め経験者も含めて幅広く楽しく<br class="sm-only">往年の名曲をベースに、ミュージカル・商業公演で<br />
@@ -26,7 +26,7 @@ get_header();
       <figure class="modBandImg">
         <img src="<?php echo esc_url(get_theme_file_uri('/assets/img/about/band.jpg')); ?>" alt="Leia Dance Studioの魅力" width="1440" height="353" />
       </figure>
-      
+
       <div class="about__contents">
         <div class="about__contentsBox">
           <figure class="about__contentsBox__img">
@@ -41,7 +41,7 @@ get_header();
         </div>
 
         <div class="about__contentsBox">
-          <div class="about__contentsBox__text">  
+          <div class="about__contentsBox__text">
             講師の<a href="/teacher">河野麻耶（こうのまや）</a>は、祖母・金光郁子のもとで1歳よりダンスを学びダンス一家の血を受け継ぎました。舞踊歴は40年以上。日本ジャズダンス芸術協会主催コンクールにて1991年ジュニアの部次点、1996年成人部門特別賞、2002年アダルト部門第1位、2007年にはコンクール最高位のグランプリを受賞。同ダンスコンクールの審査員も昨今は務めています。前身である金光郁子舞踊学園での商業講演や発表会、（一社）日本ジャズダンス芸術協会主催公演は30回以上出演、その他外部公演にも積極的に参加し豊富な経験があります。</div>
           <figure class="about__contentsBox__img">
             <figcaption class="about__contentsBox__imgCap">
@@ -92,10 +92,10 @@ get_header();
         <a href="/class" class="about__link">クラスの詳細はこちら</a>
       </div>
 
-      
+
     </div>
 
-	</main><!-- #main -->
+  </main><!-- #main -->
 </div><!-- #primary -->
 
 <?php

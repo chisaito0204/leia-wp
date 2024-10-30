@@ -348,19 +348,19 @@ get_header();
 								</tr>
 								<tr class="noon">
 									<td></td>
-									<td class="active">昼クラス<br />11:20-12:40</td>
+									<td class="active">田園調布スタジオ<br />11:20-12:40</td>
 									<td></td>
 									<td></td>
 									<td></td>
 									<td></td>
-									<td class="active">昼クラス<br />11:20-12:40</td>
+									<td class="active">田園調布スタジオ<br />14:20-15:40</td>
 								</tr>
 								<tr class="night">
 									<td></td>
-									<td class="active">夜クラス<br />19:20-20:40</td>
+									<td class="active">田園調布スタジオ<br />19:20-20:40</td>
 									<td></td>
 									<td></td>
-									<td class="active">夜クラス<br />19:20-20:40</td>
+									<td class="active">自由が丘スタジオ<br />19:20-20:40</td>
 									<td></td>
 									<td></td>
 								</tr>
@@ -376,8 +376,8 @@ get_header();
 						</dl>
 						<dl class="week">
 							<dt class="week__ttl">火曜日</dt>
-							<dd class="week__desc on">昼クラス<strong>：11:20-12:40</strong></dd>
-							<dd class="week__desc on">夜クラス<strong>：19:20-20:40</strong></dd>
+							<dd class="week__desc on">田園調布スタジオ<strong>：11:20-12:40</strong></dd>
+							<dd class="week__desc on">田園調布スタジオ<strong>：19:20-20:40</strong></dd>
 						</dl>
 						<dl class="week">
 							<dt class="week__ttl">水曜日</dt>
@@ -392,7 +392,7 @@ get_header();
 						<dl class="week">
 							<dt class="week__ttl">金曜日</dt>
 							<dd class="week__desc"></dd>
-							<dd class="week__desc on">夜クラス<strong>：19:20-20:40</strong></dd>
+							<dd class="week__desc on">自由が丘スタジオ<strong>：19:20-20:40</strong></dd>
 						</dl>
 						<dl class="week">
 							<dt class="week__ttl">土曜日</dt>
@@ -401,15 +401,16 @@ get_header();
 						</dl>
 						<dl class="week">
 							<dt class="week__ttl">日曜日</dt>
-							<dd class="week__desc on">昼クラス<strong>：11:20-12:40</strong></dd>
+							<dd class="week__desc on">田園調布スタジオ<strong>：14:20-15:40</strong></dd>
 							<dd class="week__desc"></dd>
 						</dl>
 					</div>
 				</div>
 				<p class="top__lesson__schedule--note">
-					※場所：自由ヶ丘ダンススタジオ JDS/東京都目黒区自由が丘1-3-22 / 自由ヶ丘駅徒歩5分<br />
-					※各レッスンは80分間です（スタジオは2時間かりていますので、20分前から入室できます）<br />
-					※レッスン時間の前後の各20分間で着替え、準備、チケットの購入等をお願いいたします。
+					※各レッスンは80分間です（スタジオは2時間借りていますので、20分前から入室できます）<br />
+					※レッスン時間の前後の各20分間で着替え、準備、チケットの購入等をお願いいたします<br />
+					※曜日によってレッスンスタジオが異なりますのでレッスン受講、見学の際にはご注意ください<br />
+					※各曜日でレッスン教材が異なります。詳細は、メールマガジン（登録は<a href="/#mailmaga" class="pink">こちら→</a>）やSNSをご参照ください
 				</p>
 
 				<div class="top__lesson__flow">
@@ -461,6 +462,7 @@ get_header();
 					<p class="top__lesson__feeBox--note">
 						<span class="indent01">※チケット回数制になります</span>
 						<span class="indent01">※遅刻や早退をしても１レッスンで１回分消費いたしますのでご注意下さい</span>
+						<span class="indent01">※田園調布スタジオ、自由が丘スタジオどちらで入会、レッスンをうけても金額やチケット消費分は変わりません</span>
 					</p>
 					<table>
 						<tbody>
@@ -549,6 +551,34 @@ get_header();
 
 				<h3 class="top__subtitle ja">︎<span>アクセス</span></h3>
 				<div class="top__lesson__access">
+					<p class="top__lesson__access--text">
+						田園調布と自由が丘の２つのスタジオでレッスンを開講しています。<br />
+						どちらも駅徒歩5分程度と都心の便利な2拠点です。ライフスタイルに合わせてジャズダンスを楽しみましょう。
+					</p>
+					<p class="top__lesson__access--ttl">田園調布スタジオ</p>
+					<p class="top__lesson__access--txt">
+						<span class="fsl">田園調布駅徒歩<span class="pink">6分</span>！</span>
+						<br />天井高も高く、リノリウム張りの本格的なスタジオで伸び伸びと踊れます！<br />
+						<br />
+						<span class="indent01">・東急東横線田園調布駅 徒歩6分</span>
+						<span class="indent01">・住所：〒145-0071 東京都大田区田園調布２丁目４６−３ ライトハウス田園調布 1F</span>
+						<span class="indent01">・着替えスペースあり。駅からの途中にコンビニあり。</span>
+					</p>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11264.121445656969!2d139.6649930469027!3d35.59901199139514!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f5958aafb94d%3A0xab240d3190766c30!2zTGVpYSBEYW5jZSBTdHVkaW8g55Sw5ZyS6Kq_5biD44K544K_44K444Kq!5e0!3m2!1sja!2sjp!4v1730110689039!5m2!1sja!2sjp" width="1080" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+				<div class="top__lesson__access--box">
+					<figure class="studioImg">
+						<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/top/studio05.jpg')); ?>" alt="田園調布スタジオ写真" width="550" height="380" />
+					</figure>
+					<figure class="studioImg">
+						<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/top/studio06.jpg')); ?>" alt="田園調布スタジオ写真" width="550" height="380" />
+					</figure>
+				</div>
+				<p class="top__lesson__access--note02">写真引用：<a href="https://studiocroix.jp/rentalstudio" target="_blank">スタジオクロア</a>様</p>
+
+
+				<div class="top__lesson__access">
+					<p class="top__lesson__access--ttl">自由が丘スタジオ</p>
 					<p class="top__lesson__access--txt">
 						<span class="fsl">自由が丘駅徒歩<span class="pink">5分</span>！</span>
 						<br />会社帰りに、買い物ついでに、便利なロケーションです。<br />
@@ -562,16 +592,16 @@ get_header();
 				<p class="top__lesson__access--note">★正面玄関はこちらです</p>
 				<div class="top__lesson__access--box">
 					<figure class="studioImg">
-						<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/top/studio01.jpg')); ?>" alt="スタジオ写真" width="550" height="380" />
+						<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/top/studio01.jpg')); ?>" alt="自由が丘スタジオ写真" width="550" height="380" />
 					</figure>
 					<figure class="studioImg">
-						<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/top/studio02.jpg')); ?>" alt="スタジオ写真" width="550" height="380" />
+						<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/top/studio02.jpg')); ?>" alt="自由が丘スタジオ写真" width="550" height="380" />
 					</figure>
 					<figure class="studioImg">
-						<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/top/studio03.jpg')); ?>" alt="スタジオ写真" width="550" height="380" />
+						<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/top/studio03.jpg')); ?>" alt="自由が丘スタジオ写真" width="550" height="380" />
 					</figure>
 					<figure class="studioImg">
-						<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/top/studio04.jpg')); ?>" alt="スタジオ写真" width="550" height="380" />
+						<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/top/studio04.jpg')); ?>" alt="自由が丘スタジオ写真" width="550" height="380" />
 					</figure>
 				</div>
 			</section>

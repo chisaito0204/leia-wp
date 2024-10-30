@@ -654,7 +654,7 @@
 			margin-bottom: 50px;
 		}
 		&__schedule {
-			width: 80%;
+			width: 100%;
 			margin: 40px auto 15px;
 			@include media(sm) {
 				width: 90%;
@@ -677,7 +677,7 @@
 					@include fontsize(13);
 					margin-top: 15px;
 					line-height: 150%;
-					width: 80%;
+					width: 100%;
 					margin: 0 auto 60px;
 				}
 				@include media(sm) {
@@ -1085,17 +1085,40 @@
 				width: 90%;
 				margin: 30px auto 60px;
 			}
-			&--txt {
+			&--text{
 				@include media(lg) {
 					@include fontsize(18);
+					margin-bottom: 50px;
 					line-height: 170%;
-					margin-bottom: 30px;
-					.fsl {
-						@include fontsize(24);
-					}
 				}
 				@include media(sm) {
 					@include fontsize(16);
+					line-height: 160%;
+					margin-bottom: 30px;
+				}
+			}
+			&--ttl{
+				font-weight: bold;
+				@include media(lg) {
+					@include fontsize(24);
+					margin-bottom: 20px;
+				}
+				@include media(sm) {
+					@include fontsize(20);
+					margin-bottom: 10px;
+				}
+			}
+			&--txt {
+				@include media(lg) {
+					@include fontsize(16);
+					line-height: 170%;
+					margin-bottom: 30px;
+					.fsl {
+						@include fontsize(20);
+					}
+				}
+				@include media(sm) {
+					@include fontsize(14);
 					line-height: 170%;
 					margin-bottom: 20px;
 					.fsl {
@@ -1109,16 +1132,37 @@
 			iframe {
 				width: 100%;
 			}
-			&--note {
+			&--note{
 				font-family: $noto;
 				@include media(lg) {
 					@include fontsize(16);
-					margin-top: 100px;
+					margin-top: 50px;
 				}
 				@include media(sm) {
 					@include fontsize(14);
 					width: 90%;
 					margin: 15px auto;
+				}
+				> a{
+					color: $pink;
+					border-bottom: solid 1px $pink;
+				}
+			}
+			&--note02{
+				text-align: right;
+				font-family: $noto;
+				@include media(lg) {
+					@include fontsize(16);
+					margin-top: 20px;
+				}
+				@include media(sm) {
+					@include fontsize(14);
+					width: 90%;
+					margin: 15px auto;
+				}
+				> a{
+					color: $pink;
+					border-bottom: solid 1px $pink;
 				}
 			}
 			&--box {

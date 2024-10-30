@@ -21,9 +21,9 @@ get_header();
 				<p class="lp__txt02">初心者大歓迎!!</p>
 				<p class="lp__txt03">体験レッスン：<span class="t1 pink">￥</span><span class="t2 pink">2,200</span><span class="t3 pink">円</span><span class="t4 pink">（税込）</span></p>
 				<div class="lp__txtbox">
-					<p class="lp__txt04"><span class="t1">火曜日： </span><span class="t2">昼クラス</span> <span class="t3">11:20 ~ 12:40 / <br class="sm-only" /></span><span class="t2 pl">夜クラス</span> <span class="t3">19:20 ~ 20:40</span></p>
-					<p class="lp__txt04"><span class="t1">金曜日： </span><span class="t2">夜クラス</span> <span class="t3">19:20 ~ 20:40</span></p>
-					<p class="lp__txt04"><span class="t1">日曜日： </span><span class="t2">昼クラス</span> <span class="t3">11:20 ~ 12:40</span></p>
+					<p class="lp__txt04"><span class="t1">火曜日： </span><span class="t2">田園調布スタジオ</span> <span class="t3">11:20 ~ 12:40 / <br class="sm-only" /></span><span class="t2 pl">田園調布スタジオ</span> <span class="t3">19:20 ~ 20:40</span></p>
+					<p class="lp__txt04"><span class="t1">金曜日： </span><span class="t2">自由が丘スタジオ</span> <span class="t3">19:20 ~ 20:40</span></p>
+					<p class="lp__txt04"><span class="t1">日曜日： </span><span class="t2">田園調布スタジオ</span> <span class="t3">14:20 ~ 15:40</span></p>
 				</div>
 
 				<a href="#form" class="lp__btn">お申し込みはこちらから</a>
@@ -80,19 +80,19 @@ get_header();
 								</tr>
 								<tr class="noon">
 									<td></td>
-									<td class="active">昼クラス<br />11:20-12:40</td>
+									<td class="active">田園調布スタジオ<br />11:20-12:40</td>
 									<td></td>
 									<td></td>
 									<td></td>
 									<td></td>
-									<td class="active">昼クラス<br />11:20-12:40</td>
+									<td class="active">田園調布スタジオ<br />14:20-15:40</td>
 								</tr>
 								<tr class="night">
 									<td></td>
-									<td class="active">夜クラス<br />19:20-20:40</td>
+									<td class="active">田園調布スタジオ<br />19:20-20:40</td>
 									<td></td>
 									<td></td>
-									<td class="active">夜クラス<br />19:20-20:40</td>
+									<td class="active">自由が丘スタジオ<br />19:20-20:40</td>
 									<td></td>
 									<td></td>
 								</tr>
@@ -108,8 +108,8 @@ get_header();
 						</dl>
 						<dl class="week">
 							<dt class="week__ttl">火曜日</dt>
-							<dd class="week__desc on">昼クラス<strong>：11:20-12:40</strong></dd>
-							<dd class="week__desc on">夜クラス<strong>：19:20-20:40</strong></dd>
+							<dd class="week__desc on">田園調布スタジオ<strong>：11:20-12:40</strong></dd>
+							<dd class="week__desc on">田園調布スタジオ<strong>：19:20-20:40</strong></dd>
 						</dl>
 						<dl class="week">
 							<dt class="week__ttl">水曜日</dt>
@@ -124,7 +124,7 @@ get_header();
 						<dl class="week">
 							<dt class="week__ttl">金曜日</dt>
 							<dd class="week__desc"></dd>
-							<dd class="week__desc on">夜クラス<strong>：19:20-20:40</strong></dd>
+							<dd class="week__desc on">自由が丘スタジオ<strong>：19:20-20:40</strong></dd>
 						</dl>
 						<dl class="week">
 							<dt class="week__ttl">土曜日</dt>
@@ -133,7 +133,7 @@ get_header();
 						</dl>
 						<dl class="week">
 							<dt class="week__ttl">日曜日</dt>
-							<dd class="week__desc on">昼クラス<strong>：11:20-12:40</strong></dd>
+							<dd class="week__desc on">田園調布スタジオ<strong>：14:20-15:40</strong></dd>
 							<dd class="week__desc"></dd>
 						</dl>
 					</div>
@@ -147,7 +147,7 @@ get_header();
 							<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/top/lesson-flow01.jpg')); ?>" alt="" width="261" height="173" />
 						</figure>
 						<p class="top__lesson__flow--boxTxt">
-						<span>①エクササイズとストレッチ</span><br />
+							<span>①エクササイズとストレッチ</span><br />
 							いきなり踊って怪我をしないため、そして、美しい体づくりには欠かせません。エクササイズは、本場米国プロ直伝のスタイルをベースにしています。慣れないうちは難しい動きもあるかもしれませんが、心配はいりません。講師のお手本を見ながら、丁寧な指導のもとで繰り返し練習することで、自然と身についていきます。ヒップアップ効果のある動きも取り入れてます。クラッシックバレエの基本であるバーレッスンもこのパートで行うときがあります。
 						</p>
 					</div>
@@ -156,7 +156,7 @@ get_header();
 							<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/top/lesson-flow02.jpg')); ?>" alt="" width="261" height="173" />
 						</figure>
 						<p class="top__lesson__flow--boxTxt">
-						<span>②ステップ、ジャンプ、基本など（クロスフロア）</span><br />
+							<span>②ステップ、ジャンプ、基本など（クロスフロア）</span><br />
 							当日の作品に出てくるステップや基本の動きなどを先に練習します。その他、ジャズダンスに必要な基本もこのパートで行います。ジャンプの基本やピルエット（ターン）の練習なども行います。
 						</p>
 					</div>
@@ -165,7 +165,7 @@ get_header();
 							<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/top/lesson-flow03.jpg')); ?>" alt="" width="261" height="173" />
 						</figure>
 						<p class="top__lesson__flow--boxTxt">
-						<span>③作品を踊る</span><br />
+							<span>③作品を踊る</span><br />
 							いきなり音楽に合わせるのではなく、カウントで振付します。その後、音楽に合わせて踊っていきます。初心者の方には無理ない範囲での振付にしたり、経験者には更にレベルアップとなるような振付けを行うなど臨機応変に対応いたします。分からないときには、随時質問して頂いて大丈夫です。なお各教材のワンポイントレッスン（初心者向け、経験者向け）をメルマガ（登録は<a href="/#mailmaga">こちら→</a>）でも配信しています。
 						</p>
 					</div>
@@ -187,29 +187,57 @@ get_header();
 
 				<p class="lp__ttl">アクセス</p>
 				<div class="top__lesson__access">
+					<p class="top__lesson__access--text">
+						田園調布と自由が丘の２つのスタジオでレッスンを開講しています。<br />
+						どちらも駅徒歩5分程度と都心の便利な2拠点です。ライフスタイルに合わせてジャズダンスを楽しみましょう。
+					</p>
+					<p class="top__lesson__access--ttl">田園調布スタジオ</p>
 					<p class="top__lesson__access--txt">
-						<span class="fsl">自由が丘駅徒歩<span class="pink">5分</span>！</span><br />
-						会社帰りに、買い物ついでに、便利なロケーションです。<br />
+						<span class="fsl">田園調布駅徒歩<span class="pink">6分</span>！</span>
+						<br />天井高も高く、リノリウム張りの本格的なスタジオで伸び伸びと踊れます！<br />
+						<br />
+						<span class="indent01">・東急東横線田園調布駅 徒歩6分</span>
+						<span class="indent01">・住所：〒145-0071 東京都大田区田園調布２丁目４６−３ ライトハウス田園調布 1F</span>
+						<span class="indent01">・着替えスペースあり。駅からの途中にコンビニあり。</span>
+					</p>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11264.121445656969!2d139.6649930469027!3d35.59901199139514!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f5958aafb94d%3A0xab240d3190766c30!2zTGVpYSBEYW5jZSBTdHVkaW8g55Sw5ZyS6Kq_5biD44K544K_44K444Kq!5e0!3m2!1sja!2sjp!4v1730110689039!5m2!1sja!2sjp" width="1080" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+				<div class="top__lesson__access--box">
+					<figure class="studioImg">
+						<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/top/studio05.jpg')); ?>" alt="田園調布スタジオ写真" width="550" height="380" />
+					</figure>
+					<figure class="studioImg">
+						<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/top/studio06.jpg')); ?>" alt="田園調布スタジオ写真" width="550" height="380" />
+					</figure>
+				</div>
+				<p class="top__lesson__access--note02">写真引用：<a href="https://studiocroix.jp/rentalstudio" target="_blank">スタジオクロア</a>様</p>
+
+
+				<div class="top__lesson__access">
+					<p class="top__lesson__access--ttl">自由が丘スタジオ</p>
+					<p class="top__lesson__access--txt">
+						<span class="fsl">自由が丘駅徒歩<span class="pink">5分</span>！</span>
+						<br />会社帰りに、買い物ついでに、便利なロケーションです。<br />
 						<br />
 						<span class="indent01">・東急東横線／大井町線 自由が丘駅 徒歩5分</span>
-						<span class="indent01">・住所：東京都目黒区自由が丘1-3-22 自由ヶ丘ダンススタジオ内・着替えスペースあり。自動販売機及び駐車場はございません。電話連絡先はございません。</span>
-						<span class="indent01">・横浜市内のスタジオも検討中です。<a href="/contact" class="pink">ご希望等コメント</a>お待ちしております。</span>
+						<span class="indent01">・住所：東京都目黒区自由が丘1-3-22 自由ヶ丘ダンススタジオ内</span>
+						<span class="indent01">・着替えスペースあり。近所にコンビニあり。スタジオの電話連絡先はございません。</span>
 					</p>
 					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2898.6031322731833!2d139.66810364800756!3d35.60875517766585!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f5e150067731%3A0xc67dae953be8382e!2sLeia%20Dance%20Studio!5e0!3m2!1sja!2sjp!4v1720500231626!5m2!1sja!2sjp" width="1080" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 				</div>
 				<p class="top__lesson__access--note">★正面玄関はこちらです</p>
 				<div class="top__lesson__access--box">
 					<figure class="studioImg">
-						<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/top/studio01.jpg')); ?>" alt="スタジオ写真" width="550" height="380" />
+						<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/top/studio01.jpg')); ?>" alt="自由が丘スタジオ写真" width="550" height="380" />
 					</figure>
 					<figure class="studioImg">
-						<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/top/studio02.jpg')); ?>" alt="スタジオ写真" width="550" height="380" />
+						<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/top/studio02.jpg')); ?>" alt="自由が丘スタジオ写真" width="550" height="380" />
 					</figure>
 					<figure class="studioImg">
-						<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/top/studio03.jpg')); ?>" alt="スタジオ写真" width="550" height="380" />
+						<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/top/studio03.jpg')); ?>" alt="自由が丘スタジオ写真" width="550" height="380" />
 					</figure>
 					<figure class="studioImg">
-						<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/top/studio04.jpg')); ?>" alt="スタジオ写真" width="550" height="380" />
+						<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/top/studio04.jpg')); ?>" alt="自由が丘スタジオ写真" width="550" height="380" />
 					</figure>
 				</div>
 			</div>
@@ -219,7 +247,7 @@ get_header();
 					<figure><img src="<?php echo esc_url(get_theme_file_uri('/assets/img/top/woman01.svg')); ?>" alt="" width="150" height="150" /></figure>
 					<p class="top__voice__box--txt">
 						Leia Dance Studioはジャズダンスだけではなく、クラシックバレエ・スパニッシュ・ハワイアン・モダンなど様々な要素を取り入れた曲を踊ることができますよ！<br />
-						今からプロは目指せないけど思いっきり踊りたい、昔踊った経験があり再び始めたい、子どもと一緒に踊りたいなど、楽しく踊りたい仲間、大歓迎です！自由が丘スタジオでお待ちしていまーす！
+						今からプロは目指せないけど思いっきり踊りたい、昔踊った経験があり再び始めたい、子どもと一緒に踊りたいなど、楽しく踊りたい仲間、大歓迎です！スタジオでお待ちしていまーす！
 						<br />
 						(20代 / 女性)
 					</p>

@@ -16,4 +16,18 @@
 			}
 		}
 	}
+	&__txt{
+		text-align: center;
+		font-weight: bold;
+		@include media(lg) {
+			@include fontsize(18);
+		}
+		@include media(sm) {
+			@include fontsize(16);
+		}
+		> a{
+			color: $pink;
+			border-bottom: solid 1px $pink;
+		}
+	}
 }

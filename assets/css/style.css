@@ -1486,7 +1486,7 @@ button {
   }
 }
 .top__lesson__schedule {
-  width: 80%;
+  width: 100%;
   margin: 40px auto 15px;
 }
 @media (max-width: 959px) {
@@ -1518,7 +1518,7 @@ button {
     font-size: 0.8125rem;
     margin-top: 15px;
     line-height: 150%;
-    width: 80%;
+    width: 100%;
     margin: 0 auto 60px;
   }
 }
@@ -2027,21 +2027,54 @@ button {
   }
 }
 @media (min-width: 960px) {
-  .top__lesson__access--txt {
+  .top__lesson__access--text {
     font-size: 18px;
     font-size: 1.125rem;
+    margin-bottom: 50px;
+    line-height: 170%;
+  }
+}
+@media (max-width: 959px) {
+  .top__lesson__access--text {
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 160%;
+    margin-bottom: 30px;
+  }
+}
+.top__lesson__access--ttl {
+  font-weight: bold;
+}
+@media (min-width: 960px) {
+  .top__lesson__access--ttl {
+    font-size: 24px;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 959px) {
+  .top__lesson__access--ttl {
+    font-size: 20px;
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+  }
+}
+@media (min-width: 960px) {
+  .top__lesson__access--txt {
+    font-size: 16px;
+    font-size: 1rem;
     line-height: 170%;
     margin-bottom: 30px;
   }
   .top__lesson__access--txt .fsl {
-    font-size: 24px;
-    font-size: 1.5rem;
+    font-size: 20px;
+    font-size: 1.25rem;
   }
 }
 @media (max-width: 959px) {
   .top__lesson__access--txt {
-    font-size: 16px;
-    font-size: 1rem;
+    font-size: 14px;
+    font-size: 0.875rem;
     line-height: 170%;
     margin-bottom: 20px;
   }
@@ -2063,7 +2096,7 @@ button {
   .top__lesson__access--note {
     font-size: 16px;
     font-size: 1rem;
-    margin-top: 100px;
+    margin-top: 50px;
   }
 }
 @media (max-width: 959px) {
@@ -2073,6 +2106,33 @@ button {
     width: 90%;
     margin: 15px auto;
   }
+}
+.top__lesson__access--note > a {
+  color: #E12C6D;
+  border-bottom: solid 1px #E12C6D;
+}
+.top__lesson__access--note02 {
+  text-align: right;
+  font-family: "Noto Sans", "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+}
+@media (min-width: 960px) {
+  .top__lesson__access--note02 {
+    font-size: 16px;
+    font-size: 1rem;
+    margin-top: 20px;
+  }
+}
+@media (max-width: 959px) {
+  .top__lesson__access--note02 {
+    font-size: 14px;
+    font-size: 0.875rem;
+    width: 90%;
+    margin: 15px auto;
+  }
+}
+.top__lesson__access--note02 > a {
+  color: #E12C6D;
+  border-bottom: solid 1px #E12C6D;
 }
 @media (min-width: 960px) {
   .top__lesson__access--box {
@@ -3246,6 +3306,26 @@ button {
   .class__textarea span {
     line-height: 140%;
   }
+}
+.class__txt {
+  text-align: center;
+  font-weight: bold;
+}
+@media (min-width: 960px) {
+  .class__txt {
+    font-size: 18px;
+    font-size: 1.125rem;
+  }
+}
+@media (max-width: 959px) {
+  .class__txt {
+    font-size: 16px;
+    font-size: 1rem;
+  }
+}
+.class__txt > a {
+  color: #E12C6D;
+  border-bottom: solid 1px #E12C6D;
 }
 
 .blog__list {

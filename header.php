@@ -74,6 +74,7 @@
 						<li class="header__nav__item"><a href="/">Home</a></li>
 						<li class="header__nav__item ja"><a href="/about">5つの魅力</a></li>
 						<li class="header__nav__item ja"><a href="/class">クラス</a></li>
+						<li class="header__nav__item ja"><a href="/access">アクセス</a></li>
 						<li class="header__nav__item ja"><a href="/teacher">講師</a></li>
 						<li class="header__nav__item ja"><a href="/contact">お問合せ</a></li>
 						<li class="header__nav__item"><a href="/blog">Blog</a></li>
@@ -102,6 +103,9 @@
 							</li>
 							<li class="header__spSideMenu__item">
 								<a href="/class">クラス</a>
+							</li>
+							<li class="header__spSideMenu__item">
+								<a href="/access">アクセス</a>
 							</li>
 							<li class="header__spSideMenu__item">
 								<a href="/teacher">講師</a>
