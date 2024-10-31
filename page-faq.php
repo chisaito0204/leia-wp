@@ -30,7 +30,7 @@ get_header();
 						<span class="qu">全くの初心者ですが大丈夫でしょうか？</span>
 					</div>
 					<div class="top__faq__inner--an">
-						<span class="an">はい、全くダンス未経験者でも問題ありません。初心者でも<a href="/teacher">講師</a>がしっかりと丁寧に指導いたしますので安心して参加して下さい。</span>
+						<span class="an">はい、全くダンス未経験者でも問題ありません。初心者でも<a href="/instructor">講師</a>がしっかりと丁寧に指導いたしますので安心して参加して下さい。</span>
 					</div>
 				</div>
 				<div class="top__faq__inner">

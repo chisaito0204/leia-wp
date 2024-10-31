@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: teacher
+Template Name: instructor
 */
 get_header();
 ?>

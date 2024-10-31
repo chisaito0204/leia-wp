@@ -236,7 +236,7 @@ get_header();
 						</p>
 					</div>
 				</div>
-				<a href="/teacher" class="modMoreBtn">もっと詳しく</a>
+				<a href="/instructor" class="modMoreBtn">もっと詳しく</a>
 			</section>
 			<!-- 	/ 講師 -->
 
@@ -633,7 +633,7 @@ get_header();
 					</div>
 					<div class="top__faq__inner--an" style="display: none;">
 						<span class="an">
-							はい、全くダンス未経験者でも問題ありません。初心者でも<a href="/teacher">講師</a>がしっかりと丁寧に指導いたしますので安心して参加して下さい。
+							はい、全くダンス未経験者でも問題ありません。初心者でも<a href="/instructor">講師</a>がしっかりと丁寧に指導いたしますので安心して参加して下さい。
 						</span>
 					</div>
 				</div>
