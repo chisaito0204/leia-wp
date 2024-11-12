@@ -4609,6 +4609,13 @@ button {
     margin-bottom: 100px;
   }
 }
+.lp .mapImg {
+  margin-bottom: 20px;
+}
+.lp .mapImg img {
+  width: 100%;
+  height: auto;
+}
 .lp__mv img {
   width: 100%;
   height: auto;
