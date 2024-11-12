@@ -2161,6 +2161,13 @@ button {
   width: 100%;
   height: auto;
 }
+.top__lesson .mapImg {
+  margin-bottom: 20px;
+}
+.top__lesson .mapImg img {
+  width: 100%;
+  height: auto;
+}
 .top__faq {
   margin-bottom: 100px;
 }

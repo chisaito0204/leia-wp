@@ -564,9 +564,18 @@ get_header();
 						<span class="indent01">・住所：〒145-0071 東京都大田区田園調布２丁目４６−３ ライトハウス田園調布 1F</span>
 						<span class="indent01">・着替えスペースあり。駅からの途中にコンビニあり。</span>
 					</p>
+					<figure class="mapImg">
+						<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/top/map.jpg')); ?>" alt="田園調布スタジオマップ" width="945" height="415" />
+					</figure>
 					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11264.121445656969!2d139.6649930469027!3d35.59901199139514!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f5958aafb94d%3A0xab240d3190766c30!2zTGVpYSBEYW5jZSBTdHVkaW8g55Sw5ZyS6Kq_5biD44K544K_44K444Kq!5e0!3m2!1sja!2sjp!4v1730110689039!5m2!1sja!2sjp" width="1080" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 				</div>
 				<div class="top__lesson__access--box">
+					<figure class="studioImg">
+						<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/top/access01.png')); ?>" alt="田園調布スタジオ写真" width="550" height="380" />
+					</figure>
+					<figure class="studioImg">
+						<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/top/access02.png')); ?>" alt="田園調布スタジオ写真" width="550" height="380" />
+					</figure>
 					<figure class="studioImg">
 						<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/top/studio05.jpg')); ?>" alt="田園調布スタジオ写真" width="550" height="380" />
 					</figure>
