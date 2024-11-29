@@ -53,7 +53,7 @@ get_header();
 				<figure class="teacher__messasge--img"><img src="<?php echo esc_url(get_theme_file_uri('/assets/img/teacher/maya_kohno.png')); ?>" alt="河野麻耶" width="298" height="298" /></figure>
 			</div>
 			<p class="teacher__messasge--note">
-				河野麻耶の個人的な舞踊活動（カルチャースクール講師、振付け、プライベートレッスンや出演依頼等）は<br class="lg-only"><a href="https://studio-leia.jp/" target="_blank">河野麻耶個人サイト(Studio Leia)</a> へ
+				河野麻耶の舞踊活動全般（カルチャースクール講師、振付け、プライベートレッスンや出演依頼等）については<a href="https://studio-leia.jp/" target="_blank">河野麻耶・個人事業主 Studio Leia サイト</a> へ
 			</p>
 
 			<div class="teacher__history">
