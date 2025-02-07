@@ -1213,24 +1213,17 @@ button {
 }
 .top__teacherBox__prof {
   flex: 0 0 30%;
-  background: rgba(225, 44, 109, 0.1);
-  height: 450px;
-  position: relative;
 }
 @media (max-width: 959px) {
   .top__teacherBox__prof {
-    width: 230px;
-    height: 230px;
+    width: 100%;
+    height: auto;
     margin: auto;
   }
 }
 .top__teacherBox__prof > img {
   width: 100%;
   height: auto;
-  position: absolute;
-  top: 9%;
-  left: 8%;
-  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 .top__teacherBox__txtbox {
   flex: 0 0 43%;

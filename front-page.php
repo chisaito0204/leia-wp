@@ -218,7 +218,7 @@ get_header();
 
 				<div class="top__teacherBox">
 					<figure class="top__teacherBox__prof">
-						<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/top/Maya_Kohno.jpg')); ?>" alt="河野麻耶" width="485" height="485" />
+						<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/top/Maya_Kohno.png')); ?>" alt="河野麻耶" width="485" height="485" />
 					</figure>
 					<div class="top__teacherBox__txtbox">
 						<p class="top__teacherBox__txtbox--name">河野麻耶<br /><span>Maya Kohno</span></p>
