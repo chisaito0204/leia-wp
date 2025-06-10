@@ -36,7 +36,7 @@ get_header();
 						<span class="fsl">田園調布駅徒歩<span class="pink">6分</span>！</span>
 						<br />天井高も高く、リノリウム張りの本格的なスタジオで伸び伸びと踊れます！<br />
 						<br />
-						<span class="indent01">・東急東横線田園調布駅 徒歩6分</span>
+						<span class="indent01">・東急東横線田園調布駅 徒歩5分</span>
 						<span class="indent01">・住所：〒145-0071 東京都大田区田園調布２丁目４６−３ ライトハウス田園調布 1F</span>
 						<span class="indent01">・着替えスペースあり。駅からの途中にコンビニあり。</span>
 					</p>
@@ -59,7 +59,7 @@ get_header();
 						<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/top/studio06.jpg')); ?>" alt="田園調布スタジオ写真" width="550" height="380" />
 					</figure>
 				</div>
-				<p class="top__lesson__access--note02">写真引用：<a href="https://studiocroix.jp/rentalstudio" target="_blank">スタジオクロア</a>様</p>
+				<p class="top__lesson__access--note02">写真引用：<a href="https://rental.studiocroix.jp/" target="_blank">スタジオクロア</a>様</p>
 
 
 				<div class="top__lesson__access">

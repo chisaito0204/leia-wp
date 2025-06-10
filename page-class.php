@@ -16,7 +16,7 @@ get_header();
         </figure>
       </div>
       <p class="modText">
-        本格的なジャズダンスを身近に！自由が丘駅5分のロケーションの良さ！<br>
+        本格的なジャズダンスを身近に！駅徒歩5分のロケーションの良さ！<br>
         レベルや経験に関係なく気軽に参加できるオープンクラス制です。<br>
         チケット制なのでご自身のペースで通えます！
       </p>
@@ -161,7 +161,7 @@ get_header();
             <span class="indent01">※レッスン開始時間の20分以上前にはスタジオに入ることはできません。</span>
             <span class="indent01">※レッスン後のスタジオのお掃除は不要ですが更衣スペースやトイレは綺麗に使いましょう。</span>
             <span class="indent01">※シューズはジャズシューズまたはバレエシューズを推奨いたします（屋内シューズも可）。これから購入される方はご相談にのります。</span>
-            <span class="indent01">※アクセサリー等の着用は落下などによる怪我防止のためレッスン中は極力外してください。</span>
+            <span class="indent01">※その他、レッスンのお願いやご注意事項はこちらの「<a href="https://leia-dance.jp/wp-content/uploads/2025/05/LeiaDanceStudio_guidelines_2025.pdf" target="_blank">ご入会にあたってのご案内とお願い (PDF)</a>」をご覧ください。</span>
           </p>
         </div>
 

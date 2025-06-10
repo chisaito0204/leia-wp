@@ -29,10 +29,17 @@ get_header();
 				<a href="#form" class="lp__btn">お申し込みはこちらから</a>
 
 				<p class="lp__textarea">
-					プロに振付けや指導してより洗練されたダンスを<br class="sm-only" />身に付けたい個人の方、サークルの皆様。<br />
+					<!-- プロに振付けや指導してより洗練されたダンスを<br class="sm-only" />身に付けたい個人の方、サークルの皆様。<br />
 					お子様の情操教育と学びの場に、<br class="sm-only" />ジュニアや親子ペアで学ぶクラス。<br />
 					横浜でのスタジオ開講も含めて検討しております。<br />
-					ぜひお問い合わせよりご意見、<br class="sm-only" />ご要望お待ちしております！
+					ぜひお問い合わせよりご意見、<br class="sm-only" />ご要望お待ちしております！ -->
+
+					懐かしい名曲にのせて、<br class="sm-only">華やかなショーダンスを楽しく体験してみませんか？<br>
+					自由が丘駅・田園調布駅から徒歩5分の好アクセス！<br>
+					未経験の方やシニアの方も安心して始められます。<br>
+					姿勢改善や健康づくり、美しい所作にも効果的。<br>
+					ブロードウェイスタイルの本格ジャズダンスを、<br class="sm-only">受賞歴豊富な講師が丁寧に指導。<br>
+					まずは体験から。日常にちょっとした刺激と、<br class="sm-only">踊る楽しさを取り入れてみませんか？
 				</p>
 
 				<figure class="lp__boxBg">
@@ -196,7 +203,7 @@ get_header();
 						<span class="fsl">田園調布駅徒歩<span class="pink">6分</span>！</span>
 						<br />天井高も高く、リノリウム張りの本格的なスタジオで伸び伸びと踊れます！<br />
 						<br />
-						<span class="indent01">・東急東横線田園調布駅 徒歩6分</span>
+						<span class="indent01">・東急東横線田園調布駅 徒歩5分</span>
 						<span class="indent01">・住所：〒145-0071 東京都大田区田園調布２丁目４６−３ ライトハウス田園調布 1F</span>
 						<span class="indent01">・着替えスペースあり。駅からの途中にコンビニあり。</span>
 					</p>
@@ -219,7 +226,7 @@ get_header();
 						<img src="<?php echo esc_url(get_theme_file_uri('/assets/img/top/studio06.jpg')); ?>" alt="田園調布スタジオ写真" width="550" height="380" />
 					</figure>
 				</div>
-				<p class="top__lesson__access--note02">写真引用：<a href="https://studiocroix.jp/rentalstudio" target="_blank">スタジオクロア</a>様</p>
+				<p class="top__lesson__access--note02">写真引用：<a href="https://rental.studiocroix.jp/" target="_blank">スタジオクロア</a>様</p>
 
 
 				<div class="top__lesson__access">

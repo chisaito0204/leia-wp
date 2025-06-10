@@ -1781,6 +1781,10 @@ button {
     margin: 10px 0 30px;
   }
 }
+.top__lesson__rule--txt a {
+  color: #E12C6D;
+  text-decoration: underline;
+}
 @media (min-width: 960px) {
   .top__lesson__fee {
     margin: 50px 0;

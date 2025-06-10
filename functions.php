@@ -135,3 +135,7 @@ function my_archives_link($link_html)
   return $link_html;
 }
 add_filter('get_archives_link', 'my_archives_link');
+
+add_action('init', function() {
+  load_plugin_textdomain('all-in-one-seo-pack');
+});
