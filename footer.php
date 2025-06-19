@@ -19,11 +19,14 @@
   <a href="#top"><img src="<?php echo esc_url(get_theme_file_uri('/assets/img/common/pagetop.svg')); ?>" alt="" width="9" height="29"></a>
 </div>
 <footer class="footerSub">
-  <div class="footerSub__link"><a href="/#mailmaga" >メルマガの登録はこちらから</a></div>
+  <div class="footerSub__link"><a href="/#mailmaga">メルマガの登録はこちらから</a></div>
 </footer>
 <footer class="footer">
   <div class="footer__contents">
     <div class="footer__logo">
+      <figure class="leia">
+        <img src="<?php echo esc_url(get_theme_file_uri('/assets/img/common/leia.png')); ?>" alt="" width="150" height="150">
+      </figure>
       <a href="/">
         <figure class="logo">
           <img src="<?php echo esc_url(get_theme_file_uri('/assets/img/common/lds_logo-white.png')); ?>" alt="" width="247" height="55">
@@ -46,7 +49,7 @@
 
       <div class="footer__navLink">
         <div class="footer__navLinkOuter">
-          <a href="https://studio-leia.jp/" target="_blank">運営(Studio  Leia)</a>
+          <a href="https://studio-leia.jp/" target="_blank">運営(Studio Leia)</a>
         </div>
         <div class="footer__navLinkSns">
           <a href="https://x.com/leiadancestudio" target="_blank"><img src="<?php echo esc_url(get_theme_file_uri('/assets/img/common/x.svg')); ?>" alt="X" width="20" height="22"></a>

@@ -7,6 +7,7 @@
   }
   @include media(sm) {
     padding-top: 50px;
+    padding-bottom: 75px;
   }
   &Sub {
     padding: 10px 25px;
@@ -52,6 +53,15 @@
     @include media(lg) {
       flex: 0 0 40%;
       position: relative;
+    }
+    .leia{
+      max-width: 150px;
+      @include media(lg) {
+        margin-left: 40px;
+      }
+      @include media(sm) {
+        margin: 20px auto;
+      }
     }
     .logo {
       max-width: 247px;

@@ -390,6 +390,7 @@ button {
 @media (max-width: 959px) {
   .footer {
     padding-top: 50px;
+    padding-bottom: 75px;
   }
 }
 .footerSub {
@@ -447,6 +448,19 @@ button {
   .footer__logo {
     flex: 0 0 40%;
     position: relative;
+  }
+}
+.footer__logo .leia {
+  max-width: 150px;
+}
+@media (min-width: 960px) {
+  .footer__logo .leia {
+    margin-left: 40px;
+  }
+}
+@media (max-width: 959px) {
+  .footer__logo .leia {
+    margin: 20px auto;
   }
 }
 .footer__logo .logo {
@@ -2487,6 +2501,7 @@ button {
 }
 .top__contactForm input[type=text],
 .top__contactForm input[type=email],
+.top__contactForm select,
 .top__contactForm textarea {
   background: #fff;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
@@ -2498,6 +2513,7 @@ button {
 @media (min-width: 960px) {
   .top__contactForm input[type=text],
   .top__contactForm input[type=email],
+  .top__contactForm select,
   .top__contactForm textarea {
     padding: 15px 10px;
     font-size: 16px;
@@ -2507,6 +2523,7 @@ button {
 @media (max-width: 959px) {
   .top__contactForm input[type=text],
   .top__contactForm input[type=email],
+  .top__contactForm select,
   .top__contactForm textarea {
     padding: 13px 10px;
     font-size: 14px;
@@ -2515,6 +2532,7 @@ button {
 }
 .top__contactForm input[type=text]:focus,
 .top__contactForm input[type=email]:focus,
+.top__contactForm select:focus,
 .top__contactForm textarea:focus {
   outline: 0;
   background: #fce9f0;
