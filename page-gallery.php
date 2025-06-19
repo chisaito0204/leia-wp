@@ -11,15 +11,37 @@ get_header();
 			<div class="modTttlbox">
 				<h2 class="modTttlbox--ttl">Dance Gallery</h2>
 				<p class="modTttlbox--subttl">ダンスギャラリー</p>
+				<p class="modTttlbox--txt">
+					見て感じる、ダンスの世界。<br>
+					<a href="https://leia-dance.jp/instructor/"><span class="pink borderPink">講師・河野麻耶</span></a>の作品を中心に、情熱あふれる舞台の魅力を映像と<br>
+					写真でお届けします。<br>
+					生徒さんの出演も順次追加予定です。
+				</p>
 			</div>
 
 			<div class="tab-container">
-				<div class="tab active">動画</div>
-				<div class="tab">写真</div>
+				<div class="tab active">写真</div>
+				<div class="tab">動画</div>
 			</div>
 
 			<div>
-				<div class="media__contents show">
+				<?php if (CFS()->get('gallery_photo')) : ?>
+					<ul class="media__contents grid show">
+						<?php
+						$photos = CFS()->get('gallery_photo');
+						foreach ($photos as $photo) :
+							$alt_text = isset($photo['gallery_photo_alt']) ? esc_attr($photo['gallery_photo_alt']) : '';
+						?>
+							<li class="item">
+								<a href="<?php echo esc_url($photo['gallery_photo_image']); ?>" class="luminous">
+									<img src="<?php echo esc_url($photo['gallery_photo_image']); ?>" alt="<?php echo $alt_text; ?>" width="800" height="533">
+								</a>
+							</li>
+						<?php endforeach; ?>
+					</ul>
+				<?php endif; ?>
+
+				<div class="media__contents">
 					<?php if (CFS()->get('gallery_video')) : ?>
 						<?php
 						$videos = CFS()->get('gallery_video');
@@ -30,21 +52,6 @@ get_header();
 					<?php endif; ?>
 				</div>
 
-				<?php if (CFS()->get('gallery_photo')) : ?>
-					<ul class="media__contents grid">
-						<?php
-						$photos = CFS()->get('gallery_photo');
-						foreach ($photos as $photo) :
-						$alt_text = isset($photo['gallery_photo_alt']) ? esc_attr($photo['gallery_photo_alt']) : '';
-						?>
-							<li class="item">
-								<a href="<?php echo esc_url($photo['gallery_photo_image']); ?>" class="luminous">
-									<img src="<?php echo esc_url($photo['gallery_photo_image']); ?>" alt="<?php echo $alt_text; ?>" width="800" height="533">
-								</a>
-							</li>
-						<?php endforeach; ?>
-					</ul>
-				<?php endif; ?>
 			</div>
 
 			<div class="modSns">

@@ -15,6 +15,11 @@
 	color: $pink;
 }
 
+/* border pink */
+.borderPink{
+	border-bottom: solid 1px $pink;
+}
+
 /* scroll down */
 .scrollDown {
 	width: 1px;
@@ -192,6 +197,18 @@
 			@include media(sm) {
 				@include fontsize(16);
 				width: 60%;
+			}
+		}
+		&--txt{
+			@include media(lg) {
+				@include fontsize(16);
+				margin-top: 20px;
+				line-height:160%;
+			}
+			@include media(sm) {
+				@include fontsize(14);
+				margin-top: 16px;
+				line-height: 140%;
 			}
 		}
 	}

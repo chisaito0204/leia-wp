@@ -3862,6 +3862,11 @@ button {
   color: #E12C6D;
 }
 
+/* border pink */
+.borderPink {
+  border-bottom: solid 1px #E12C6D;
+}
+
 /* scroll down */
 .scrollDown {
   width: 1px;
@@ -4069,6 +4074,22 @@ button {
     font-size: 16px;
     font-size: 1rem;
     width: 60%;
+  }
+}
+@media (min-width: 960px) {
+  .modTttlbox--txt {
+    font-size: 16px;
+    font-size: 1rem;
+    margin-top: 20px;
+    line-height: 160%;
+  }
+}
+@media (max-width: 959px) {
+  .modTttlbox--txt {
+    font-size: 14px;
+    font-size: 0.875rem;
+    margin-top: 16px;
+    line-height: 140%;
   }
 }
 .modText {

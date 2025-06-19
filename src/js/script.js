@@ -188,29 +188,25 @@ $(function () {
     $(this).addClass("active");
     const index = tabs.index(this);
     $(".media__contents").removeClass("show").eq(index).addClass("show");
-
-    // .grid 要素が存在するかを確認
-    var gridElement = document.querySelector(".grid");
-    if (gridElement !== null) {
-      // .grid 要素が存在する場合のみ、Muuriの設定を実行
-      var grid = new Muuri(".grid", {
-        // Muuriの設定
-        showDuration: 600,
-        showEasing: "cubic-bezier(0.215, 0.61, 0.355, 1)",
-        hideDuration: 600,
-        hideEasing: "cubic-bezier(0.215, 0.61, 0.355, 1)",
-        visibleStyles: {
-          opacity: "1",
-          transform: "scale(1)",
-        },
-        hiddenStyles: {
-          opacity: "0",
-          transform: "scale(0.5)",
-        },
-      });
-    } else {
-    }
   });
+
+// 写真一覧にmuuriの処理
+  var grid = new Muuri(".grid", {
+    // Muuriの設定
+    showDuration: 600,
+    showEasing: "cubic-bezier(0.215, 0.61, 0.355, 1)",
+    hideDuration: 600,
+    hideEasing: "cubic-bezier(0.215, 0.61, 0.355, 1)",
+    visibleStyles: {
+      opacity: "1",
+      transform: "scale(1)",
+    },
+    hiddenStyles: {
+      opacity: "0",
+      transform: "scale(0.5)",
+    },
+  });
+
 });
 
 /*********************
