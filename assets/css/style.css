@@ -149,6 +149,10 @@ button {
   text-align: inherit;
 }
 
+strong {
+  font-weight: bold;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -3771,6 +3775,7 @@ button {
     font-size: 20px;
     font-size: 1.25rem;
     padding-bottom: 15px;
+    margin-top: 15px;
     margin-bottom: 25px;
     line-height: 140%;
   }
@@ -3781,6 +3786,7 @@ button {
     font-size: 1.125rem;
     line-height: 1.5rem;
     padding-bottom: 10px;
+    margin-top: 10px;
     margin-bottom: 20px;
   }
 }
@@ -3792,6 +3798,7 @@ button {
   .articleDetailContents--text h3 {
     font-size: 18px;
     font-size: 1.125rem;
+    margin-top: 15px;
     margin-bottom: 20px;
     line-height: 120%;
   }
@@ -3801,6 +3808,7 @@ button {
     font-size: 16px;
     font-size: 1rem;
     line-height: 1.5rem;
+    margin-top: 10px;
     margin-bottom: 15px;
   }
 }
