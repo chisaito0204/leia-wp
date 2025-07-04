@@ -13,8 +13,7 @@ get_header();
 				<p class="modTttlbox--subttl">ダンスギャラリー</p>
 				<p class="modTttlbox--txt">
 					見て感じる、ダンスの世界。<br>
-					<a href="https://leia-dance.jp/instructor/"><span class="pink borderPink">講師・河野麻耶</span></a>の作品を中心に、情熱あふれる舞台の魅力を映像と<br>
-					写真でお届けします。<br>
+					<a href="https://leia-dance.jp/instructor/"><span class="pink borderPink">講師・河野麻耶</span></a>の作品を中心に、情熱あふれる舞台の魅力を映像と写真でお届けします。<br>
 					生徒さんの出演も順次追加予定です。
 				</p>
 			</div>

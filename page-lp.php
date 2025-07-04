@@ -200,7 +200,7 @@ get_header();
 					</p>
 					<p class="top__lesson__access--ttl">田園調布スタジオ</p>
 					<p class="top__lesson__access--txt">
-						<span class="fsl">田園調布駅徒歩<span class="pink">6分</span>！</span>
+						<span class="fsl">田園調布駅徒歩<span class="pink">5分</span>！</span>
 						<br />天井高も高く、リノリウム張りの本格的なスタジオで伸び伸びと踊れます！<br />
 						<br />
 						<span class="indent01">・東急東横線田園調布駅 徒歩5分</span>
