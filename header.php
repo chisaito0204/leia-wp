@@ -9,11 +9,6 @@
 	<link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-precomposed.png">
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<title>Leia Dance Studio</title>
-	<meta property="og:title" content="Leia Dance Studio" />
-	<meta property="og:site_name" content="Leia Dance Studio" />
-	<meta property="og:type" content="website" />
-	<meta property="og:image" content="<?php echo esc_url(get_theme_file_uri('/assets/img/ogp.png')); ?>" />
-	<meta property="og:description" content="Leia Dance Studioのサイト" />
 	<link rel="profile" href="https://gmpg.org/xfn/11" />
 	<link rel="stylesheet" href="<?php echo esc_url(get_theme_file_uri('/assets/css/style.css')); ?>">
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
