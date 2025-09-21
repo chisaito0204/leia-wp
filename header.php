@@ -13,7 +13,7 @@
 	<meta property="og:site_name" content="Leia Dance Studio" />
 	<meta property="og:type" content="website" />
 	<meta property="og:image" content="<?php echo esc_url(get_theme_file_uri('/assets/img/ogp.png')); ?>" />
-	<meta property="og:url" content="https://leia-dance.jp/" />
+	<!-- <meta property="og:url" content="https://leia-dance.jp/" /> -->
 	<meta property="og:description" content="Leia Dance Studioのサイト" />
 	<link rel="profile" href="https://gmpg.org/xfn/11" />
 	<link rel="stylesheet" href="<?php echo esc_url(get_theme_file_uri('/assets/css/style.css')); ?>">
